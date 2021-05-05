@@ -142,6 +142,9 @@ input {
 .center {
 	text-align: center;
 }
+.hidden {
+	display: none;
+}
 /* ---------------breadcrumbs----------------- */
 
 .breadcrumbs {
@@ -273,7 +276,18 @@ input {
 	   -moz-border-radius: 50%;
 	        border-radius: 50%;
 }
-
+.heart {
+	width: 30px;
+	height: 30px;
+}
+.user-i {
+	width: 32px;
+	height: 32px;
+}
+.burger-i {
+	width: 24px;
+	height: 24px;
+}
 .header__login {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -317,6 +331,7 @@ input {
 	top: 100%;
 	right: 0;
 	padding-top: 5px;
+	z-index: 8;
 }
 .header__login:hover .header__login-menu {
 	display: block;

@@ -59,14 +59,14 @@
                             Сдать жилье
                         </a>
                         <a href="#" class="header__like">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" fill="none"><path d="M22.515 2.768c-.55-.561-1.203-1.005-1.921-1.309S19.106 1 18.328 1s-1.548.156-2.266.46-1.371.748-1.921 1.309L13 3.931l-1.141-1.163c-1.11-1.132-2.617-1.768-4.187-1.768s-3.077.636-4.187 1.768S1.75 5.435 1.75 7.035s.624 3.135 1.734 4.267l1.141 1.163L13 21l8.374-8.534 1.141-1.163a6.04 6.04 0 0 0 1.284-1.958c.298-.732.451-1.517.451-2.31s-.153-1.577-.451-2.31a6.04 6.04 0 0 0-1.284-1.958h0z" stroke="#777d82" stroke-width="2" stroke-linejoin="round"/></svg>
+                            <svg class="heart"><use xlink:href="img/sprite.svg#fi_heart"></use></svg>
                             <span>
                                 2
                             </span>
                         </a>
                         <div class="header__login">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"  stroke="#777d82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12M6 12h12M6 16h12"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"><path d="M16 .7A15.32 15.32 0 0 0 .7 16 15.32 15.32 0 0 0 16 31.3 15.32 15.32 0 0 0 31.3 16 15.32 15.32 0 0 0 16 .7zm0 28c-4.021 0-7.605-1.884-9.933-4.81 1.622-2.122 3.884-3.665 6.451-4.4a6.51 6.51 0 0 1-2.213-2.358c-.528-.96-.804-2.037-.805-3.132A6.51 6.51 0 0 1 16 7.5a6.51 6.51 0 0 1 6.5 6.5c-.001 1.095-.278 2.173-.806 3.132a6.51 6.51 0 0 1-2.213 2.358 12.42 12.42 0 0 1 6.452 4.4C23.605 26.816 20.021 28.7 16 28.7z" fill="#777d82"/></svg>
+                            <svg class="burger-i"><use xlink:href="img/sprite.svg#burger"></use></svg>
+                            <svg class="user-i"><use xlink:href="img/sprite.svg#user"></use></svg>
                             <div class="header__login-menu">
                                 <ul>
                                     <li>
@@ -844,7 +844,7 @@
     <div class="login__popup" id="login">
         <div class="login__popup-wrap">
             <div class="close" data-fancybox-close>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"  stroke="#777d82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l8 8"/><path d="M16 8L8 16"/></svg>
+                <svg class="cross"><use xlink:href="img/sprite.svg#cross"></use></svg>
             </div>
             <div class="login__popup-tabs">
                 <div class="login__popup-tab active" data-tab>
@@ -985,6 +985,7 @@
             </div>
         </div>
     </div>
+    <object class="hidden" type="image/svg+xml" data="img/sprite.svg" >Your browser does not support SVG</object>
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css">
