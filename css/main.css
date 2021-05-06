@@ -25,6 +25,32 @@
     font-display: swap;
 }
 
+/* -----ICONS----- */
+
+.x {
+    width: 16px;
+    height: 16px;
+}
+.round {
+    width: 20px;
+    height: 20px;
+}
+.cross-sec {
+    width: 20px;
+    height: 20px;
+}
+.heart {
+	width: 30px;
+	height: 30px;
+}
+.user-i {
+	width: 32px;
+	height: 32px;
+}
+.burger-i {
+	width: 24px;
+	height: 24px;
+}
 /* ----SPECIFICATION----- */
 body {
 	margin: 0;
@@ -276,18 +302,7 @@ input {
 	   -moz-border-radius: 50%;
 	        border-radius: 50%;
 }
-.heart {
-	width: 30px;
-	height: 30px;
-}
-.user-i {
-	width: 32px;
-	height: 32px;
-}
-.burger-i {
-	width: 24px;
-	height: 24px;
-}
+
 .header__login {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -311,7 +326,7 @@ input {
 	        border-radius: 48px;
 	padding: 7px 7px 7px 12px;
 }
-.header__login svg:first-child {
+.header__login .burger-i {
 	margin-right: 8px;
 }
 .header__login ul {

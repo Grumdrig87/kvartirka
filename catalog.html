@@ -219,7 +219,7 @@
                                 <div class="filter__item-title">
                                     Количество комнат:
                                 </div>
-                                <div class="catalog__filter-tabs filter-border">
+                                <div class="catalog__filter-tabs">
                                     <div class="catalog__filter-tab filter-tab-border">
                                         <input type="radio" checked name="numbKomnat" id="numbKomnat1">
                                         <label for="numbKomnat1">Студия</label>
@@ -253,10 +253,10 @@
                                 </div>
                                 <div class="filter__item-inputs">
                                     <div class="filter__input-wrap">
-                                        <input type="number" name="min-price" class="filter__input">
+                                        <input type="number" name="min-price" placeholder="$ 10" class="filter__input">
                                     </div>
                                     <div class="filter__input-wrap">
-                                        <input type="number" name="max-price" class="filter__input">
+                                        <input type="number" name="max-price" placeholder="$ 3110" class="filter__input">
                                     </div>
                                 </div>
                             </div>
@@ -269,10 +269,10 @@
                                 </div>
                                 <div class="filter__item-inputs">
                                     <div class="filter__input-wrap">
-                                        <input type="number" name="min-ploshad" class="filter__input">
+                                        <input type="number" name="min-ploshad" placeholder="10" class="filter__input">
                                     </div>
-                                    <div class="filter__input-wrap">
-                                        <input type="number" name="max-ploshad" class="filter__input">
+                                    <div class="filter__input-wrap meters">
+                                        <input type="number" name="max-ploshad" placeholder="120" class="filter__input">
                                     </div>
                                 </div>
                             </div>
@@ -280,20 +280,20 @@
                                 <div class="filter__item-title">
                                     Указать
                                 </div>
-                                <div class="catalog__filter-tabs filter-border">
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                <div class="catalog__filter-tabs filter-border filter-where">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" checked name="where" id="where1">
                                         <label for="where1">Район</label>
                                     </div>
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" name="where" id="where2">
                                         <label for="where2">Метро</label>
                                     </div>
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" name="where" id="where3">
                                         <label for="where3">Улица</label>
                                     </div>
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" name="where" id="where4">
                                         <label for="where4">Ориентиры</label>
                                     </div>
@@ -323,28 +323,28 @@
                                             <svg class="cross-sec"><use xlink:href="img/sprite.svg#cross"></use></svg>
                                         </span>
                                     </div>
-                                    <div class="login__popup-inputwrap">
-                                        <input type="checkbox" name="video" id="video">
-                                        <label for="video">
-                                            Только с видео
-                                        </label>
-                                    </div>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="video" id="video">
+                                    <label for="video">
+                                        Только с видео
+                                    </label>
                                 </div>
                             </div>
                             <div class="filter__item">
                                 <div class="filter__item-title">
                                     Тип санузла
                                 </div>
-                                <div class="catalog__filter-tabs flex-w">
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                <div class="catalog__filter-tabs flex-w sanuzel">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" checked name="toilet" id="toilet1">
                                         <label for="toilet1">Совмещенный</label>
                                     </div>
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" name="toilet" id="toilet2">
                                         <label for="toilet2">2 санузла</label>
                                     </div>
-                                    <div class="catalog__filter-tab filter-tab-border">
+                                    <div class="catalog__filter-tab">
                                         <input type="radio" name="toilet" id="toilet3">
                                         <label for="toilet3">Раздельный</label>
                                     </div>
@@ -433,26 +433,26 @@
                                     </label>
                                 </div>
                                 <div class="login__popup-inputwrap">
-                                    <input type="checkbox" name="udob14" id="udo14">
+                                    <input type="checkbox" name="udob14" id="udob14">
                                     <label for="udob14">
                                         Электрочайник
                                     </label>
                                 </div>
                                 <div class="login__popup-inputwrap">
-                                    <input type="checkbox" name="udob14" id="udob14">
-                                    <label for="udob14">
-                                        Пол с подогревом
-                                    </label>
-                                </div>
-                                <div class="login__popup-inputwrap">
                                     <input type="checkbox" name="udob15" id="udob15">
                                     <label for="udob15">
-                                        Ортопедическая кровать
+                                        Пол с подогревом
                                     </label>
                                 </div>
                                 <div class="login__popup-inputwrap">
                                     <input type="checkbox" name="udob16" id="udob16">
                                     <label for="udob16">
+                                        Ортопедическая кровать
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="udob17" id="udob17">
+                                    <label for="udob17">
                                         Посудомоечная машина
                                     </label>
                                 </div>

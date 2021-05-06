@@ -29,6 +29,13 @@ jQuery(document).ready(function($) {
       width: 'auto'
     });
   }
+  if (jQuery('[data-time]').length > 0) {
+    jQuery('[data-time]').select2({
+      width: 'auto',
+      dropdownCssClass: "time-container",
+      dropdownAutoWidth: true
+    });
+  }
   if (jQuery('[data-val]').length > 0) {
     jQuery('[data-val]').select2({
       width: 'auto',
