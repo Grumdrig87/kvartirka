@@ -1,6 +1,11 @@
 jQuery(document).ready(function($) {
 
-
+  $('[data-cardlike]').click(function(){
+    $(this).toggleClass('active');
+  })
+  $('[data-hide]').click(function(){
+    $(this).addClass('none');
+  })
   //adaptive
 
   
@@ -24,6 +29,25 @@ jQuery(document).ready(function($) {
           // }, ]
       });
   }
+    if (jQuery('[data-catslider]').length > 0) {
+      $('[data-catslider]').slick({
+          dots: true,
+          speed: 300,
+          slidesToShow: 1,
+          infinite: false,
+          // responsive: [{
+          //     breakpoint: 994,
+          //     settings: {
+          //       centerMode: false,
+          //       arrows: true,
+          //       prevArrow: '[data-uniqprev]',
+          //       nextArrow: '[data-uniqnext]',
+          //     }
+          // }, ]
+      });
+  }
+
+  // select
   if (jQuery('[data-hcity]').length > 0) {
     jQuery('[data-hcity]').select2({
       width: 'auto'
@@ -174,17 +198,20 @@ jQuery(document).ready(function($) {
     });
 
 // range
+
     $( function() {
       $( "#slider-range" ).slider({
         range: true,
-        min: 0,
+        min: 1,
         max: 25,
-        values: [ 5, 20 ],
+        values: [ 5, 22 ],
         slide: function( event, ui ) {
-          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+          $( ".ui-slider-handle:nth-child(2) > .range-label" ).text( ui.values[ 0 ] + " ₽");
+          $( ".ui-slider-handle:last-child > .range-label" ).text( ui.values[ 1 ] + " ₽");
         }
       });
-      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+      $('.ui-slider-handle').html('<span class="range-label"></span>');
+      $( ".ui-slider-handle:nth-child(2) > .range-label" ).text( $( "#slider-range" ).slider( "values", 0 ) + " ₽");
+      $( ".ui-slider-handle:last-child > .range-label" ).text( $( "#slider-range" ).slider( "values", 1 ) + " ₽");
     } );
 });
