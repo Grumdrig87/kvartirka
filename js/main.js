@@ -6,10 +6,34 @@ jQuery(document).ready(function($) {
   $('[data-hide]').click(function(){
     $(this).addClass('none');
   })
-  //adaptive
+  $('[data-flatnav] li').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+  $('[data-flatmore]').click(function() {
+    $(this).parent().find('p').removeClass('small');
+    $(this).css({'display':'none'})
+  })
+  $("[data-udobwrap] .flat__udob-itemwrap:lt(8)").show();
+  $('[data-flatall]').click(function(){
+    $("[data-udobwrap] .flat__udob-itemwrap").show();
+    $(this).hide();
+  });
+  $("[data-revwrap] .flat__review-itemwrap:lt(4)").show();
+  $('[data-revall]').click(function(){
+    $("[data-revwrap] .flat__review-itemwrap").show();
+    $(this).hide();
+  });
+// slide to id
+  $('[data-flatnav]').on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+//adaptive
 
   
-  //slider
+//slider
   if (jQuery('[data-reviews]').length > 0) {
       $('[data-reviews]').slick({
           dots: false,
@@ -46,8 +70,7 @@ jQuery(document).ready(function($) {
           // }, ]
       });
   }
-
-  // select
+// select
   if (jQuery('[data-hcity]').length > 0) {
     jQuery('[data-hcity]').select2({
       width: 'auto'
@@ -83,6 +106,7 @@ jQuery(document).ready(function($) {
         templateSelection: langformat
       });
     }
+// стилизация выпадающих селектов
   function formatState (state) {
       if (!state.id) {
         return state.text;
@@ -112,7 +136,7 @@ jQuery(document).ready(function($) {
       $lang.find(".main__val-city").text(lang.text);    
       return $lang;
     };
-
+//plus minus
     (function quantityProducts() {
       var $quantityArrowMinus = $("[data-arrowminus]");
       var $quantityArrowPlus = $("[data-arrowplus]");
@@ -172,24 +196,19 @@ jQuery(document).ready(function($) {
     });
   };
   closeMenu ();
-  // var text1 = $("[data-revtxt]").each(function(){
-  //   $(this).html();
-  // })
-  // console.log(text1);
-  //closetext
-  $("[data-revtxt]").text(function(i, text) {
 
-    if (text.length >= 227) {
-      text = text.substring(0, 227);
-      var lastIndex = text.lastIndexOf(" ");       // позиция последнего пробела
-      text = text.substring(0, lastIndex) + '... <a class="readmore">Подробнее</a>'; // обрезаем до последнего слова
-    }
-    
-    $(this).html(text);
+// readmore
+
+  $("[data-revtxt]").shorten({
+    "showChars" : 225,
+    "moreText"  : "Подробнее",
+    "lessText"  : "Скрыть",
   });
-//   $('.readmore').click(function(){
-//       $(this).parent('[data-revtxt]').html(text1.eq($('.slick-slide').index())).css({'height':'auto'});
-//   })
+  $("[data-flatrev]").shorten({
+    "showChars" : 230,
+    "moreText"  : "Читать дальше",
+    "lessText"  : "Скрыть",
+  });
 
 // tabs
     $('[data-tab]').on('click', function() {

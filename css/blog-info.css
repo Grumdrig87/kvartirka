@@ -1,0 +1,257 @@
+.blog__main {
+    padding: 65px 0;
+    background: url('../img/demo/plane.jpg') no-repeat center center / cover;
+    position: relative;
+}
+.blog__main:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0E1E48;
+    opacity: 0.5;
+    z-index: 1;
+}
+.blog__main .title-l {
+    position: relative;
+    z-index: 2;
+    color: #FFFFFF;
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog__art {
+    padding: 30px 0;
+}
+.blog__art-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.blog__art-left {
+    width: 66%;
+}
+.blog__art-right {
+    width: 24%;
+}
+.popular__card-wrap {
+    width: 100%;
+}
+.blog__art-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    color: #021A3E;
+}
+.popular__txt {
+    margin-bottom: 10px;
+}
+.blog__popular-btn {
+    background: none;
+    padding: 0;
+    color: #0752E4;
+    border: none;
+}
+.blog__art-author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.review__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.review__date {
+    font-size: 12px;
+    line-height: 18px;
+}
+.blog__art-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.blog__art-links span {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 20px;
+    color: #3A3F44;
+}
+.blog__art-link {
+    display: block;
+}
+.blog__art-link:not(:last-child) {
+    margin-right: 10px;
+}
+.blog__art-link:hover {
+    opacity: 0.8;
+}
+.blog__art-txt {
+    margin-bottom: 20px;
+}
+.blog__art-txt p {
+    line-height: 22px;
+}
+.blog__art-txt p:not(:last-child) {
+    margin-bottom: 30px;
+}
+.blog__art-txt blockquote {
+    padding-left: 34px;
+    margin: 30px 0;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    width: 80%;
+}
+.blog__art-txt blockquote::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0A71EB), to(#0A71EB)), -webkit-gradient(linear, left bottom, left top, from(#225FFB), to(#225FFB)), #0752E4;
+    background: -webkit-linear-gradient(bottom, #0A71EB, #0A71EB), -webkit-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: -moz-linear-gradient(bottom, #0A71EB, #0A71EB), -moz-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: -o-linear-gradient(bottom, #0A71EB, #0A71EB), -o-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: linear-gradient(0deg, #0A71EB, #0A71EB), linear-gradient(0deg, #225FFB, #225FFB), #0752E4;
+}
+.blog__art-img {
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.blog__art-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.blog__art-comment {
+    width: 80%;
+}
+.blog__art-rate {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.blog__art-rate > span {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 10px;
+    display: block;
+}
+.blog__art-inp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.blog__art-foto {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.blog__art-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.blog__art-input {
+    display: block;
+    background: #F8FAFD;
+    padding: 15px 20px;
+    border: 1px solid #D8DEE0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5E6165;
+    width: 90%;
+}
+.blog__art-input::-webkit-input-placeholder {
+    color: #5E6165;
+    font-family: Cera Pro;
+}
+.blog__art-input:-moz-placeholder {
+    color: #5E6165;
+    font-family: Cera Pro;
+}
+.blog__art-input::-moz-placeholder {
+    color: #5E6165;
+    font-family: Cera Pro;
+}
+.blog__art-input:-ms-input-placeholder {
+    color: #5E6165;
+    font-family: Cera Pro;
+}
+.blog__art-input::-ms-input-placeholder {
+    color: #5E6165;
+    font-family: Cera Pro;
+}
+.blog__art-input::placeholder {
+    color: #5E6165;
+    font-family: Cera Pro;
+}

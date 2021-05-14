@@ -20,6 +20,7 @@
     <!-- link CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flat.css">
+    <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
@@ -131,37 +132,962 @@
                         </div>
                     </div>
                 </div>
-                <div class="flap__wrap">
+                <div class="flat__wrap">
                     <div class="flat__left">
                         <div class="flat__imgs">
-                            <a href="img/demo/img_1.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_1.png" data-fancybox="images" class="flat__img flat__first">
                                 <img src="img/demo/img_1.png" alt="">
                             </a>
-                            <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="flat__img">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="flat__img flat__second">
                                 <img src="img/demo/img_2.png" alt="">
                             </a>
-                            <a href="img/demo/img_3.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_3.png" data-fancybox="images" class="flat__img flat__third">
                                 <img src="img/demo/img_3.png" alt="">
                             </a>
-                            <a href="img/demo/img_4.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_4.png" data-fancybox="images" class="flat__img flat__fourth">
                                 <img src="img/demo/img_4.png" alt="">
                             </a>
-                            <a href="img/demo/img_5.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_5.png" data-fancybox="images" class="flat__img flat__fifth">
                                 <img src="img/demo/img_5.png" alt="">
                             </a>
-                            <a href="img/demo/img_6.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_6.png" data-fancybox="images" class="flat__img flat__sixth">
                                 <img src="img/demo/img_6.png" alt="">
                             </a>
-                            <a href="img/demo/img_7.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_7.png" data-fancybox="images" class="flat__img flat__seventh">
                                 <img src="img/demo/img_7.png" alt="">
                             </a>
-                            <a href="img/demo/img_8.png" data-fancybox="images" class="flat__img">
+                            <a href="img/demo/img_8.png" data-fancybox="images" class="flat__img flat__eighth">
                                 <img src="img/demo/img_8.png" alt="">
+                                <span>
+                                    <svg class="camera"><use xlink:href="img/sprite.svg#camera"></use></svg>
+                                    Показать все фото
+                                </span>
                             </a>
+                        </div>
+                        <div class="flat__nav" data-flatnav>
+                            <ul>
+                                <li class="active">
+                                    <a href="#map">
+                                        Карта
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#desc">
+                                        Описание
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#udobstva">
+                                        Удобства
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#rules">
+                                        Правила проживания
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#near">
+                                        Рядом с жильем
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#reviews">
+                                        Отзывы
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flat__about-wrap">
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#room"></use></svg>
+                                <span>2</span>
+                                Комнат
+                            </div>
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#bed"></use></svg>
+                                <span>2</span>
+                                Кровати
+                            </div>
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#bedrooms"></use></svg>
+                                <span>2+1</span>
+                                Спальных мест
+                            </div>
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#users"></use></svg>
+                                <span>3</span>
+                                Гостей
+                            </div>
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#size"></use></svg>
+                                <span>26 м2</span>
+                                Общая
+                            </div>
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#size"></use></svg>
+                                <span>23 м2</span>
+                                Жилая
+                            </div>
+                            <div class="flat__about-item">
+                                <svg class="flat-iconsabout"><use xlink:href="img/sprite.svg#size"></use></svg>
+                                <span>14 м2</span>
+                                Кухня
+                            </div>
+                        </div>
+                        <div class="flat__map" id="map">
+                            <h3 class="title-m">
+                                Карта
+                            </h3>
+                            <p>
+                                Жуковского ул, 29, Минск
+                            </p>
+                            <div class="flat__map-img">
+                                <img src="img/demo/flatmap.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flat__descr flat__sect" id="desc">
+                            <h3 class="title-m">
+                                Описание
+                            </h3>
+                            <p class="small">
+                                Новая комфортная квартира-студия (площадь 50 м2) с отдельной спальней и балконом. Рядом станция метро "Грушевка". <br>Жилье Новая и комфортная квартира рядом с метро Грушевка. В квартире есть всё необходимое для комфортного проживания. В шаговой доступности ж/д вокзал, супермаркеты, рестораны и кафе, парк Якутова. Красивый панорамный вид из окна, кабельное ТВ, wi-fi, полотенца, постельное белье, вся необходимая посуда,полотенца, постельное белье, вся необходимая посуда полотенца, постельное белье, вся необходимая посуда  
+                            </p>
+                            <button class="flat__more" data-flatmore>
+                                Читать дальше
+                            </button>
+                        </div>
+                        <div class="flat__udob flat__sect" id="udobstva">
+                            <h3 class="title-m">
+                                Удобства
+                            </h3>
+                            <div class="flat__udob-wrap" data-udobwrap>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#monitor"></use></svg>
+                                        <span>
+                                            Лифт
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#fork"></use></svg>
+                                        <span>
+                                            Кухня
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#monitor"></use></svg>
+                                        <span>
+                                            Утюг
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#monitor"></use></svg>
+                                        <span>
+                                            Рабочая зона
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#monitor"></use></svg>
+                                        <span>
+                                            Wi-Fi
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#park"></use></svg>
+                                        <span>
+                                            Бесплатная парковка
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#temp"></use></svg>
+                                        <span>
+                                            Отопление
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#monitor"></use></svg>
+                                        <span>
+                                            Телевизор
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flat__udob-itemwrap">
+                                    <div class="flat__udob-item">
+                                        <svg class="udob-i"><use xlink:href="img/sprite.svg#monitor"></use></svg>
+                                        <span>
+                                            Телевизор
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="flat__udob-all" data-flatall>
+                                Все удобства
+                            </button>
+                        </div>
+                        <div class="flat__rules flat__sect" id="rules">
+                            <h3 class="title-m">
+                                Правила проживания
+                            </h3>
+                            <ul class="flat__rules-wrap">
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#clock"></use></svg>
+                                    Заезд: После 15:00
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#clock"></use></svg>
+                                    Отъезд: 12:00
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#k_z"></use></svg>
+                                    Курение запрещено
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#p_n"></use></svg>
+                                    Нельзя с питомцами
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#v_b"></use></svg>
+                                    Без вечеринок и мероприятий
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#letter"></use></svg>
+                                    Наличие страхового депозита <br>(возвращается при отъезде)
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#18"></use></svg>
+                                    Возрастное ограничение: 18+
+                                </li>
+                                <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#calendar"></use></svg>
+                                    Минимальный срок аренды: 1 сутки
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flat__near flat__sect" id="near">
+                            <h3 class="title-m">
+                                Рядом с жильем
+                            </h3>
+                            <ul>
+                                <li>
+                                    Киево-Могилянская академия - 0.41 км
+                                </li>
+                                <li>
+                                    Андреевская церковь - 0.42 км
+                                </li>
+                                <li>
+                                    Андреевский спуск - 0.46 км
+                                </li>
+                                <li>
+                                    Киевский фуникулер - 0.46 км
+                                </li>
+                                <li>
+                                    Церковь Николы Притиска - 0.7 км
+                                </li>
+                                <li>
+                                    Михайловский Златоверхий монастырь - 0.7 км
+                                </li>
+                                <li>
+                                    Владимирская горка - 1.06 км
+                                </li>
+                                <li>
+                                    Пейзажная аллея - 1.07 км
+                                </li>
+                                <li>
+                                    Софийский собор - 1.13 км
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flat__review" id="reviews">
+                            <h3 class="title-m">
+                                Отзывы
+                            </h3>
+                            <div class="flat__review-card">
+                                <div class="flat__review-l">
+                                    <span class="flat__review-rate">
+                                        4.6
+                                    </span>
+                                    <div class="stars">
+                                        <div class="rating__star">
+                                            <span>
+                                                <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                            </span>
+                                        </div>
+                                        <div class="rating__star">
+                                            <span>
+                                                <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                            </span>
+                                        </div>
+                                        <div class="rating__star">
+                                            <span>
+                                                <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                            </span>
+                                        </div>
+                                        <div class="rating__star">
+                                            <span>
+                                                <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                            </span>
+                                        </div>
+                                        <div class="rating__star">
+                                            <span>
+                                                <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flat__review-count">
+                                        Всего 
+                                        <span>
+                                            51
+                                        </span>
+                                        отзывов
+                                    </div>
+                                </div>
+                                <a href="#" class="flat__udob-all flat__review-btn">
+                                    Оставить отзыв
+                                </a>
+                            </div>
+                            <div class="flat__review-wrap" data-revwrap>
+                                <div class="flat__review-itemwrap">
+                                    <div class="flat__review-item">
+                                        <p data-flatrev>
+                                            Большая уютная квартира. Порадовало наличие отдельного ключа, что позволило вернуться поздно вечером, лишний раз не беспокоя хозяев открытием/закрытием дверей. Спасибо за теплый прием! Советую.
+                                        </p>
+                                        <div class="review__bottom">
+                                            <div class="review__left">
+                                                <div class="review__img">
+                                                    <img src="img/demo/rev1.png" alt="">
+                                                </div>
+                                                <div class="review__about">
+                                                    <div class="review__name">
+                                                        Екатерина
+                                                    </div>
+                                                    <div class="review__date">
+                                                        март 2021 г.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flat__review-itemwrap">
+                                    <div class="flat__review-item">
+                                        <p data-flatrev>
+                                            Чудесная квартира! Всё понравилось. Особенно удивил вход в квартиру по паролю :)
+                                        </p>
+                                        <div class="review__bottom">
+                                            <div class="review__left">
+                                                <div class="review__img">
+                                                    <img src="img/demo/rev2.png" alt="">
+                                                </div>
+                                                <div class="review__about">
+                                                    <div class="review__name">
+                                                        Анна
+                                                    </div>
+                                                    <div class="review__date">
+                                                        март 2021 г.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flat__review-itemwrap">
+                                    <div class="flat__review-item">
+                                        <p data-flatrev>
+                                            Очень красивая и просторная квартира с прекрасным ремонтом превзошла наши ожидания. Удобное расположение, в пешей доступности метро, магазины и парк. Ольга отвечала на сообщения почти мгновенно.
+                                        </p>
+                                        <div class="review__bottom">
+                                            <div class="review__left">
+                                                <div class="review__img">
+                                                    <img src="img/demo/rev3.png" alt="">
+                                                </div>
+                                                <div class="review__about">
+                                                    <div class="review__name">
+                                                        Антон
+                                                    </div>
+                                                    <div class="review__date">
+                                                        март 2021 г.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flat__review-itemwrap">
+                                    <div class="flat__review-item">
+                                        <p data-flatrev>
+                                            highly recommended! Максимально открытые хозяева, всегда на связи, гостеприимство на высшем уровне. Отличное месторасположение. 
+                                        </p>
+                                        <div class="review__bottom">
+                                            <div class="review__left">
+                                                <div class="review__img">
+                                                    <img src="img/demo/rev3.png" alt="">
+                                                </div>
+                                                <div class="review__about">
+                                                    <div class="review__name">
+                                                        Юлия
+                                                    </div>
+                                                    <div class="review__date">
+                                                        март 2021 г.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flat__review-itemwrap">
+                                    <div class="flat__review-item">
+                                        <p data-flatrev>
+                                            Очень красивая и просторная квартира с прекрасным ремонтом превзошла наши ожидания. Удобное расположение, в пешей доступности метро, магазины и парк. Ольга отвечала на сообщения почти мгновенно.
+                                        </p>
+                                        <div class="review__bottom">
+                                            <div class="review__left">
+                                                <div class="review__img">
+                                                    <img src="img/demo/rev3.png" alt="">
+                                                </div>
+                                                <div class="review__about">
+                                                    <div class="review__name">
+                                                        Антон
+                                                    </div>
+                                                    <div class="review__date">
+                                                        март 2021 г.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flat__review-itemwrap">
+                                    <div class="flat__review-item">
+                                        <p data-flatrev>
+                                            highly recommended! Максимально открытые хозяева, всегда на связи, гостеприимство на высшем уровне. Отличное месторасположение. 
+                                        </p>
+                                        <div class="review__bottom">
+                                            <div class="review__left">
+                                                <div class="review__img">
+                                                    <img src="img/demo/rev3.png" alt="">
+                                                </div>
+                                                <div class="review__about">
+                                                    <div class="review__name">
+                                                        Юлия
+                                                    </div>
+                                                    <div class="review__date">
+                                                        март 2021 г.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="flat__udob-all" data-revall>
+                                Показать все отзывы
+                            </button>
                         </div>
                     </div>
                     <div class="flat__right">
-
+                        <div class="flat__right-card">
+                            <span class="catalog__card-link">
+                                Новая 2-х комнатная квартира на м. Грушевка
+                            </span>
+                            <div class="catalog__card-mid">
+                                <span class="catalog__adress flat__adress">
+                                    Жуковского ул, 29, Минск
+                                </span>
+                                <a href="#">
+                                    <svg class="point-cat"><use xlink:href="img/sprite.svg#point-cat"></use></svg>
+                                    На карте
+                                </a>
+                            </div>
+                            <div class="catalog__card-marsh">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A)" fill="#960000"><path d="M0 .069L5.327.07c.869.002 1.836-.208 2.581.091s1.28 1.106 1.889 1.707c.218.216.385.482.634.8L12.766.372c.153-.146.394-.289.596-.291l7.422-.007c.057 0 .113.023.216.045v8.363l-.614.025c-1.9.002-3.801-.015-5.699.018a1.52 1.52 0 0 0-.918.363l-3.231 3.11-.354-.284-2.504-2.45c-.549-.6-1.142-.801-1.958-.773L.616 8.51H0V.069zm10.488 3.366L8.002 1.02C7.801.835 7.463.7 7.187.696L1.253.683c-.192 0-.385.02-.604.032v7.186h.684l5.341.015a1.34 1.34 0 0 1 .816.325l3.007 2.942 3.027-2.94a1.35 1.35 0 0 1 .816-.329l5.4-.014h.622V.683c-2.302 0-4.554-.007-6.807.014-.182.001-.392.16-.537.298l-2.529 2.441zM1.302 7.227V1.324h1.052l4.57.014a1.35 1.35 0 0 1 .816.323l2.768 2.689 2.695-2.657c.284-.29.578-.391.987-.386l5.509.009v5.94h-.606c-1.662 0-3.324-.017-4.985.016-.293.006-.647.156-.863.353l-2.739 2.636L7.818 7.64a1.24 1.24 0 0 0-.985-.393l-4.926.008-.604-.028z"/></g><defs><clipPath id="A"><path fill="#fff" d="M0 0h21v12H0z"/></clipPath></defs></svg>
+                                <span class="catalog__card-metro">
+                                    Немига
+                                </span>
+                                <span class="catalog__card-time">
+                                    <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                    <span>7</span> мин.
+                                </span>
+                            </div>
+                            <div class="flat__right-bg">
+                                <div class="flat__price">
+                                    <strong>
+                                        24 р. 
+                                    </strong>
+                                    / сутки
+                                </div>
+                                <span class="catalog__card-rate flat__card-rate">
+                                    <svg class="rate-full"><use xlink:href="img/sprite.svg#rate-full"></use></svg>
+                                    <span>4.67</span> <span class="flat__rate-count">(<span>51</span>)</span>
+                                </span>
+                            </div>
+                            <div class="flat__right-prices">
+                                <div class="flat__right-price green">
+                                    сутки
+                                    <span>
+                                        20р
+                                    </span>
+                                </div>
+                                <div class="flat__right-price gray">
+                                    ночь
+                                    <span>
+                                        18р
+                                    </span>
+                                </div>
+                                <div class="flat__right-price orange">
+                                    часы
+                                    <span>
+                                        10р
+                                    </span>
+                                </div>
+                                <div class="flat__right-price red">
+                                    неделя
+                                    <span>
+                                        590р
+                                    </span>
+                                </div>
+                                <div class="flat__right-price purple">
+                                    месяц
+                                    <span>
+                                        590р
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="flat__right-txt">
+                                В праздники и выходные цена договорная
+                            </span>
+                            <div class="catalog__card-bottom">
+                                <div class="catalog__card-contacts">
+                                    <a href="tel:+375296685110" class="catalog__card-phone">
+                                        +375 29 668-51-10
+                                    </a>
+                                    <div class="catalog__card-socwrap">
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-tg"><use xlink:href="img/sprite.svg#tg"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-vb"><use xlink:href="img/sprite.svg#vb"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-wa"><use xlink:href="img/sprite.svg#wa"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card-hide" data-hide>
+                                    Показать контакты
+                                </div>
+                            </div>
+                            <span class="flat__right-about">
+                                Позвоните владельцу, чтобы уточнить все детали аренды
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flat-more">
+            <div class="container">
+                <h3 class="title-m">
+                    Еще квартиры этого хозяйна
+                </h3>
+                <div class="catalog__cards-wrap">
+                    <div class="catalog__card-wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__card-img">
+                                <span class="catalog__card-super">
+                                    <svg class="catcheck"><use xlink:href="img/sprite.svg#catcheck"></use></svg>
+                                    Суперхозяин
+                                </span>
+                                <span class="catalog__card-video">
+                                    <svg class="catvid"><use xlink:href="img/sprite.svg#catvid"></use></svg>
+                                    Видеообзор
+                                </span>
+                                <span class="catalog__card-like" data-cardlike>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" xmlns:v="https://vecta.io/nano"><path d="M13.075 3.61c-.293-.299-.641-.536-1.024-.698s-.794-.245-1.209-.245-.825.083-1.209.245-.731.399-1.025.698L8 4.23l-.609-.62a3.13 3.13 0 0 0-2.233-.943 3.13 3.13 0 0 0-2.233.943A3.25 3.25 0 0 0 2 5.886a3.25 3.25 0 0 0 .925 2.276l.609.62L8 13.333l4.466-4.552.608-.62c.293-.299.526-.654.685-1.044a3.27 3.27 0 0 0 0-2.463c-.159-.391-.391-.745-.685-1.044h0z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="catalog__card-rate">
+                                    <svg class="rate-full"><use xlink:href="img/sprite.svg#rate-full"></use></svg>
+                                    <span>4.67</span> (<span>51</span>)
+                                </span>
+                                <div class="catalog__card-slider" data-catslider>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog3.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__card-txt">
+                                <div class="catalog__card-top">
+                                    <div class="catalog__card-price">
+                                        <span>22</span> р.
+                                    </div>
+                                    <div class="catalog__card-rooms">
+                                        <svg class="room"><use xlink:href="img/sprite.svg#room"></use></svg>
+                                        <span>4</span>-комн.
+                                    </div>
+                                    <div class="catalog__card-peop">
+                                        <svg class="users"><use xlink:href="img/sprite.svg#users"></use></svg>
+                                        <span>3</span> гостя
+                                    </div>
+                                </div>
+                                <div class="catalog__card-mid">
+                                    <a href="flat.html" class="catalog__adress">
+                                        Жуковского ул, 29
+                                    </a>
+                                    <a href="#">
+                                        <svg class="point-cat"><use xlink:href="img/sprite.svg#point-cat"></use></svg>
+                                        На карте
+                                    </a>
+                                </div>
+                                <div class="catalog__card-marsh">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A)" fill="#960000"><path d="M0 .069L5.327.07c.869.002 1.836-.208 2.581.091s1.28 1.106 1.889 1.707c.218.216.385.482.634.8L12.766.372c.153-.146.394-.289.596-.291l7.422-.007c.057 0 .113.023.216.045v8.363l-.614.025c-1.9.002-3.801-.015-5.699.018a1.52 1.52 0 0 0-.918.363l-3.231 3.11-.354-.284-2.504-2.45c-.549-.6-1.142-.801-1.958-.773L.616 8.51H0V.069zm10.488 3.366L8.002 1.02C7.801.835 7.463.7 7.187.696L1.253.683c-.192 0-.385.02-.604.032v7.186h.684l5.341.015a1.34 1.34 0 0 1 .816.325l3.007 2.942 3.027-2.94a1.35 1.35 0 0 1 .816-.329l5.4-.014h.622V.683c-2.302 0-4.554-.007-6.807.014-.182.001-.392.16-.537.298l-2.529 2.441zM1.302 7.227V1.324h1.052l4.57.014a1.35 1.35 0 0 1 .816.323l2.768 2.689 2.695-2.657c.284-.29.578-.391.987-.386l5.509.009v5.94h-.606c-1.662 0-3.324-.017-4.985.016-.293.006-.647.156-.863.353l-2.739 2.636L7.818 7.64a1.24 1.24 0 0 0-.985-.393l-4.926.008-.604-.028z"/></g><defs><clipPath id="A"><path fill="#fff" d="M0 0h21v12H0z"/></clipPath></defs></svg>
+                                    <span class="catalog__card-metro">
+                                        Немига
+                                    </span>
+                                    <span class="catalog__card-time">
+                                        <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                        <span>7</span> мин.
+                                    </span>
+                                </div>
+                                <span class="catalog__card-link">
+                                    Новая 2-х комнатная квартира
+                                </span>
+                            </div>
+                            <div class="catalog__card-bottom">
+                                <div class="catalog__card-contacts">
+                                    <a href="tel:+375296685110" class="catalog__card-phone">
+                                        +375 29 668-51-10
+                                    </a>
+                                    <div class="catalog__card-socwrap">
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-tg"><use xlink:href="img/sprite.svg#tg"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-vb"><use xlink:href="img/sprite.svg#vb"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-wa"><use xlink:href="img/sprite.svg#wa"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card-hide" data-hide>
+                                    Показать контакты
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card-wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__card-img">
+                                <span class="catalog__card-super">
+                                    <svg class="catcheck"><use xlink:href="img/sprite.svg#catcheck"></use></svg>
+                                    Суперхозяин
+                                </span>
+                                <span class="catalog__card-video">
+                                    <svg class="catvid"><use xlink:href="img/sprite.svg#catvid"></use></svg>
+                                    Видеообзор
+                                </span>
+                                <span class="catalog__card-like" data-cardlike>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" xmlns:v="https://vecta.io/nano"><path d="M13.075 3.61c-.293-.299-.641-.536-1.024-.698s-.794-.245-1.209-.245-.825.083-1.209.245-.731.399-1.025.698L8 4.23l-.609-.62a3.13 3.13 0 0 0-2.233-.943 3.13 3.13 0 0 0-2.233.943A3.25 3.25 0 0 0 2 5.886a3.25 3.25 0 0 0 .925 2.276l.609.62L8 13.333l4.466-4.552.608-.62c.293-.299.526-.654.685-1.044a3.27 3.27 0 0 0 0-2.463c-.159-.391-.391-.745-.685-1.044h0z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="catalog__card-rate">
+                                    <svg class="rate-full"><use xlink:href="img/sprite.svg#rate-full"></use></svg>
+                                    <span>4.67</span> (<span>51</span>)
+                                </span>
+                                <div class="catalog__card-slider" data-catslider>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog3.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__card-txt">
+                                <div class="catalog__card-top">
+                                    <div class="catalog__card-price">
+                                        <span>22</span> р.
+                                    </div>
+                                    <div class="catalog__card-rooms">
+                                        <svg class="room"><use xlink:href="img/sprite.svg#room"></use></svg>
+                                        <span>4</span>-комн.
+                                    </div>
+                                    <div class="catalog__card-peop">
+                                        <svg class="users"><use xlink:href="img/sprite.svg#users"></use></svg>
+                                        <span>3</span> гостя
+                                    </div>
+                                </div>
+                                <div class="catalog__card-mid">
+                                    <a href="flat.html" class="catalog__adress">
+                                        Жуковского ул, 29
+                                    </a>
+                                    <a href="#">
+                                        <svg class="point-cat"><use xlink:href="img/sprite.svg#point-cat"></use></svg>
+                                        На карте
+                                    </a>
+                                </div>
+                                <div class="catalog__card-marsh">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A)" fill="#960000"><path d="M0 .069L5.327.07c.869.002 1.836-.208 2.581.091s1.28 1.106 1.889 1.707c.218.216.385.482.634.8L12.766.372c.153-.146.394-.289.596-.291l7.422-.007c.057 0 .113.023.216.045v8.363l-.614.025c-1.9.002-3.801-.015-5.699.018a1.52 1.52 0 0 0-.918.363l-3.231 3.11-.354-.284-2.504-2.45c-.549-.6-1.142-.801-1.958-.773L.616 8.51H0V.069zm10.488 3.366L8.002 1.02C7.801.835 7.463.7 7.187.696L1.253.683c-.192 0-.385.02-.604.032v7.186h.684l5.341.015a1.34 1.34 0 0 1 .816.325l3.007 2.942 3.027-2.94a1.35 1.35 0 0 1 .816-.329l5.4-.014h.622V.683c-2.302 0-4.554-.007-6.807.014-.182.001-.392.16-.537.298l-2.529 2.441zM1.302 7.227V1.324h1.052l4.57.014a1.35 1.35 0 0 1 .816.323l2.768 2.689 2.695-2.657c.284-.29.578-.391.987-.386l5.509.009v5.94h-.606c-1.662 0-3.324-.017-4.985.016-.293.006-.647.156-.863.353l-2.739 2.636L7.818 7.64a1.24 1.24 0 0 0-.985-.393l-4.926.008-.604-.028z"/></g><defs><clipPath id="A"><path fill="#fff" d="M0 0h21v12H0z"/></clipPath></defs></svg>
+                                    <span class="catalog__card-metro">
+                                        Немига
+                                    </span>
+                                    <span class="catalog__card-time">
+                                        <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                        <span>7</span> мин.
+                                    </span>
+                                </div>
+                                <span class="catalog__card-link">
+                                    Новая 2-х комнатная квартира
+                                </span>
+                            </div>
+                            <div class="catalog__card-bottom">
+                                <div class="catalog__card-contacts">
+                                    <a href="tel:+375296685110" class="catalog__card-phone">
+                                        +375 29 668-51-10
+                                    </a>
+                                    <div class="catalog__card-socwrap">
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-tg"><use xlink:href="img/sprite.svg#tg"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-vb"><use xlink:href="img/sprite.svg#vb"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-wa"><use xlink:href="img/sprite.svg#wa"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card-hide" data-hide>
+                                    Показать контакты
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card-wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__card-img">
+                                <span class="catalog__card-super">
+                                    <svg class="catcheck"><use xlink:href="img/sprite.svg#catcheck"></use></svg>
+                                    Суперхозяин
+                                </span>
+                                <span class="catalog__card-video">
+                                    <svg class="catvid"><use xlink:href="img/sprite.svg#catvid"></use></svg>
+                                    Видеообзор
+                                </span>
+                                <span class="catalog__card-like" data-cardlike>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" xmlns:v="https://vecta.io/nano"><path d="M13.075 3.61c-.293-.299-.641-.536-1.024-.698s-.794-.245-1.209-.245-.825.083-1.209.245-.731.399-1.025.698L8 4.23l-.609-.62a3.13 3.13 0 0 0-2.233-.943 3.13 3.13 0 0 0-2.233.943A3.25 3.25 0 0 0 2 5.886a3.25 3.25 0 0 0 .925 2.276l.609.62L8 13.333l4.466-4.552.608-.62c.293-.299.526-.654.685-1.044a3.27 3.27 0 0 0 0-2.463c-.159-.391-.391-.745-.685-1.044h0z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="catalog__card-rate">
+                                    <svg class="rate-full"><use xlink:href="img/sprite.svg#rate-full"></use></svg>
+                                    <span>4.67</span> (<span>51</span>)
+                                </span>
+                                <div class="catalog__card-slider" data-catslider>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog3.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__card-txt">
+                                <div class="catalog__card-top">
+                                    <div class="catalog__card-price">
+                                        <span>22</span> р.
+                                    </div>
+                                    <div class="catalog__card-rooms">
+                                        <svg class="room"><use xlink:href="img/sprite.svg#room"></use></svg>
+                                        <span>4</span>-комн.
+                                    </div>
+                                    <div class="catalog__card-peop">
+                                        <svg class="users"><use xlink:href="img/sprite.svg#users"></use></svg>
+                                        <span>3</span> гостя
+                                    </div>
+                                </div>
+                                <div class="catalog__card-mid">
+                                    <a href="flat.html" class="catalog__adress">
+                                        Жуковского ул, 29
+                                    </a>
+                                    <a href="#">
+                                        <svg class="point-cat"><use xlink:href="img/sprite.svg#point-cat"></use></svg>
+                                        На карте
+                                    </a>
+                                </div>
+                                <div class="catalog__card-marsh">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A)" fill="#960000"><path d="M0 .069L5.327.07c.869.002 1.836-.208 2.581.091s1.28 1.106 1.889 1.707c.218.216.385.482.634.8L12.766.372c.153-.146.394-.289.596-.291l7.422-.007c.057 0 .113.023.216.045v8.363l-.614.025c-1.9.002-3.801-.015-5.699.018a1.52 1.52 0 0 0-.918.363l-3.231 3.11-.354-.284-2.504-2.45c-.549-.6-1.142-.801-1.958-.773L.616 8.51H0V.069zm10.488 3.366L8.002 1.02C7.801.835 7.463.7 7.187.696L1.253.683c-.192 0-.385.02-.604.032v7.186h.684l5.341.015a1.34 1.34 0 0 1 .816.325l3.007 2.942 3.027-2.94a1.35 1.35 0 0 1 .816-.329l5.4-.014h.622V.683c-2.302 0-4.554-.007-6.807.014-.182.001-.392.16-.537.298l-2.529 2.441zM1.302 7.227V1.324h1.052l4.57.014a1.35 1.35 0 0 1 .816.323l2.768 2.689 2.695-2.657c.284-.29.578-.391.987-.386l5.509.009v5.94h-.606c-1.662 0-3.324-.017-4.985.016-.293.006-.647.156-.863.353l-2.739 2.636L7.818 7.64a1.24 1.24 0 0 0-.985-.393l-4.926.008-.604-.028z"/></g><defs><clipPath id="A"><path fill="#fff" d="M0 0h21v12H0z"/></clipPath></defs></svg>
+                                    <span class="catalog__card-metro">
+                                        Немига
+                                    </span>
+                                    <span class="catalog__card-time">
+                                        <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                        <span>7</span> мин.
+                                    </span>
+                                </div>
+                                <span class="catalog__card-link">
+                                    Новая 2-х комнатная квартира
+                                </span>
+                            </div>
+                            <div class="catalog__card-bottom">
+                                <div class="catalog__card-contacts">
+                                    <a href="tel:+375296685110" class="catalog__card-phone">
+                                        +375 29 668-51-10
+                                    </a>
+                                    <div class="catalog__card-socwrap">
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-tg"><use xlink:href="img/sprite.svg#tg"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-vb"><use xlink:href="img/sprite.svg#vb"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-wa"><use xlink:href="img/sprite.svg#wa"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card-hide" data-hide>
+                                    Показать контакты
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__card-wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__card-img">
+                                <span class="catalog__card-super">
+                                    <svg class="catcheck"><use xlink:href="img/sprite.svg#catcheck"></use></svg>
+                                    Суперхозяин
+                                </span>
+                                <span class="catalog__card-video">
+                                    <svg class="catvid"><use xlink:href="img/sprite.svg#catvid"></use></svg>
+                                    Видеообзор
+                                </span>
+                                <span class="catalog__card-like" data-cardlike>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" xmlns:v="https://vecta.io/nano"><path d="M13.075 3.61c-.293-.299-.641-.536-1.024-.698s-.794-.245-1.209-.245-.825.083-1.209.245-.731.399-1.025.698L8 4.23l-.609-.62a3.13 3.13 0 0 0-2.233-.943 3.13 3.13 0 0 0-2.233.943A3.25 3.25 0 0 0 2 5.886a3.25 3.25 0 0 0 .925 2.276l.609.62L8 13.333l4.466-4.552.608-.62c.293-.299.526-.654.685-1.044a3.27 3.27 0 0 0 0-2.463c-.159-.391-.391-.745-.685-1.044h0z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="catalog__card-rate">
+                                    <svg class="rate-full"><use xlink:href="img/sprite.svg#rate-full"></use></svg>
+                                    <span>4.67</span> (<span>51</span>)
+                                </span>
+                                <div class="catalog__card-slider" data-catslider>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog3.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog1.png" alt="">
+                                    </a>
+                                    <a href="flat.html" class="catalog__card-imglink">
+                                        <img src="img/demo/catalog2.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__card-txt">
+                                <div class="catalog__card-top">
+                                    <div class="catalog__card-price">
+                                        <span>22</span> р.
+                                    </div>
+                                    <div class="catalog__card-rooms">
+                                        <svg class="room"><use xlink:href="img/sprite.svg#room"></use></svg>
+                                        <span>4</span>-комн.
+                                    </div>
+                                    <div class="catalog__card-peop">
+                                        <svg class="users"><use xlink:href="img/sprite.svg#users"></use></svg>
+                                        <span>3</span> гостя
+                                    </div>
+                                </div>
+                                <div class="catalog__card-mid">
+                                    <a href="flat.html" class="catalog__adress">
+                                        Жуковского ул, 29
+                                    </a>
+                                    <a href="#">
+                                        <svg class="point-cat"><use xlink:href="img/sprite.svg#point-cat"></use></svg>
+                                        На карте
+                                    </a>
+                                </div>
+                                <div class="catalog__card-marsh">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A)" fill="#960000"><path d="M0 .069L5.327.07c.869.002 1.836-.208 2.581.091s1.28 1.106 1.889 1.707c.218.216.385.482.634.8L12.766.372c.153-.146.394-.289.596-.291l7.422-.007c.057 0 .113.023.216.045v8.363l-.614.025c-1.9.002-3.801-.015-5.699.018a1.52 1.52 0 0 0-.918.363l-3.231 3.11-.354-.284-2.504-2.45c-.549-.6-1.142-.801-1.958-.773L.616 8.51H0V.069zm10.488 3.366L8.002 1.02C7.801.835 7.463.7 7.187.696L1.253.683c-.192 0-.385.02-.604.032v7.186h.684l5.341.015a1.34 1.34 0 0 1 .816.325l3.007 2.942 3.027-2.94a1.35 1.35 0 0 1 .816-.329l5.4-.014h.622V.683c-2.302 0-4.554-.007-6.807.014-.182.001-.392.16-.537.298l-2.529 2.441zM1.302 7.227V1.324h1.052l4.57.014a1.35 1.35 0 0 1 .816.323l2.768 2.689 2.695-2.657c.284-.29.578-.391.987-.386l5.509.009v5.94h-.606c-1.662 0-3.324-.017-4.985.016-.293.006-.647.156-.863.353l-2.739 2.636L7.818 7.64a1.24 1.24 0 0 0-.985-.393l-4.926.008-.604-.028z"/></g><defs><clipPath id="A"><path fill="#fff" d="M0 0h21v12H0z"/></clipPath></defs></svg>
+                                    <span class="catalog__card-metro">
+                                        Немига
+                                    </span>
+                                    <span class="catalog__card-time">
+                                        <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                        <span>7</span> мин.
+                                    </span>
+                                </div>
+                                <span class="catalog__card-link">
+                                    Новая 2-х комнатная квартира
+                                </span>
+                            </div>
+                            <div class="catalog__card-bottom">
+                                <div class="catalog__card-contacts">
+                                    <a href="tel:+375296685110" class="catalog__card-phone">
+                                        +375 29 668-51-10
+                                    </a>
+                                    <div class="catalog__card-socwrap">
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-tg"><use xlink:href="img/sprite.svg#tg"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-vb"><use xlink:href="img/sprite.svg#vb"></use></svg>
+                                        </a>
+                                        <a href="#" class="catalog__card-socitem">
+                                            <svg class="catalog-wa"><use xlink:href="img/sprite.svg#wa"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__card-hide" data-hide>
+                                    Показать контакты
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -474,6 +1400,7 @@
     <link rel="stylesheet" href="js/select2/css/select2.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.shorten.1.0.js"></script>
     <script src="js/fancybox/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/select2/js/select2.full.min.js"></script>

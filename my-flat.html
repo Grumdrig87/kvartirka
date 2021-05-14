@@ -20,6 +20,7 @@
     <!-- link CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/my-flat.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
@@ -87,99 +88,38 @@
                 </div>
             </div>
         </header>
-        <section class="main main__inner">
+        <section class="flats">
             <div class="container">
-                <h1 class="title">
-                    Минск
-                </h1>
-                <p>
-                    Найдено более 300 вариантов жилья
-                </p>
-                <form action="post" class="main__wrap">
-                    <div class="main__city">
-                        <select name="city" data-mcity>
-                            <option value="Могилев">Могилев</option>
-                            <option value="Гродно">Гродно</option>
-                            <option value="Витебск">Витебск</option>
-                            <option value="Полоцк">Полоцк</option>
-                            <option value="Брест">Брест</option>
-                            <option value="Гродно">Гродно</option>
-                            <option value="Витебск">Витебск</option>
-                            <option value="Полоцк">Полоцк</option>
-                            <option value="Брест">Брест</option>
-                        </select>
-                    </div>
-                    <div class="main__type">
-                        <div class="main__type-wrap">
-                            <input type="radio" name="type" checked id="type1">
-                            <label for="type1">
-                                Квартиры
-                            </label>
-                        </div>
-                        <div class="main__type-wrap">
-                            <input type="radio" name="type" id="type2">
-                            <label for="type2">
-                                Коттеджи
-                            </label>
-                        </div>
-                    </div>
-                    <div class="main__guest">
-                        <div class="main__guest-help" data-mguest>
-                            <span class="city-tit">
-                                Гости
-                            </span>
-                            <div class="main__guest-count">
-                               <span data-guestinp>2</span> <span data-guesttxt>гостя</span> 
-                            </div>
-                        </div>
-                        <div class="main__guest-dropdown" data-guestdrop>
-                            <div class="main__guest-wrap">
-                                <div class="input__main-numb">
-                                    <button type="button" class="quantity-arrow quantity-arrow-minus" data-arrowminus>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" fill="none"><path d="M1.334 1h9.333" stroke="#777d82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                    </button>
-                                    <input type="number" name="guest" data-guest value="2" required class="main__inp-guest">
-                                    <button type="button" class="quantity-arrow quantity-arrow-plus" data-arrowplus>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.333v9.333" stroke="#777d82"/><path d="M8 3.333v9.333" stroke="#777d82"/><path d="M3.334 8h9.333" stroke="#777d82"/><path d="M3.334 8h9.333" stroke="#777d82"/></svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="main__button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"  stroke="#fff" stroke-width="2"><path d="M11.014 19c4.424 0 8.01-3.582 8.01-8s-3.586-8-8.01-8-8.01 3.582-8.01 8 3.586 8 8.01 8z"/><path d="M21.027 21l-4.356-4.35" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Найти
-                    </button>
-                </form>
+                <div class="flats__top">
+                    <ul class="flats__nav">
+                        <li>
+                            <a href="#">
+                                Мои объявления
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Оплата
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Статистика
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Профиль арендодателя
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="flats__add">
+                        <svg class="add-i"><use xlink:href="img/sprite.svg#add"></use></svg>
+                        Добавить объявление
+                    </a>
+                </div>
             </div>
         </section>
-        <div class="container">
-            <div class="breadcrumbs">
-                <span>
-                    <a class="breadcrumbs__link" href="#"> 
-                        <span>
-                            Посуточная аренда   
-                        </span>
-                    </a>
-                </span>
-                <span class="breadcrumbs__separator"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M4.745 3.01a1 1 0 0 1 0 1.536L1.974 6.855a1 1 0 0 1-1.64-.768V1.468A1 1 0 0 1 1.974.7L4.745 3.01z" fill="#c3c7cb"/></svg>
-                </span>
-                <span>
-                    <a class="breadcrumbs__link" href="#"> 
-                        <span>
-                            Минск   
-                        </span>
-                    </a>
-                </span>
-                <span class="breadcrumbs__separator"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M4.745 3.01a1 1 0 0 1 0 1.536L1.974 6.855a1 1 0 0 1-1.64-.768V1.468A1 1 0 0 1 1.974.7L4.745 3.01z" fill="#c3c7cb"/></svg>
-                </span>
-                <span class="breadcrumbs__current">
-                    Квартиры на сутки
-                </span>
-            </div>
-        </div>
         <section class="catalog">
             <div class="container">
                 <div class="catalog__top">
