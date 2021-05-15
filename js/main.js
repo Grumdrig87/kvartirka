@@ -76,6 +76,21 @@ jQuery(document).ready(function($) {
       width: 'auto'
     });
   }
+  if (jQuery('[data-paycount]').length > 0) {
+    jQuery('[data-paycount]').select2({
+      width: '100%'
+    });
+  }
+  if (jQuery('[data-paysrok]').length > 0) {
+    jQuery('[data-paysrok]').select2({
+      width: '100%'
+    });
+  }
+  if (jQuery('[data-flats]').length > 0) {
+    jQuery('[data-flats]').select2({
+      width: '250px'
+    });
+  }
   if (jQuery('[data-time]').length > 0) {
     jQuery('[data-time]').select2({
       width: 'auto',

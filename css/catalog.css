@@ -290,7 +290,7 @@
     content: 'до';
 }
 .meters::after {
-    content: 'м2';
+    content: 'м<sup>2</sup>';
     display: block;
     position: absolute;
     font-size: 14px;
@@ -801,6 +801,9 @@
 .catalog__card-rooms svg,
 .catalog__card-peop svg {
     margin-right: 5px;
+}
+.catalog__card-peop sup {
+    font-size: 10px;
 }
 .catalog__card-mid {
     display: -webkit-box;
