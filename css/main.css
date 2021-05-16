@@ -71,7 +71,8 @@
 .bed,
 .flat-iconsabout,
 .rules-i,
-.add-i {
+.add-i,
+.arrstat-i {
 	width: 24px;
 	height: 24px;
 }
@@ -81,7 +82,8 @@
 	height: 12px;
 }
 .camera,
-.udob-i {
+.udob-i,
+.stat-i {
 	width: 40px;
 	height: 40px;
 }
@@ -179,7 +181,7 @@ input {
 .btn {
 	padding: 9px 20px;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
 	color: #0752E4;
@@ -547,6 +549,9 @@ input {
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
 	line-height: 40px !important;
+}
+.header .select2-container--default .select2-selection--single .select2-selection__rendered {
+	font-weight: 500 !important;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
 	display: none;
@@ -1822,6 +1827,7 @@ input::-webkit-inner-spin-button {
     line-height: 22px;
     color: #5E6165;
     text-decoration: none;
+	font-weight: 500;
 }
 .flats__nav li a:hover,
 .flats__nav li.active a {
@@ -1849,6 +1855,7 @@ input::-webkit-inner-spin-button {
             align-items: center;
     font-size: 14px;
     line-height: 20px;
+	font-weight: 500;
     color: #FFFFFF;
 }
 .flats__add svg {

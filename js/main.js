@@ -91,6 +91,11 @@ jQuery(document).ready(function($) {
       width: '250px'
     });
   }
+  if (jQuery('[data-statssel]').length > 0) {
+    jQuery('[data-statssel]').select2({
+      width: '100%'
+    });
+  }
   if (jQuery('[data-time]').length > 0) {
     jQuery('[data-time]').select2({
       width: 'auto',
@@ -248,4 +253,49 @@ jQuery(document).ready(function($) {
       $( ".ui-slider-handle:nth-child(2) > .range-label" ).text( $( "#slider-range" ).slider( "values", 0 ) + " ₽");
       $( ".ui-slider-handle:last-child > .range-label" ).text( $( "#slider-range" ).slider( "values", 1 ) + " ₽");
     } );
+
+
+
+    $("#proffoto").change(function () {
+      if (this.files && this.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+              $('[data-profoto] img').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(this.files[0]);
+      }
+  });
+    
 });
+
+
+var data = {
+  // A labels array that can contain any sort of values
+  labels: ['1', '2', '3', '4', '5','6', '7', '8', '9', '10','11', '12', '13', '14', '15','16', '17', '18', '19', '20','21', '22', '23', '24', '25','26', '27', '28', '29', '30'],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [2, 6, 5, 11, 7, 9, 13, 7, 3, 7, 9, 11, 8, 6, 5, 7]
+  ]
+};
+
+var options = {
+  showPoint: false,
+  // Disable line smoothing
+  lineSmooth: false,
+  // X-Axis specific configuration
+  axisX: {
+    // We can disable the grid for this axis
+    showGrid: false,
+  },
+  axisY: {
+    // Lets offset the chart a bit from the labels
+    offset: 60,
+  },
+    low: 0,
+    showArea: true
+};
+
+// Create a new line chart object where as first parameter we pass in a selector
+// that is resolving to our chart container element. The Second parameter
+// is the actual data object. As a third parameter we pass in our custom options.
+new Chartist.Line('.ct-chart', data, options);
