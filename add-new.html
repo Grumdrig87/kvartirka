@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<title>Kvartirka</title>
+	<meta name="keywords" content="Kvartirka" />
+    <meta name="description" content="Kvartirka">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+	<!-- OG Tags -->
+	<meta property="og:title" content="Kvartirka" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:site_name" content="Kvartirka">
+    <meta property="og:description" content="Kvartirka" />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/addnew.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__left">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                        <div class="header__city">
+                            <select name="city" data-hcity class="header__select-city">
+                                <option value="Минск">Минск</option>
+                                <option value="Могилев">Могилев</option>
+                                <option value="Гродно">Гродно</option>
+                                <option value="Витебск">Витебск</option>
+                                <option value="Полоцк">Полоцк</option>
+                                <option value="Брест">Брест</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__lang">
+                            <select name="lang" data-lang class="header__select-lang">
+                                <option value="rus" selected>Русский</option>
+                                <option value="us">English</option>
+                            </select>
+                        </div>
+                        <div class="header__val">
+                            <select name="val" data-val class="header__select-val">
+                                <option value="BYN" selected>BYN</option>
+                                <option value="$">$</option>
+                                <option value="₽">₽</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn header__btn">
+                            Сдать жилье
+                        </a>
+                        <a href="#" class="header__like">
+                            <svg class="heart"><use xlink:href="img/sprite.svg#fi_heart"></use></svg>
+                            <span>
+                                2
+                            </span>
+                        </a>
+                        <div class="header__login">
+                            <svg class="burger-i"><use xlink:href="img/sprite.svg#burger"></use></svg>
+                            <svg class="user-i"><use xlink:href="img/sprite.svg#user"></use></svg>
+                            <div class="header__login-menu">
+                                <ul>
+                                    <li>
+                                        <a data-fancybox data-src="#login" href="javascript:;">
+                                            Войти
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Сдать жилье
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="addnew">
+            <div class="container">
+                <div class="flats__top">
+                    <ul class="flats__nav">
+                        <li class='active'>
+                            <a href="#">
+                                Мои объявления
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Оплата
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Статистика
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Профиль арендодателя
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="flats__add">
+                        <svg class="add-i"><use xlink:href="img/sprite.svg#add"></use></svg>
+                        Добавить объявление
+                    </a>
+                </div>
+                <ul class="addnew__nav" data-addnew>
+                    <li>
+                        <a href="#type">
+                            Тип объявления
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#adress">
+                            Адрес
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Описание и фото
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            О доме
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            На территории
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Цена и условия
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="addnew__wrap">
+                    <h1 class="title-m">
+                        Новое объявление
+                    </h1>
+                    <div class="addnew__item" id="type">
+                        <div class="addnew__title">
+                            Выберите тип объявления:
+                        </div>
+                        <div class="addnew__types">
+                            <div class="addnew__type-wrap">
+                                <input type="radio" name="flattype" checked id="flattype1">
+                                <label for="flattype1" class="addnew__type">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="48" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A)"><use xlink:href="#B" fill="#020E20"/><use xlink:href="#B" fill="#020E20"/><use xlink:href="#B" fill="#020E20"/><use xlink:href="#C" fill="#020E20"/><use xlink:href="#C" fill="#020E20"/><use xlink:href="#C" fill="#020E20"/></g><defs><clipPath id="A"><path fill="#fff" transform="translate(.5)" d="M0 0h48v48H0z"/></clipPath><path id="B" d="M48.46 19.952L48.415.996a1 1 0 0 0-1-.996L24.456.054 1.496.109A1 1 0 0 0 .5 1.109l.045 18.957.036 14.966.028 11.973a1 1 0 0 0 1 .996l14.973-.036a1 1 0 0 0 .996-1l-.005-1.995 15.972-.038a3 3 0 0 0 2.988-3l-.009-3.991 10.98-.027a1 1 0 0 0 .996-1l-.04-16.961zM36.438 2.021l.019 7.982a1 1 0 0 0 1 .996 1 1 0 0 0 .996-1l-.019-7.982 7.986-.019.04 16.961-7.986.019-.007-2.993a1 1 0 0 0-1-.996 1 1 0 0 0-.996 1l.007 2.993-1.996.005-5.989.014-2.995.007-.04-16.961 10.981-.026zM33.503 26.87a5 5 0 0 1-4.005-4.879l-.002-.998 2.638-.006 1.355-.003.014 5.886zm-10.001-7.857l-3.993.009-.002-.997c-.006-2.41 1.707-4.429 3.981-4.898l.014 5.886zM2.602 46.002l-.024-9.977 3.993-.009a1 1 0 0 0 .996-1 1 1 0 0 0-1-.996l-3.993.01-.031-12.97 3.046-.007 3.942-.009.002.998c.008 3.511 2.624 6.411 6.005 6.89l.025 10.397.011 4.648.005 1.995-12.977.029zm8.925-24.965l3.993-.009.014 5.886a5 5 0 0 1-4.005-4.879l-.002-.998zm-8.991-1.973l-.04-16.961 7.988-.02.009 3.991a1 1 0 0 0 1 .996 1 1 0 0 0 .996-1l-.01-3.991 10.981-.026.021 9.059c-3.379.495-5.981 3.407-5.973 6.918l.002.998-14.973.036zm31.004 23.87l-15.972.038-.003-1.4-.008-3.589 16.97-.04.009 3.991a1 1 0 0 1-.996 1zm-15.989-6.946l-.006-2.44-.03-12.525 9.982-.024.002.998c.009 3.85 3.151 6.977 7.005 6.967a1 1 0 0 0 .996-1l-.017-6.984 1.996-.005 8.984-.021.036 14.966-28.949.069z"/><path id="C" d="M46.492 41.326a2.75 2.75 0 0 0-2.75-2.738l-3.658.009a2.75 2.75 0 0 0-2.737 2.75l.008 3.658c.001.506.412.914.916.913l7.317-.017c.505-.001.914-.412.913-.916l-.008-3.658zm-7.31 2.76l-.006-2.744c-.001-.505.408-.916.913-.916l3.658-.009c.504-.001.915.408.916.913l.006 2.744-5.488.013z"/></defs></svg>
+                                    Квартира
+                                </label>
+                            </div>
+                            <div class="addnew__type-wrap">
+                                <input type="radio" name="flattype" id="flattype2">
+                                <label for="flattype2" class="addnew__type">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A1)" fill="#020e20"><path d="M47.542 44.571h-1.107V20.339l.582.272a.96.96 0 0 0 1.362-.868v-3.847a.96.96 0 0 0-.553-.868l-3.298-1.539v-6.22a.96.96 0 0 0-.958-.958h-5.696a.96.96 0 0 0-.958.958v2.669L19.06 1.604a.96.96 0 0 0-.874.033L.989 11.296a.96.96 0 0 0-.489.835v3.847a.96.96 0 0 0 1.427.835l.519-.291v28.05h-.948a.96.96 0 0 0-.958.958.96.96 0 0 0 .958.958h1.905 42.075 2.065a.96.96 0 0 0 .958-.958.96.96 0 0 0-.958-.958zm-8.708-33.773V8.227h3.78v4.369l-3.782-1.765.002-.033zM2.415 12.691l16.28-9.144 27.77 12.959v1.733L19.06 5.45a.96.96 0 0 0-.874.033l-15.77 8.858v-1.65zm1.945 31.88V15.477c0-.01-.001-.021-.002-.031l14.336-8.052L44.52 19.445v25.126H4.36zm18.165-16.272H7.243a.96.96 0 0 0-.958.958v12.456a.96.96 0 0 0 .958.958h15.282a.96.96 0 0 0 .958-.958V29.257a.96.96 0 0 0-.958-.958zM8.2 30.214h5.726v10.541H8.2V30.214zm13.367 10.541h-5.726V30.214h5.726v10.541zm20.111-12.456H26.356a.96.96 0 0 0-.958.958v12.456a.96.96 0 0 0 .958.958h15.322a.96.96 0 0 0 .958-.958V29.257a.96.96 0 0 0-.958-.958zm-14.364 1.915h5.746v10.541h-5.746V30.214zM40.72 40.755h-5.746V30.214h5.746v10.541zm1.363-20.124L26.83 13.514a.95.95 0 0 0-.442-.089.96.96 0 0 0-.99.957v11.072a.96.96 0 0 0 .958.958h15.322a.96.96 0 0 0 .958-.958v-3.955a.96.96 0 0 0-.553-.868zm-14.769-4.778l5.746 2.681v5.962h-5.746v-8.643zm13.407 8.644h-5.746v-5.069l5.746 2.681v2.387zM23.478 12.481l-.005-.042-.007-.048-.01-.049-.01-.039-.016-.053-.013-.034-.021-.051-.017-.035-.024-.045-.023-.038-.025-.038-.03-.04-.025-.031-.036-.04-.027-.027-.04-.036-.032-.026-.039-.029-.041-.027-.035-.021-.052-.028-.019-.01-3.312-1.545c-.33-.154-.702-.104-.975.098l-.051.025L6.774 16.91c-.319.179-.496.514-.488.856v7.688a.96.96 0 0 0 .958.958h15.282a.96.96 0 0 0 .958-.958V12.561l-.001-.022-.003-.058zM8.2 18.305l5.726-3.216v9.407H8.2v-6.191zm7.641 6.191V14.013l3.417-1.919 2.308 1.077v11.325H15.84h0z"/></g><defs><clipPath id="A1"><path fill="#fff" transform="translate(.5)" d="M0 0h48v48H0z"/></clipPath></defs></svg>
+                                    Коттедж
+                                </label>
+                            </div>
+                            <div class="addnew__type-wrap">
+                                <input type="radio" name="flattype" id="flattype3">
+                                <label for="flattype3" class="addnew__type">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" fill="none" xmlns:v="https://vecta.io/nano"><g clip-path="url(#A2)" fill="#020e20"><path d="M48.479 15.421c-.051-.243-.197-.456-.405-.592l-6.53-4.258c-.434-.283-1.015-.161-1.297.273a.94.94 0 0 0 .273 1.297l5.744 3.746-1.027 1.575L25.012 4.271a.94.94 0 0 0-1.024 0L3.762 17.462l-1.027-1.575 21.252-13.86a.94.94 0 0 1 1.027 0l8.441 5.505a.94.94 0 0 0 1.297-.273.94.94 0 0 0-.273-1.297L26.038.457c-.934-.609-2.141-.609-3.076 0l-8.056 5.254V1.898a.94.94 0 0 0-.937-.937h-9a.94.94 0 0 0-.937.937v3.75a.94.94 0 0 0 .937.937h.375v5.362L.925 14.829c-.208.136-.354.349-.405.592s-.004.497.132.705l2.051 3.145c.234.358.67.503 1.06.384-.049.222-.076.452-.076.689v2.742c0 .877.356 1.673.932 2.25-.576.577-.932 1.372-.932 2.25v2.742c0 .877.356 1.673.932 2.25-.576.577-.932 1.373-.932 2.25v2.742c0 .877.356 1.673.932 2.25-.576.577-.932 1.373-.932 2.25v2.742A3.19 3.19 0 0 0 6.875 48h35.25a3.19 3.19 0 0 0 3.187-3.187V42.07c0-.877-.356-1.673-.932-2.25.575-.577.932-1.373.932-2.25v-2.742c0-.877-.356-1.673-.932-2.25.575-.577.932-1.373.932-2.25v-2.742c0-.877-.356-1.673-.932-2.25.575-.577.932-1.373.932-2.25v-2.742a3.19 3.19 0 0 0-.076-.689c.09.027.182.042.274.042.306 0 .606-.15.786-.425l2.051-3.145a.94.94 0 0 0 .132-.705zM11.719 7.79l-4.5 2.935V6.585h4.5V7.79zM5.906 2.835h7.125V4.71H5.906V2.835zM24.5 6.175l16.838 10.981H7.662L24.5 6.175zm-12.937 39.95H6.875c-.724 0-1.312-.589-1.312-1.312V42.07c0-.724.589-1.312 1.312-1.312h4.687v5.367zm0-7.242H6.875c-.724 0-1.312-.589-1.312-1.312v-2.742c0-.724.589-1.312 1.312-1.312h4.687v5.367zm0-7.242H6.875c-.723 0-1.312-.589-1.312-1.312v-2.742c0-.724.589-1.312 1.312-1.312h4.687v5.367zm12 14.484H13.437V26.274h10.125v19.851zm19.875-1.312c0 .724-.589 1.313-1.312 1.313H25.437v-5.367h16.687c.724 0 1.313.589 1.313 1.313v2.742zm0-7.242c0 .724-.589 1.313-1.312 1.313H25.437v-5.367h3.938v2.508a.94.94 0 0 0 .938.937h8.25a.94.94 0 0 0 .938-.937v-2.508h2.625c.724 0 1.313.589 1.313 1.313v2.742zm-18-5.93v-5.367h3.938v5.367h-3.937zm8.062-.023v3.469h-2.25v-3.469h2.25zm-2.25-1.875v-3.469h2.25v3.469h-2.25zm6.375 1.875v3.469h-2.25v-3.469h2.25zm-2.25-1.875v-3.469h2.25v3.469h-2.25zm8.063.586c0 .724-.589 1.313-1.312 1.313H39.5v-5.367h2.625c.724 0 1.313.589 1.313 1.313v2.742zm0-7.242c0 .724-.589 1.313-1.312 1.313H6.875c-.723 0-1.312-.589-1.312-1.312v-2.742c0-.724.589-1.312 1.312-1.312h35.25c.724 0 1.313.589 1.313 1.313v2.742z"/><path d="M40.247 10.844c.283-.434.863-.556 1.297-.273l-7.067-4.609a.94.94 0 0 1 .273 1.297.94.94 0 0 1-1.297.273l7.067 4.609a.94.94 0 0 1-.273-1.297zM20.75 34.157a.94.94 0 0 0-.937.938v.9a.94.94 0 0 0 .938.938.94.94 0 0 0 .938-.937v-.9a.94.94 0 0 0-.937-.937z"/><path d="M37.5 9.989a.94.94 0 0 0 .938-.937.94.94 0 0 0-.937-.937.94.94 0 0 0-.937.938.94.94 0 0 0 .938.938z"/></g><defs><clipPath id="A2"><path fill="#fff" transform="translate(.5)" d="M0 0h48v48H0z"/></clipPath></defs></svg>
+                                    Баня
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addnew__item" id="adress">
+                        <div class="addnew__title">
+                            Адрес
+                        </div>
+                        <div class="profile__item flats__select">
+                            <div class="profile__title">
+                                Город:
+                            </div>
+                            <select name="addcity" data-addnewsel>
+                                <option value="choose" disabled selected>Выберите Ваш город</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                            </select>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Адрес:
+                            </div>
+                            <input type="text" name="addadress" class="prof__input" placeholder="ул.Некрасова, 5">
+                        </div>
+                        <div class="addnew__map">
+                            <img src="img/demo/map.png" alt="">
+                        </div>
+                        <div class="profile__item flats__select">
+                            <div class="profile__title">
+                                Район:
+                            </div>
+                            <select name="addraion" data-addnewsel>
+                                <option value="choose" disabled selected>Выберите район</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                            </select>
+                        </div>
+                        <div class="profile__item flats__select">
+                            <div class="profile__title">
+                                Микрорайон:
+                            </div>
+                            <select name="addcity" data-addnewsel>
+                                <option value="choose" disabled selected>Выберите микрорайон</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                            </select>
+                        </div>
+                        <div class="profile__item flats__select">
+                            <div class="profile__title">
+                                Ориентиры:
+                            </div>
+                            <select name="addcity" data-addnewsel>
+                                <option value="choose" disabled selected>Выберите ориентир</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                            </select>
+                        </div>
+                        <div class="profile__item flats__select">
+                            <div class="profile__title">
+                                Метро:
+                            </div>
+                            <select name="addcity" data-addnewsel>
+                                <option value="choose" disabled selected>Выберите ориентир</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                                <option value="1">Минск</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="addnew__item" id="adress">
+                        <div class="addnew__title addnew__title-sec">
+                            Описание и фото
+                        </div>
+                        <div class="profile__item">
+                            <p>
+                                Не допускается к размещению фотографии с водяными знаками, чужих объектов и рекламные баннеры. JPG, PNG или GIF. Максимальный размер файла 10 Мб.
+                            </p>
+                            <div class="dropZone" data-dropzone>
+                                <div class="profile__input-wrap">
+                                    <input type="file" name="flatfoto" id="proffoto" accept=".jpg, .jpeg, .png">
+                                    <label for="proffoto">
+                                        <svg class="img-i"><use xlink:href="img/sprite.svg#image"></use></svg>
+                                        Загрузите фотографии
+                                    </label>
+                                </div>
+                                <span>или</span>
+                                <div class="addnew__drop">
+                                    Перетащите сюда
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="login__popup" id="login">
+        <div class="login__popup-wrap">
+            <div class="close" data-fancybox-close>
+                <svg class="cross"><use xlink:href="img/sprite.svg#cross"></use></svg>
+            </div>
+            <div class="login__popup-tabs">
+                <div class="login__popup-tab active" data-tab>
+                    Вход
+                </div>
+                <div class="login__popup-tab" data-tab>
+                    Регистрация
+                </div>
+            </div>
+            <div class="login__popup-forms">
+                <form action="post" class="login__popup-form active">
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            E-mail:
+                        </span>
+                        <input type="email" name="email" placeholder="ex. djohnson@gmail.com" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            Пароль:
+                        </span>
+                        <input type="password" name="password" placeholder="********" class="login__popup-inp">
+                        <a href="#" class="forget">
+                            Забыл пароль:
+                        </a>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">
+                            Запомнить меня
+                        </label>
+                    </div>
+                    <input type="submit" value="Войти" class="login__btn">
+                    <div class="center">
+                        <a href="#" class="get__pass">
+                            Напомнить пароль
+                        </a>
+                    </div>
+                    <a href="#" class="login__btn-sec">
+                        Зарегистрироваться
+                    </a>
+                    <span class="login__soc-title">
+                        или войдите с помощью соц. сетей
+                    </span>
+                    <div class="login__soc-wrap">
+                        <a href="#" class="login__soc-item vk">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none"  xmlns:v="https://vecta.io/nano"><path fill-rule="evenodd" d="M17.587.745c.125-.429 0-.745-.596-.745h-1.969c-.501 0-.731.273-.857.573 0 0-1.001 2.512-2.42 4.143-.459.472-.668.622-.918.622-.125 0-.306-.15-.306-.579V.745c0-.515-.145-.745-.563-.745H6.864a.48.48 0 0 0-.501.466c0 .488.709.601.782 1.975v2.984c0 .654-.115.773-.365.773-.668 0-2.291-2.523-3.255-5.41C3.337.227 3.148 0 2.644 0H.675C.113 0 0 .273 0 .573c0 .537.668 3.199 3.109 6.719C4.736 9.697 7.028 11 9.115 11c1.252 0 1.407-.29 1.407-.788V8.395c0-.579.119-.694.515-.694.292 0 .793.15 1.961 1.309 1.335 1.374 1.555 1.99 2.306 1.99h1.969c.563 0 .844-.29.682-.861-.177-.569-.815-1.395-1.661-2.375-.459-.558-1.148-1.159-1.356-1.46-.292-.386-.209-.558 0-.901 0 0 2.399-3.478 2.649-4.658h0z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item fb">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M5.842 18V9.789h2.653l.397-3.2H5.842V4.546c0-.926.248-1.558 1.527-1.558L9 2.988V.126A21.06 21.06 0 0 0 6.623 0C4.271 0 2.66 1.491 2.66 4.23v2.36H0v3.2h2.66V18h3.181z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item ok">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M5.5 2.723c1.119 0 2.029.863 2.029 1.923S6.619 6.569 5.5 6.569s-2.029-.863-2.029-1.923.911-1.923 2.029-1.923zm0 6.567c2.703 0 4.901-2.083 4.901-4.644S8.203 0 5.5 0 .598 2.084.598 4.646 2.797 9.29 5.5 9.29zm1.983 3.789a9.46 9.46 0 0 0 2.846-1.117c.322-.192.551-.498.635-.85a1.3 1.3 0 0 0-.185-1.027c-.1-.151-.231-.283-.385-.386s-.328-.177-.512-.217-.374-.045-.56-.015-.364.095-.523.19a6.52 6.52 0 0 1-6.599 0c-.16-.095-.337-.16-.523-.19a1.51 1.51 0 0 0-.56.015c-.184.04-.358.113-.512.217s-.285.235-.385.386a1.3 1.3 0 0 0-.185 1.027c.084.352.313.658.635.85a9.47 9.47 0 0 0 2.846 1.117l-2.74 2.597c-.269.255-.42.601-.42.962s.151.707.421.962.635.399 1.016.399.746-.143 1.015-.399l2.692-2.552 2.694 2.552c.133.126.291.227.465.295s.361.104.549.104.375-.035.549-.104.332-.169.465-.295.239-.276.312-.441a1.3 1.3 0 0 0 .11-.521c0-.179-.037-.356-.11-.521s-.178-.315-.312-.441l-2.74-2.598z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M11.707 9A2.71 2.71 0 0 1 9 11.707 2.71 2.71 0 0 1 6.293 9 2.71 2.71 0 0 1 9 6.293 2.71 2.71 0 0 1 11.707 9zM9 0C4.037 0 0 4.037 0 9s4.037 9 9 9a8.95 8.95 0 0 0 5.07-1.565l.026-.018-1.212-1.409-.021.013A7.12 7.12 0 0 1 9 16.155c-3.945 0-7.155-3.21-7.155-7.155S5.055 1.845 9 1.845 16.155 5.055 16.155 9c0 .511-.057 1.029-.168 1.538-.226.929-.877 1.213-1.365 1.176s-1.066-.39-1.07-1.246v-.652V9A4.56 4.56 0 0 0 9 4.448 4.56 4.56 0 0 0 4.448 9 4.56 4.56 0 0 0 9 13.552c1.22 0 2.363-.476 3.225-1.344.501.78 1.319 1.27 2.249 1.344a3.04 3.04 0 0 0 .242.01c.655 0 1.304-.219 1.827-.616.539-.41.942-1.002 1.165-1.714.035-.115.101-.378.101-.38l.002-.01c.131-.571.19-1.14.19-1.843 0-4.963-4.037-9-9-9z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item google">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff"  xmlns:v="https://vecta.io/nano"><path d="M3.989 10.878l-.627 2.339-2.29.049A8.96 8.96 0 0 1 0 9a8.96 8.96 0 0 1 1.006-4.139h0l2.039.374.893 2.027A5.35 5.35 0 0 0 3.65 9a5.34 5.34 0 0 0 .339 1.878zm13.854-3.559A9.03 9.03 0 0 1 18 9a9.02 9.02 0 0 1-.197 1.879c-.438 2.063-1.583 3.865-3.169 5.139h0l-2.568-.131-.363-2.269c1.052-.617 1.875-1.583 2.308-2.739H9.198v-3.56h4.883 3.762z"/><path d="M14.634 16.018h.001A8.96 8.96 0 0 1 9 18c-3.427 0-6.407-1.916-7.927-4.735l2.917-2.387A5.35 5.35 0 0 0 9 14.35a5.32 5.32 0 0 0 2.702-.732l2.932 2.4zm.111-13.946l-2.916 2.387A5.32 5.32 0 0 0 9 3.65c-2.346 0-4.339 1.51-5.061 3.611l-2.932-2.4h0C2.504 1.973 5.522 0 9 0a8.96 8.96 0 0 1 5.745 2.072z"/></svg> 
+                        </a>
+                        <a href="#" class="login__soc-item ya">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M8.724 0H5.867C3.058 0 .677 2.04.677 6c0 2.376 1.153 4.128 3.209 4.992L.05 17.616c-.126.216 0 .384.2.384h1.78c.15 0 .251-.048.301-.168l3.484-6.504H7.07v6.504c0 .072.075.168.175.168H8.8c.15 0 .2-.072.2-.191V.24C9 .072 8.9 0 8.724 0zM7.07 9.792H6.017c-1.654 0-3.259-1.152-3.259-4.032 0-3 1.504-4.224 3.033-4.224H7.07v8.256h0z" fill="#fff"/></svg>
+                        </a>
+                    </div>
+                    <p class="login__form-txt">
+                        <span>
+                            Регистрируясь, вы принимаете условия
+                        </span>
+                        <a href="#">
+                            Правила и условия
+                        </a>
+                    </p>
+                </form>
+                <form action="post" class="login__popup-form">
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            Ваше имя на сайте:
+                        </span>
+                        <input type="text" name="name" placeholder="*****************" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            E-mail:
+                        </span>
+                        <input type="email" name="email" placeholder="ex. djohnson@gmail.com" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            Пароль:
+                        </span>
+                        <input type="password" name="password" placeholder="password" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            Подтвердить пароль:
+                        </span>
+                        <input type="password" name="password" placeholder="password" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="info" id="info">
+                        <label for="info">
+                            Я не хочу получать рекламную информацию от Kvartirka.by
+                        </label>
+                    </div>
+                    <input type="submit" value="Зарегистрироваться" class="login__btn">
+                    <span class="login__soc-title">
+                        или войдите с помощью соц. сетей
+                    </span>
+                    <div class="login__soc-wrap">
+                        <a href="#" class="login__soc-item vk">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none"  xmlns:v="https://vecta.io/nano"><path fill-rule="evenodd" d="M17.587.745c.125-.429 0-.745-.596-.745h-1.969c-.501 0-.731.273-.857.573 0 0-1.001 2.512-2.42 4.143-.459.472-.668.622-.918.622-.125 0-.306-.15-.306-.579V.745c0-.515-.145-.745-.563-.745H6.864a.48.48 0 0 0-.501.466c0 .488.709.601.782 1.975v2.984c0 .654-.115.773-.365.773-.668 0-2.291-2.523-3.255-5.41C3.337.227 3.148 0 2.644 0H.675C.113 0 0 .273 0 .573c0 .537.668 3.199 3.109 6.719C4.736 9.697 7.028 11 9.115 11c1.252 0 1.407-.29 1.407-.788V8.395c0-.579.119-.694.515-.694.292 0 .793.15 1.961 1.309 1.335 1.374 1.555 1.99 2.306 1.99h1.969c.563 0 .844-.29.682-.861-.177-.569-.815-1.395-1.661-2.375-.459-.558-1.148-1.159-1.356-1.46-.292-.386-.209-.558 0-.901 0 0 2.399-3.478 2.649-4.658h0z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item fb">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M5.842 18V9.789h2.653l.397-3.2H5.842V4.546c0-.926.248-1.558 1.527-1.558L9 2.988V.126A21.06 21.06 0 0 0 6.623 0C4.271 0 2.66 1.491 2.66 4.23v2.36H0v3.2h2.66V18h3.181z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item ok">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M5.5 2.723c1.119 0 2.029.863 2.029 1.923S6.619 6.569 5.5 6.569s-2.029-.863-2.029-1.923.911-1.923 2.029-1.923zm0 6.567c2.703 0 4.901-2.083 4.901-4.644S8.203 0 5.5 0 .598 2.084.598 4.646 2.797 9.29 5.5 9.29zm1.983 3.789a9.46 9.46 0 0 0 2.846-1.117c.322-.192.551-.498.635-.85a1.3 1.3 0 0 0-.185-1.027c-.1-.151-.231-.283-.385-.386s-.328-.177-.512-.217-.374-.045-.56-.015-.364.095-.523.19a6.52 6.52 0 0 1-6.599 0c-.16-.095-.337-.16-.523-.19a1.51 1.51 0 0 0-.56.015c-.184.04-.358.113-.512.217s-.285.235-.385.386a1.3 1.3 0 0 0-.185 1.027c.084.352.313.658.635.85a9.47 9.47 0 0 0 2.846 1.117l-2.74 2.597c-.269.255-.42.601-.42.962s.151.707.421.962.635.399 1.016.399.746-.143 1.015-.399l2.692-2.552 2.694 2.552c.133.126.291.227.465.295s.361.104.549.104.375-.035.549-.104.332-.169.465-.295.239-.276.312-.441a1.3 1.3 0 0 0 .11-.521c0-.179-.037-.356-.11-.521s-.178-.315-.312-.441l-2.74-2.598z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M11.707 9A2.71 2.71 0 0 1 9 11.707 2.71 2.71 0 0 1 6.293 9 2.71 2.71 0 0 1 9 6.293 2.71 2.71 0 0 1 11.707 9zM9 0C4.037 0 0 4.037 0 9s4.037 9 9 9a8.95 8.95 0 0 0 5.07-1.565l.026-.018-1.212-1.409-.021.013A7.12 7.12 0 0 1 9 16.155c-3.945 0-7.155-3.21-7.155-7.155S5.055 1.845 9 1.845 16.155 5.055 16.155 9c0 .511-.057 1.029-.168 1.538-.226.929-.877 1.213-1.365 1.176s-1.066-.39-1.07-1.246v-.652V9A4.56 4.56 0 0 0 9 4.448 4.56 4.56 0 0 0 4.448 9 4.56 4.56 0 0 0 9 13.552c1.22 0 2.363-.476 3.225-1.344.501.78 1.319 1.27 2.249 1.344a3.04 3.04 0 0 0 .242.01c.655 0 1.304-.219 1.827-.616.539-.41.942-1.002 1.165-1.714.035-.115.101-.378.101-.38l.002-.01c.131-.571.19-1.14.19-1.843 0-4.963-4.037-9-9-9z" fill="#fff"/></svg>
+                        </a>
+                        <a href="#" class="login__soc-item google">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff"  xmlns:v="https://vecta.io/nano"><path d="M3.989 10.878l-.627 2.339-2.29.049A8.96 8.96 0 0 1 0 9a8.96 8.96 0 0 1 1.006-4.139h0l2.039.374.893 2.027A5.35 5.35 0 0 0 3.65 9a5.34 5.34 0 0 0 .339 1.878zm13.854-3.559A9.03 9.03 0 0 1 18 9a9.02 9.02 0 0 1-.197 1.879c-.438 2.063-1.583 3.865-3.169 5.139h0l-2.568-.131-.363-2.269c1.052-.617 1.875-1.583 2.308-2.739H9.198v-3.56h4.883 3.762z"/><path d="M14.634 16.018h.001A8.96 8.96 0 0 1 9 18c-3.427 0-6.407-1.916-7.927-4.735l2.917-2.387A5.35 5.35 0 0 0 9 14.35a5.32 5.32 0 0 0 2.702-.732l2.932 2.4zm.111-13.946l-2.916 2.387A5.32 5.32 0 0 0 9 3.65c-2.346 0-4.339 1.51-5.061 3.611l-2.932-2.4h0C2.504 1.973 5.522 0 9 0a8.96 8.96 0 0 1 5.745 2.072z"/></svg> 
+                        </a>
+                        <a href="#" class="login__soc-item ya">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" fill="none"  xmlns:v="https://vecta.io/nano"><path d="M8.724 0H5.867C3.058 0 .677 2.04.677 6c0 2.376 1.153 4.128 3.209 4.992L.05 17.616c-.126.216 0 .384.2.384h1.78c.15 0 .251-.048.301-.168l3.484-6.504H7.07v6.504c0 .072.075.168.175.168H8.8c.15 0 .2-.072.2-.191V.24C9 .072 8.9 0 8.724 0zM7.07 9.792H6.017c-1.654 0-3.259-1.152-3.259-4.032 0-3 1.504-4.224 3.033-4.224H7.07v8.256h0z" fill="#fff"/></svg>
+                        </a>
+                    </div>
+                    <p class="login__form-txt">
+                        <span>
+                            Регистрируясь, вы принимаете условия
+                        </span>
+                        <a href="#">
+                            Правила и условия
+                        </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="js/select2/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.shorten.1.0.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/select2/js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

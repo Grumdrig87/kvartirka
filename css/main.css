@@ -53,7 +53,8 @@
 .room,
 .star-i,
 .cross-sec,
-.blog-meta-i {
+.blog-meta-i,
+.img-i {
     width: 20px;
     height: 20px;
 }
@@ -1883,6 +1884,7 @@ input::-webkit-inner-spin-button {
     line-height: 48px !important;
     padding-left: 20px;
     padding-right: 32px;
+	font-size: 14px;
 }
 .flats__select .select2-container--default .select2-selection--single .select2-selection__arrow {
     right: 10px;
