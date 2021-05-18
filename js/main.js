@@ -283,8 +283,8 @@ if (jQuery('[data-addnew]').length > 0) {
   });
 
   //dropzone foto
-  var dropZone = $('#dropZone'),
-        maxFileSize = 1000000; // максимальный размер фалйа - 1 мб.
+  var dropZone = $('[data-dropzone]'),
+        maxFileSize = 10000000; // максимальный размер фалйа - 10 мб.
     
     // Проверка поддержки браузером
     if (typeof(window.FileReader) == 'undefined') {
@@ -314,7 +314,7 @@ if (jQuery('[data-addnew]').length > 0) {
         
         // Проверяем размер файла
         if (file.size > maxFileSize) {
-            dropZone.text('Файл слишком большой!');
+            dropZone.find('.addnew__drop').text('Файл слишком большой!');
             dropZone.addClass('error');
             return false;
         }
@@ -331,16 +331,16 @@ if (jQuery('[data-addnew]').length > 0) {
     // Показываем процент загрузки
     function uploadProgress(event) {
         var percent = parseInt(event.loaded / event.total * 100);
-        dropZone.text('Загрузка: ' + percent + '%');
+        dropZone.find('.addnew__drop').text('Загрузка: ' + percent + '%');
     }
     
     // Пост обрабочик
     function stateChange(event) {
         if (event.target.readyState == 4) {
             if (event.target.status == 200) {
-                dropZone.text('Загрузка успешно завершена!');
+                dropZone.find('.addnew__drop').text('Загрузка успешно завершена!');
             } else {
-                dropZone.text('Произошла ошибка!');
+                dropZone.find('.addnew__drop').text('Произошла ошибка!');
                 dropZone.addClass('error');
             }
         }

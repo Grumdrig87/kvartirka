@@ -184,14 +184,15 @@
     border-color: #aaa;
 }
 
-.dropZone.error {
-    background: #faa;
-    border-color: #f00;
-}
+
 
 .dropZone.drop {
     background: #afa;
     border-color: #0f0;
+}
+.dropZone.error {
+    background: #faa;
+    border-color: #f00;
 }
 .dropZone label {
     padding: 13px 30px;
@@ -264,4 +265,10 @@
     line-height: 22px;
     font-weight: 500;
     color: #777D82;
+}
+.profile__item > p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #777D82;
+    margin-bottom: 20px;
 }
