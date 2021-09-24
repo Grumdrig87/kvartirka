@@ -269,7 +269,33 @@ if (jQuery('[data-addnew]').length > 0) {
       $( ".ui-slider-handle:nth-child(2) > .range-label" ).text( $( "#slider-range" ).slider( "values", 0 ) + " ₽");
       $( ".ui-slider-handle:last-child > .range-label" ).text( $( "#slider-range" ).slider( "values", 1 ) + " ₽");
     } );
-
+//show filter
+var showitem = $('[data-showitem]');
+var showHeight = $('[data-showitem]').height();
+$('[data-showitem]').css({'height':'300px'});
+var showHeighthelp = $('[data-showitem]').height();
+$('[data-showbtn]').on('click', function() {
+  $(this).toggleClass('open');
+  if (showHeighthelp > 300) {
+    $(this).find('span').text('Показать еще');
+    showitem.animate({
+      height: '300px'
+    }, 300);
+    setTimeout(function(){
+      showHeighthelp = 300;
+    }, 200);
+  }
+    if (showHeighthelp == 300) {
+      $(this).find('span').text('Скрыть');
+      showitem.animate({
+        height: showHeight + 'px'
+      }, 300);
+      setTimeout(function(){
+        showHeighthelp = showHeight;
+      }, 200);
+      console.log(showHeighthelp)
+    } 
+  })
 
 //foto load
     $("#proffoto").change(function () {
