@@ -1396,6 +1396,10 @@ input::-webkit-inner-spin-button {
 	font-size: 14px;
 	line-height: 20px;
 }
+.login__popup-textarea {
+	height: 120px;
+	resize: none;
+}
 .login__popup-inp::-webkit-input-placeholder {
 	font-family: 'Cera Pro', sans-serif;
 	color: #777D82;
@@ -1420,7 +1424,85 @@ input::-webkit-inner-spin-button {
 	font-family: 'Cera Pro', sans-serif;
 	color: #777D82;
 }
-
+.svyaz__txt {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #3A3F44;
+}
+.svyaz__txt span {
+	color: #F53E3E;
+}
+.svyaz__popup .login__btn {
+	margin-bottom: 15px;
+}
+.svyaz__popup .login__popup-tabs {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.send__popup-wrap {
+	padding: 50px 72px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.send__popup-img {
+	width: 106px;
+	height: 106px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	background: #23B554;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	margin-bottom: 30px;
+}
+.send__popup-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: -0.02em;
+	margin-bottom: 10px;
+}
+.send__popup-wrap p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 26px;
+}
+.send__popup .fancybox-close-small {
+	display: none;
+}
 .forget {
 	font-size: 12px;
 	line-height: 18px;

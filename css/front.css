@@ -231,9 +231,9 @@
 }
 .rewievs__card:hover {
 	background: #FFFFFF;
-	-webkit-box-shadow: 0px 20px 40px rgba(44, 57, 78, 0.08);
-	   -moz-box-shadow: 0px 20px 40px rgba(44, 57, 78, 0.08);
-	        box-shadow: 0px 20px 40px rgba(44, 57, 78, 0.08);
+	-webkit-box-shadow: 0px 15px 20px rgba(44, 57, 78, 0.08);
+	   -moz-box-shadow: 0px 15px 20px rgba(44, 57, 78, 0.08);
+	        box-shadow: 0px 15px 20px rgba(44, 57, 78, 0.08);
 }
 .rewievs__card p {
 	line-height: 22px;
@@ -432,3 +432,23 @@
 .prizyv__btn:hover {
 	text-decoration: none;
 }
+/* 993-1200px */
+@media screen and (max-width: 1200px) {
+	
+  }
+   
+  /* 769-993px */
+  @media screen and (max-width: 993px) {
+  
+  }
+  
+  /* 577-768px */
+  @media screen and (max-width: 768px) {
+	
+  }
+  
+  
+  /* 320-576px */
+  @media screen and (max-width: 576px) {
+	
+  }

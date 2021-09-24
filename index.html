@@ -709,7 +709,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a data-fancybox data-src="#svyaz" href="javascript:;">
                                             Обратная связь
                                         </a>
                                     </li>
@@ -984,6 +984,57 @@
                     </p>
                 </form>
             </div>
+        </div>
+    </div>
+    <div class="login__popup svyaz__popup" id="svyaz">
+        <div class="login__popup-wrap">
+            <div class="close" data-fancybox-close>
+                <svg class="cross"><use xlink:href="img/sprite.svg#cross"></use></svg>
+            </div>
+            <div class="login__popup-tabs">
+                <div class="login__popup-tab">
+                    Обратная связь
+                </div>
+            </div>
+            <div class="login__popup-forms">
+                <form action="post" class="login__popup-form active">
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            Имя *
+                        </span>
+                        <input type="text" name="namepop" placeholder="***********" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            E-mail *
+                        </span>
+                        <input type="email" name="email" placeholder="ex. djohnson@gmail.com" class="login__popup-inp">
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <span class="login__popup-title">
+                            Сообщение *
+                        </span>
+                        <textarea name="message" placeholder="Введите сообщение" class="login__popup-inp login__popup-textarea"></textarea>
+                    </div>
+                    <input type="submit" value="Отправить" class="login__btn">
+                    <p class="svyaz__txt">
+                        <span>*</span> - Поля, обязательные для заполнения
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="login__popup send__popup" id="sendpop">
+        <div class="login__popup-wrap send__popup-wrap">
+            <div class="send__popup-img">
+                <svg width='30' height='22'><use xlink:href="img/sprite.svg#okpage"></use></svg>
+            </div>
+            <div class="send__popup-title">
+                Спасибо!
+            </div>
+            <p>
+                Ваше сообщение принято <br> и будет рассмотрено в ближайшее время
+            </p>
         </div>
     </div>
     <object class="hidden" type="image/svg+xml" data="img/sprite.svg" >Your browser does not support SVG</object>
