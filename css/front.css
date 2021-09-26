@@ -217,6 +217,19 @@
 	padding: 20px 15px;
 	width: 33.3%;
 }
+.rewievs__wrap .slick-list,
+.rewievs__wrap .slick-track {
+	display: -webkit-box !important;
+	display: -webkit-flex !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+.rewievs__wrap .slick-slide > div,
+.rewievs__card-wrap,
+.rewievs__card {
+	height: 100%;
+}
 .rewievs__card {
 	background: #F8FAFD;
 	padding: 30px 40px 32px;
@@ -225,6 +238,23 @@
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	border: 1px solid #E6EAED;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-border-radius: 10px;
 	   -moz-border-radius: 10px;
 	        border-radius: 10px;
