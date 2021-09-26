@@ -493,7 +493,7 @@ input {
 .header__login .burger-i {
 	margin-right: 8px;
 }
-.header__login ul {
+.header__login-menu > ul {
 	background: #FFFFFF;
 	border: 1px solid #F1F3F4;
 	-webkit-box-shadow: 0px 20px 40px rgba(44, 57, 78, 0.2);
@@ -515,11 +515,11 @@ input {
 .header__login:hover .header__login-menu {
 	display: block;
 }
-.header__login ul li {
+.header__login-menu > ul > li {
 	padding: 0 15px;
 	min-width: 220px;
 }
-.header__login ul li:not(:last-child) {
+.header__login-menu > ul > li:not(:last-child) {
 	padding-bottom: 9px;
 	margin-bottom: 9px;
 	border-bottom: 1px solid #E6EAED;

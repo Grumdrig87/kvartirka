@@ -469,16 +469,120 @@
    
   /* 769-993px */
   @media screen and (max-width: 993px) {
-  
+	.main__city .select2-container {
+		width: 100% !important;
+	}
+	.main__wrap {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		   -moz-box-orient: vertical;
+		   -moz-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		max-width: 50% !important;
+		background: none;
+	}
+	.main__wrap > div {
+		margin-bottom: 10px;
+	}
+	.main__type-wrap label {
+		display: block;
+		text-align: center;
+	}
+	.main__type-wrap {
+		width: 49%;
+	}
+	.main__button {
+		width: 100%;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		   -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.main__example {
+		display: none;
+	}
+	.popular__card-wrap {
+		width: 33.33%;
+	}
+	.hands__card-wrap,
+	.service__card-wrap {
+		width: 50%;
+	}
   }
   
   /* 577-768px */
   @media screen and (max-width: 768px) {
-	
+	.main__wrap {
+		max-width: 70% !important;
+	}
+	.popular__card-wrap {
+		width: 50%;
+	}
+	.hands__card-wrap {
+		width: 300px !important;
+	}
+	.btn-see {
+		display: inline-block;
+		margin-top: 30px;
+	}
+	.hands__wrap {
+		margin-right: -30px;
+	}
+	.rewievs__card-wrap {
+		width: 320px !important;
+	}
+	.rewievs__wrap {
+		margin-right: -30px;
+	}
   }
   
   
   /* 320-576px */
   @media screen and (max-width: 576px) {
-	
+	.main {
+		padding: 40px 0 60px;
+	}
+	.main .title {
+		margin-bottom: 15px;
+	}
+	.main p {
+		max-width: unset;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.main__wrap {
+		max-width: 100% !important;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.popular {
+		padding: 40px 0;
+	}
+	.popular .title-l {
+		margin-bottom: 20px;
+	}
+	.popular__card-wrap {
+		padding: 15px 10px;
+		margin-bottom: 0;
+	}
+	.popular__wrap {
+		margin: -15px -10px -25px;
+	}
+	.popular__img {
+		height: 140px;
+	}
+	.hands__card-wrap {
+		padding: 5px;
+	}
+	.hands__wrap {
+		margin: -5px -30px -5px -5px;
+	}
+  }
+  @media screen and (max-width: 350px) {
+	.popular__img {
+		height: 130px;
+	}
   }

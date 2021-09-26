@@ -52,15 +52,18 @@ if (jQuery('[data-addnew]').length > 0) {
           infinite: true,
           prevArrow: '[data-prev]',
           nextArrow: '[data-next]',
-          // responsive: [{
-          //     breakpoint: 994,
-          //     settings: {
-          //       centerMode: false,
-          //       arrows: true,
-          //       prevArrow: '[data-uniqprev]',
-          //       nextArrow: '[data-uniqnext]',
-          //     }
-          // }, ]
+          responsive: [{
+              breakpoint: 993,
+              settings: {
+                slidesToShow: 2,
+              }
+          },{
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                variableWidth: true,
+              }
+          }, ]
       });
   }
     if (jQuery('[data-catslider]').length > 0) {
@@ -307,7 +310,40 @@ $('[data-showbtn]').on('click', function() {
           reader.readAsDataURL(this.files[0]);
       }
   });
+// adaptive
+if ($(window).width() < 994) {
+  $('.header__login-menu ul li:first').after('<li><div class="btns__mob"><div class="mob__item"><span>Язык</span><div data-moblang></div></div><div class="mob__item"><span>Валюта</span><div data-mobval></div></div></div></li>');
+  $('.header__lang').appendTo('[data-moblang]');
+  $('.header__val').appendTo('[data-mobval]');
+  $('.header__login-menu ul li:last a').before('<ul class="sub-menu"><li><a href="#">Связаться с нами</a></li><li><a href="#">Сдать свое жилье</a></li></ul>');
 
+}
+if ($(window).width() < 769) {
+  $('.footer__title').click(function(){
+    $(this).toggleClass('open');
+    $(this).next().slideToggle();
+  })
+  if (jQuery('[data-hands]').length > 0) {
+    $('[data-hands]').after('<div data-btnhand></div>');
+    $('.btn-see').appendTo('[data-btnhand]');
+    $('[data-hands]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+        infinite: false,
+        // responsive: [{
+        //     breakpoint: 994,
+        //     settings: {
+        //       centerMode: false,
+        //       arrows: true,
+        //       prevArrow: '[data-uniqprev]',
+        //       nextArrow: '[data-uniqnext]',
+        //     }
+        // }, ]
+    });
+}
+}
   //dropzone foto
   var dropZone = $('[data-dropzone]'),
         maxFileSize = 10000000; // максимальный размер фалйа - 10 мб.
