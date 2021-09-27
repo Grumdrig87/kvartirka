@@ -332,19 +332,12 @@ if ($(window).width() < 769) {
         slidesToShow: 1,
         variableWidth: true,
         infinite: false,
-        // responsive: [{
-        //     breakpoint: 994,
-        //     settings: {
-        //       centerMode: false,
-        //       arrows: true,
-        //       prevArrow: '[data-uniqprev]',
-        //       nextArrow: '[data-uniqnext]',
-        //     }
-        // }, ]
+        arrows: false,
     });
 }
 }
   //dropzone foto
+  if (jQuery('[data-dropzone]').length > 0) {
   var dropZone = $('[data-dropzone]'),
         maxFileSize = 10000000; // максимальный размер фалйа - 10 мб.
     
@@ -407,36 +400,37 @@ if ($(window).width() < 769) {
             }
         }
     }
+  }
 });
 
 
-var data = {
-  // A labels array that can contain any sort of values
-  labels: ['1', '2', '3', '4', '5','6', '7', '8', '9', '10','11', '12', '13', '14', '15','16', '17', '18', '19', '20','21', '22', '23', '24', '25','26', '27', '28', '29', '30'],
-  // Our series array that contains series objects or in this case series data arrays
-  series: [
-    [2, 6, 5, 11, 7, 9, 13, 7, 3, 7, 9, 11, 8, 6, 5, 7]
-  ]
-};
+// var data = {
+//   // A labels array that can contain any sort of values
+//   labels: ['1', '2', '3', '4', '5','6', '7', '8', '9', '10','11', '12', '13', '14', '15','16', '17', '18', '19', '20','21', '22', '23', '24', '25','26', '27', '28', '29', '30'],
+//   // Our series array that contains series objects or in this case series data arrays
+//   series: [
+//     [2, 6, 5, 11, 7, 9, 13, 7, 3, 7, 9, 11, 8, 6, 5, 7]
+//   ]
+// };
 
-var options = {
-  showPoint: false,
-  // Disable line smoothing
-  lineSmooth: false,
-  // X-Axis specific configuration
-  axisX: {
-    // We can disable the grid for this axis
-    showGrid: false,
-  },
-  axisY: {
-    // Lets offset the chart a bit from the labels
-    offset: 60,
-  },
-    low: 0,
-    showArea: true
-};
+// var options = {
+//   showPoint: false,
+//   // Disable line smoothing
+//   lineSmooth: false,
+//   // X-Axis specific configuration
+//   axisX: {
+//     // We can disable the grid for this axis
+//     showGrid: false,
+//   },
+//   axisY: {
+//     // Lets offset the chart a bit from the labels
+//     offset: 60,
+//   },
+//     low: 0,
+//     showArea: true
+// };
 
-// Create a new line chart object where as first parameter we pass in a selector
-// that is resolving to our chart container element. The Second parameter
-// is the actual data object. As a third parameter we pass in our custom options.
-new Chartist.Line('.ct-chart', data, options);
+// // Create a new line chart object where as first parameter we pass in a selector
+// // that is resolving to our chart container element. The Second parameter
+// // is the actual data object. As a third parameter we pass in our custom options.
+// new Chartist.Line('.ct-chart', data, options);

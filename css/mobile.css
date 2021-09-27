@@ -205,6 +205,52 @@
 		font-size: 20px;
 		line-height: 28px;
 	}
+  .main__city .select2-container--default .select2-selection--single {
+    height: 50px !important;
+    padding: 2px 0 0px;
+  }
+  .main__city .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 50px !important;
+  }
+  .main__type-wrap label {
+    padding: 7px 20px;
+  }
+  .main__guest-help {
+    padding: 2px 20px 5px;
+}
+.main__button {
+  padding: 12px 50px;
+}
+.main {
+  background: url(../img/main-bgmob.png) no-repeat 0 0 / cover;
+}
+.login__popup {
+  margin-top: 90px !important;
+  overflow: visible !important;
+}
+.close {
+  top: -34px;
+  right: 0;
+}
+.login__popup-tab {
+  font-size: 18px;
+  line-height: 26px;
+}
+.login__popup-form {
+  padding: 20px 20px 32px;
+}
+.login__form-txt span,
+.login__form-txt a {
+  font-size: 12px;
+  line-height: 18px;
+}
+.send__popup-wrap p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.send__popup-wrap {
+  padding: 50px 30px;
+}
 }
 @media screen and (max-width: 350px) {
   .logo {

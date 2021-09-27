@@ -1348,6 +1348,9 @@ input::-webkit-inner-spin-button {
 	cursor: pointer;
 	position: relative;
 }
+.login__popup-tab.active {
+	color: #0752E4;
+}
 .login__popup-tab.active:after {
 	content: '';
 	display: block;
@@ -1500,8 +1503,8 @@ input::-webkit-inner-spin-button {
 	font-size: 18px;
 	line-height: 26px;
 }
-.send__popup .fancybox-close-small {
-	display: none;
+.fancybox-close-small {
+	display: none !important;
 }
 .forget {
 	font-size: 12px;

@@ -558,7 +558,10 @@
 		padding: 0;
 		margin-bottom: 0;
 	}
-	.popular {
+	.popular,
+	.hands,
+	.service,
+	.prizyv {
 		padding: 40px 0;
 	}
 	.popular .title-l {
@@ -580,9 +583,85 @@
 	.hands__wrap {
 		margin: -5px -30px -5px -5px;
 	}
+	.hands__left p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.hands__top {
+		margin-bottom: 20px;
+	}
+	.hands__card:hover {
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transform: none;
+		   -moz-transform: none;
+		    -ms-transform: none;
+		     -o-transform: none;
+		        transform: none;
+	}
+	.review {
+		padding: 45px 0 40px;
+	}
+	.review__name,
+	.service__card p,
+	.rewievs__card p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.service__txt {
+		display: none;
+	}
+	.service__card-wrap {
+		padding: 5px;
+	}
+	.service__wrap {
+		margin: -5px;
+	}
+	.service__card {
+		padding: 30px 10px 15px;
+	}
+	.service__img {
+		margin-bottom: 15px;
+	}
+	.prizyv__card {
+		padding: 40px 30px;
+		background: url(../img/prizyv-bg.png) no-repeat 54% center / cover;
+	}
+	.prizyv__title {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+	.prizyv__txt {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 30px;
+	}
+	.main__wrap {
+		padding: 0 20px;
+	}
+
   }
   @media screen and (max-width: 350px) {
 	.popular__img {
 		height: 130px;
+	}
+	.hands__card-wrap {
+		width: 270px !important;
+	}
+	.btn-see {
+		margin-top: 20px;
+	}
+	.prizyv__title {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.main p {
+		margin-bottom: 20px;
+	}
+	.main__wrap {
+		padding: 0;
 	}
   }
