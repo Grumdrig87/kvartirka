@@ -289,18 +289,48 @@
 .filter__input-wrap:last-child::before {
     content: 'до';
 }
-.meters::after {
-    content: 'м<sup>2</sup>';
-    display: block;
-    position: absolute;
+.filter__item-show {
+    overflow: hidden;
+}
+.filter__item-show-btn {
+    font-family: Cera Pro;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #777D82;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    color: #0752E4;
+}
+.filter__item-show-btn svg {
+    margin-left: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.filter__item-show-btn.open {
+    margin-top: 16px;
+}
+.filter__item-show-btn.open svg {
+    -webkit-transform: rotateZ(180deg);
+       -moz-transform: rotateZ(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+}
+.meters::after {
+    content: '';
+    display: block;
+    position: absolute;
     top: 0;
     right: 10px;
     bottom: 0;
-    height: 20px;
+    width: 14px;
+    height: 12px;
     margin: auto 0;
+    background: url('../img/m2.png') no-repeat 0 0 / cover;
 }
 .filter__item-wrap {
     margin-bottom: 20px;
@@ -935,11 +965,7 @@
 }
 
 .catalog__card-hide {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
     padding: 9px 20px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -949,7 +975,6 @@
     background: #BEDBFC;
     color: #0752E4;
     line-height: 22px;
-    cursor: pointer;
     -webkit-box-align: center;
     -webkit-align-items: center;
        -moz-box-align: center;
@@ -960,9 +985,6 @@
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-}
-.catalog__card-hide.none {
-    display: none;
 }
 .catalog__card .slick-arrow::before {
     display: none !important;

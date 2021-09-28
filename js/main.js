@@ -3,9 +3,6 @@ jQuery(document).ready(function($) {
   $('[data-cardlike]').click(function(){
     $(this).toggleClass('active');
   })
-  $('[data-hide]').click(function(){
-    $(this).addClass('none');
-  })
   $('[data-flatnav] li').click(function() {
     $(this).addClass('active').siblings().removeClass('active');
   })
