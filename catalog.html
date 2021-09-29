@@ -283,19 +283,19 @@
                                 <div class="catalog__filter-tabs filter-border filter-where">
                                     <div class="catalog__filter-tab">
                                         <input type="radio" checked name="where" id="where1">
-                                        <label for="where1">Район</label>
+                                        <label for="where1" data-fancybox data-src="#filter">Район</label>
                                     </div>
                                     <div class="catalog__filter-tab">
                                         <input type="radio" name="where" id="where2">
-                                        <label for="where2">Метро</label>
+                                        <label for="where2" data-fancybox data-src="#filter">Метро</label>
                                     </div>
                                     <div class="catalog__filter-tab">
                                         <input type="radio" name="where" id="where3">
-                                        <label for="where3">Улица</label>
+                                        <label for="where3" data-fancybox data-src="#filter">Улица</label>
                                     </div>
                                     <div class="catalog__filter-tab">
                                         <input type="radio" name="where" id="where4">
-                                        <label for="where4">Ориентиры</label>
+                                        <label for="where4" data-fancybox data-src="#filter">Ориентиры</label>
                                     </div>
                                 </div>
                                 <div class="catalog__selected-wrap">
@@ -3198,6 +3198,153 @@
             </a>
             <a href="#" class="flat__contact-soc flat__contact-tg">
                 <svg width='19' height='16'><use xlink:href="img/sprite.svg#telegram"></use></svg>
+            </a>
+        </div>
+    </div>
+    <div class="filter__where" id="filter">
+        <div class="close" data-fancybox-close>
+            <svg class="cross"><use xlink:href="img/sprite.svg#cross"></use></svg>
+        </div>
+        <div class="filter__where-top">
+            <div class="filter__item-title">
+                Указать
+            </div>
+            <div class="catalog__filter-tabs filter-border filter-where">
+                <div class="catalog__filter-tab">
+                    <input type="radio" checked name="wherepop" id="where1pop">
+                    <label for="where1pop">Район</label>
+                </div>
+                <div class="catalog__filter-tab">
+                    <input type="radio" name="wherepop" id="where2pop">
+                    <label for="where2pop">Метро</label>
+                </div>
+                <div class="catalog__filter-tab">
+                    <input type="radio" name="wherepop" id="where3pop">
+                    <label for="where3pop">Улица</label>
+                </div>
+                <div class="catalog__filter-tab">
+                    <input type="radio" name="wherepop" id="where4pop">
+                    <label for="where4pop">Ориентиры</label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__pophelp">
+            <div class="filter__where-mid">
+                <div class="login__popup-inputwrap filter__where-search">
+                    <input type="search" name="search" placeholder="Поиск района">
+                </div>
+                <div class="filter__item-show filter__where-wrap">
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street1" id="street1">
+                        <label for="street1">
+                            пр. Ленина
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street2" id="street2">
+                        <label for="street2">
+                            пр. Октября
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street3" id="street3">
+                        <label for="street3">
+                            пр. Победы
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street4" id="street4">
+                        <label for="street4">
+                            пр. Речицкий
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street5" id="street5">
+                        <label for="street5">
+                            ул. 3-я Авиационная
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street6" id="street6">
+                        <label for="street6">
+                            ул. Богдана Хмельницкого
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street7" id="street7">
+                        <label for="street7">
+                            ул. Ветковская
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street8" id="street8">
+                        <label for="street8">
+                            ул. Головацкого
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street9" id="street9">
+                        <label for="street9">
+                            ул. Григория Денисенко
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street10" id="street10">
+                        <label for="street10">
+                            ул. Д.Н. Пенязькова
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street11" id="street11">
+                        <label for="street11">
+                            ул. Докутович
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street12" id="street12">
+                        <label for="street12">
+                            ул. Докутович
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street13" id="street13">
+                        <label for="street13">
+                            ул. Докутович
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street14" id="street14">
+                        <label for="street14">
+                            ул. Докутович
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street15" id="street15">
+                        <label for="street15">
+                            ул. Докутович
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street16" id="street16">
+                        <label for="street16">
+                            ул. Докутович
+                        </label>
+                    </div>
+                    <div class="login__popup-inputwrap">
+                        <input type="checkbox" name="street17" id="street17">
+                        <label for="street17">
+                            ул. Докутович
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__where-btns">
+            <a href="#" class="filter__where-btn">
+                Выбрать
+            </a>
+            <a href="javascript:;" class="filter__where-btn filter__where-btnsec">
+                Очистить выбор
             </a>
         </div>
     </div>
