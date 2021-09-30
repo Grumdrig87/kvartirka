@@ -255,6 +255,15 @@
 .send__popup-wrap {
   padding: 50px 30px;
 }
+.breadcrumbs__current,
+.breadcrumbs__link {
+  white-space: nowrap;
+}
+.breadcrumbs {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
 }
 @media screen and (max-width: 350px) {
   .logo {

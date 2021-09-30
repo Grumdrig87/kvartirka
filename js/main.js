@@ -236,18 +236,20 @@ $('[data-unselect]').click(function(e) {
   closeMenu ();
 
 // readmore
-
+if (jQuery('[data-revtxt]').length > 0){
   $("[data-revtxt]").shorten({
     "showChars" : 225,
     "moreText"  : "Подробнее",
     "lessText"  : "Скрыть",
   });
+};
+if (jQuery('[data-flatrev]').length > 0){
   $("[data-flatrev]").shorten({
     "showChars" : 230,
     "moreText"  : "Читать дальше",
     "lessText"  : "Скрыть",
   });
-
+}
 // tabs
     $('[data-tab]').on('click', function() {
       $(this).addClass('active').siblings().removeClass('active')
@@ -320,8 +322,17 @@ if ($(window).width() < 994) {
     $('[data-cattabs]').appendTo('[data-catalogwrap]');
     $('[data-catalogwrap]').after('<div class="container"><div class="filter-mob" data-filtermob><ul><li><a data-filters href="javascript:;">Фильтр (<span>3</span>)</a></li><li><a data-fancybox data-src="#price" href="javascript:;">Цена <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></a></li><li><a data-fancybox data-src="#rooms" href="javascript:;">Комнаты <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></a></li><li><a data-fancybox data-src="#guests" href="javascript:;">Гости <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></a></li></ul></div></div>')
     $('[data-filters]').click(function(){
-      $('[data-catleft]').toggleClass('open')
+      $('[data-catleft]').addClass('open');
+      $('body').addClass('open');
     });
+    $('[data-catleft]').children('*:first').before('<span class="filter__close" data-filterclose><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#3a3f44" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.667 10.667l10.667 10.667"/><path d="M21.334 10.667L10.667 21.333"/></svg></span>')
+    $('[data-guestdrop]').children().children().before('<div class="filter__item-title">Количество гостей:</div>');
+    $('[data-filterclose]').click(function(){
+      $('[data-catleft]').removeClass('open');
+      $('body').removeClass('open');
+    });
+    $('[data-filterbtns]').children().text('Очистить');
+    $('[data-filterbtns]').children().after('<button class="filter-go">Показать <span>375</span> вариантов</button>');
   }
 }
 if ($(window).width() < 769) {
