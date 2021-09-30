@@ -31,7 +31,7 @@
                         <a href="#" class="logo">
                             <img src="img/logo.png" alt="Logo">
                         </a>
-                        <div class="header__city">
+                        <div class="header__city" data-headcity>
                             <select name="city" data-hcity class="header__select-city">
                                 <option value="Минск">Минск</option>
                                 <option value="Могилев">Могилев</option>
@@ -43,13 +43,13 @@
                         </div>
                     </div>
                     <div class="header__right">
-                        <div class="header__lang">
+                        <div class="header__lang" data-headlang>
                             <select name="lang" data-lang class="header__select-lang">
                                 <option value="rus" selected>Русский</option>
                                 <option value="us">English</option>
                             </select>
                         </div>
-                        <div class="header__val">
+                        <div class="header__val" data-headval>
                             <select name="val" data-val class="header__select-val">
                                 <option value="BYN" selected>BYN</option>
                                 <option value="$">$</option>
@@ -68,7 +68,7 @@
                         <div class="header__login">
                             <svg class="burger-i"><use xlink:href="img/sprite.svg#burger"></use></svg>
                             <svg class="user-i"><use xlink:href="img/sprite.svg#user"></use></svg>
-                            <div class="header__login-menu">
+                            <div class="header__login-menu" data-headlog>
                                 <ul>
                                     <li>
                                         <a data-fancybox data-src="#login" href="javascript:;">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </header>
-        <section class="main main__inner">
+        <section class="main main__inner" data-catalogwrap>
             <div class="container">
                 <h1 class="title">
                     Минск
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                         <div class="main__guest-dropdown" data-guestdrop>
-                            <div class="main__guest-wrap">
+                            <div class="main__guest-wrap" id="guests">
                                 <div class="input__main-numb">
                                     <button type="button" class="quantity-arrow quantity-arrow-minus" data-arrowminus>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" fill="none"><path d="M1.334 1h9.333" stroke="#777d82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -194,7 +194,7 @@
                     </span>
                 </div>
                 <div class="catalog__wrap">
-                    <div class="catalog__left">
+                    <div class="catalog__left" data-catleft>
                         <div class="catalog__title">
                             Фильтры
                         </div>
@@ -215,7 +215,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter__item">
+                            <div class="filter__item" id="rooms">
                                 <div class="filter__item-title">
                                     Количество комнат:
                                 </div>
@@ -242,26 +242,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter__item">
-                                <div class="filter__item-title">
-                                    Цена:
-                                    <select name="time" data-time>
-                                        <option value="за сутки">за сутки</option>
-                                        <option value="за неделю">за неделю</option>
-                                        <option value="за месяц">за месяц</option>
-                                    </select>
-                                </div>
-                                <div class="filter__item-inputs">
-                                    <div class="filter__input-wrap">
-                                        <input type="number" name="min-price" placeholder="$ 10" class="filter__input">
+                            <div class="filter__price" id="price">
+                                <div class="filter__item"  id="price">
+                                    <div class="filter__item-title">
+                                        Цена:
+                                        <select name="time" data-time>
+                                            <option value="за сутки">за сутки</option>
+                                            <option value="за неделю">за неделю</option>
+                                            <option value="за месяц">за месяц</option>
+                                        </select>
                                     </div>
-                                    <div class="filter__input-wrap">
-                                        <input type="number" name="max-price" placeholder="$ 3110" class="filter__input">
+                                    <div class="filter__item-inputs">
+                                        <div class="filter__input-wrap">
+                                            <input type="number" name="min-price" placeholder="$ 10" class="filter__input">
+                                        </div>
+                                        <div class="filter__input-wrap">
+                                            <input type="number" name="max-price" placeholder="$ 3110" class="filter__input">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="filter__item">
-                                <div id="slider-range"></div>
+                                <div class="filter__item">
+                                    <div id="slider-range"></div>
+                                </div>
                             </div>
                             <div class="filter__item">
                                 <div class="filter__item-title">
@@ -732,13 +734,13 @@
                         </div>
                     </div>
                     <div class="catalog__right">
-                        <div class="catalog__tabs-top">
+                        <div class="catalog__tabs-top" data-cattabs>
                             <a href="catalog.html" class="catalog__tab active">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" fill="none"><g stroke-width="1.5" stroke-linejoin="round"><use xlink:href="#B" stroke="#777d82"/><use xlink:href="#B" stroke="#777d82"/><use xlink:href="#B" stroke="#777d82"/><use xlink:href="#C" stroke="#777d82"/><use xlink:href="#C" stroke="#777d82"/><use xlink:href="#C" stroke="#777d82"/><use xlink:href="#D" stroke="#777d82"/><use xlink:href="#D" stroke="#777d82"/><use xlink:href="#D" stroke="#777d82"/><use xlink:href="#E" stroke="#777d82"/><use xlink:href="#E" stroke="#777d82"/><use xlink:href="#E" stroke="#777d82"/></g><defs ><path id="B" d="M7.75 9.75H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2.75a2 2 0 0 1 2 2v2.75a2 2 0 0 1-2 2z"/><path id="C" d="M19 9.75h-2.75a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2H19a2 2 0 0 1 2 2v2.75a2 2 0 0 1-2 2z"/><path id="D" d="M7.75 21H5a2 2 0 0 1-2-2v-2.75a2 2 0 0 1 2-2h2.75a2 2 0 0 1 2 2V19a2 2 0 0 1-2 2z"/><path id="E" d="M19 21h-2.75a2 2 0 0 1-2-2v-2.75a2 2 0 0 1 2-2H19a2 2 0 0 1 2 2V19a2 2 0 0 1-2 2z"/></defs></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" fill="none"><g stroke-width="1.5" stroke-linejoin="round"><use xlink:href="#B" stroke="#777d82"/><use xlink:href="#B" stroke="#777d82"/><use xlink:href="#B" stroke="#777d82"/><use xlink:href="#C" stroke="#777d82"/><use xlink:href="#C" stroke="#777d82"/><use xlink:href="#C" stroke="#777d82"/><use xlink:href="#D" stroke="#777d82"/><use xlink:href="#D" stroke="#777d82"/><use xlink:href="#D" stroke="#777d82"/><use xlink:href="#E" stroke="#777d82"/><use xlink:href="#E" stroke="#777d82"/><use xlink:href="#E" stroke="#777d82"/></g><defs ><path id="B" d="M7.75 9.75H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2.75a2 2 0 0 1 2 2v2.75a2 2 0 0 1-2 2z"/><path id="C" d="M19 9.75h-2.75a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2H19a2 2 0 0 1 2 2v2.75a2 2 0 0 1-2 2z"/><path id="D" d="M7.75 21H5a2 2 0 0 1-2-2v-2.75a2 2 0 0 1 2-2h2.75a2 2 0 0 1 2 2V19a2 2 0 0 1-2 2z"/><path id="E" d="M19 21h-2.75a2 2 0 0 1-2-2v-2.75a2 2 0 0 1 2-2H19a2 2 0 0 1 2 2V19a2 2 0 0 1-2 2z"/></defs></svg>
                                 Список
                             </a>
                             <a href="map.html" class="catalog__tab">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#777d82" stroke-width="1.5" stroke-linejoin="round"><path d="M8.368 4.211l-4 1.333A2 2 0 0 0 3 7.442v10.94a1 1 0 0 0 1.447.894l3.658-1.829c.563-.282 1.226-.282 1.789 0l4.211 2.106c.563.282 1.226.282 1.789 0l4-2A2 2 0 0 0 21 15.764V5.387a1 1 0 0 0-1.316-.949l-4.051 1.35a2 2 0 0 1-1.265 0L9.632 4.211c-.41-.137-.854-.137-1.264 0h0z"/><path d="M15 9.53v5.94M9 7.53v5.94" stroke-linecap="round"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#777d82" stroke-width="1.5" stroke-linejoin="round"><path d="M8.368 4.211l-4 1.333A2 2 0 0 0 3 7.442v10.94a1 1 0 0 0 1.447.894l3.658-1.829c.563-.282 1.226-.282 1.789 0l4.211 2.106c.563.282 1.226.282 1.789 0l4-2A2 2 0 0 0 21 15.764V5.387a1 1 0 0 0-1.316-.949l-4.051 1.35a2 2 0 0 1-1.265 0L9.632 4.211c-.41-.137-.854-.137-1.264 0h0z"/><path d="M15 9.53v5.94M9 7.53v5.94" stroke-linecap="round"/></svg>
                                 Карта
                             </a>
                         </div>
@@ -3343,7 +3345,7 @@
             <a href="#" class="filter__where-btn">
                 Выбрать
             </a>
-            <a href="javascript:;" class="filter__where-btn filter__where-btnsec">
+            <a href="javascript:;" data-unselect class="filter__where-btn filter__where-btnsec">
                 Очистить выбор
             </a>
         </div>

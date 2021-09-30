@@ -37,8 +37,10 @@ if (jQuery('[data-addnew]').length > 0) {
     $('body,html').animate({scrollTop: top}, 1500);
   });
 }
-//adaptive
-
+//unselect
+$('[data-unselect]').click(function(e) {    
+  $('.filter__where-wrap input[type=checkbox]').prop('checked', false);
+});
   
 //slider
   if (jQuery('[data-reviews]').length > 0) {
@@ -309,11 +311,18 @@ $('[data-showbtn]').on('click', function() {
   });
 // adaptive
 if ($(window).width() < 994) {
-  $('.header__login-menu ul li:first').after('<li><div class="btns__mob"><div class="mob__item"><span>Язык</span><div data-moblang></div></div><div class="mob__item"><span>Валюта</span><div data-mobval></div></div></div></li>');
-  $('.header__lang').appendTo('[data-moblang]');
-  $('.header__val').appendTo('[data-mobval]');
-  $('.header__login-menu ul li:last a').before('<ul class="sub-menu"><li><a href="#">Связаться с нами</a></li><li><a href="#">Сдать свое жилье</a></li></ul>');
-
+  $('[data-headlog] ul li:first').after('<li><div class="btns__mob"><div class="mob__item"><span>Язык</span><div data-moblang></div></div><div class="mob__item"><span>Валюта</span><div data-mobval></div></div></div></li>');
+  $('[data-headlang]').appendTo('[data-moblang]');
+  $('[data-headval]').appendTo('[data-mobval]');
+  $('[data-headlog] ul li:last a').before('<ul class="sub-menu"><li><a href="#">Связаться с нами</a></li><li><a href="#">Сдать свое жилье</a></li></ul>');
+  if (jQuery('[data-catalogwrap]').length > 0){
+    $('[data-headcity]').appendTo('[data-catalogwrap]');
+    $('[data-cattabs]').appendTo('[data-catalogwrap]');
+    $('[data-catalogwrap]').after('<div class="container"><div class="filter-mob" data-filtermob><ul><li><a data-filters href="javascript:;">Фильтр (<span>3</span>)</a></li><li><a data-fancybox data-src="#price" href="javascript:;">Цена <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></a></li><li><a data-fancybox data-src="#rooms" href="javascript:;">Комнаты <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></a></li><li><a data-fancybox data-src="#guests" href="javascript:;">Гости <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></a></li></ul></div></div>')
+    $('[data-filters]').click(function(){
+      $('[data-catleft]').toggleClass('open')
+    });
+  }
 }
 if ($(window).width() < 769) {
   $('.footer__title').click(function(){

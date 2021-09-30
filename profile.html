@@ -31,7 +31,7 @@
                         <a href="#" class="logo">
                             <img src="img/logo.png" alt="Logo">
                         </a>
-                        <div class="header__city">
+                        <div class="header__city" data-headcity>
                             <select name="city" data-hcity class="header__select-city">
                                 <option value="Минск">Минск</option>
                                 <option value="Могилев">Могилев</option>
@@ -43,13 +43,13 @@
                         </div>
                     </div>
                     <div class="header__right">
-                        <div class="header__lang">
+                        <div class="header__lang" data-headlang>
                             <select name="lang" data-lang class="header__select-lang">
                                 <option value="rus" selected>Русский</option>
                                 <option value="us">English</option>
                             </select>
                         </div>
-                        <div class="header__val">
+                        <div class="header__val" data-headval>
                             <select name="val" data-val class="header__select-val">
                                 <option value="BYN" selected>BYN</option>
                                 <option value="$">$</option>
@@ -68,7 +68,7 @@
                         <div class="header__login">
                             <svg class="burger-i"><use xlink:href="img/sprite.svg#burger"></use></svg>
                             <svg class="user-i"><use xlink:href="img/sprite.svg#user"></use></svg>
-                            <div class="header__login-menu">
+                            <div class="header__login-menu" data-headlog>
                                 <ul>
                                     <li>
                                         <a data-fancybox data-src="#login" href="javascript:;">
