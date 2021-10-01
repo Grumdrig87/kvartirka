@@ -1597,6 +1597,9 @@
     .catalog__right {
         margin-left: 0;
     }
+    .select2-container--open .select2-dropdown--below {
+        width: 130px !important;
+    }
 }
 
 /* 577-768px */
@@ -1715,20 +1718,13 @@
         font-size: 14px;
         line-height: 20px;
     }
-    .select2-container--open .select2-dropdown--below {
-        width: 130px !important;
-    }
+    
 }
 @media screen and (max-width: 374px) {
     .filter-mob ul li:not(:last-child) {
         margin-right: 5px;
     }
-    .page-arrow.next {
-        margin-left: 0px;
-    }
-    .page-arrow.prev {
-        margin-right: 10px;
-    }
+    
     .catalog__left {
         width: 100%;
     }

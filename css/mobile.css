@@ -265,12 +265,20 @@
           flex-wrap: wrap;
 }
 }
+@media screen and (max-width: 380px) {
+  .footer__menu-item {
+    width: 100% !important;
+  }
+  .page-arrow.next {
+    margin-left: 0px;
+  }
+  .page-arrow.prev {
+      margin-right: 10px;
+  }
+}
 @media screen and (max-width: 350px) {
   .logo {
     width: 138px;
-  }
-  .footer__menu-item {
-    width: 100% !important;
   }
   .title-l {
 		font-size: 20px;

@@ -334,6 +334,16 @@ if ($(window).width() < 994) {
     $('[data-filterbtns]').children().text('Очистить');
     $('[data-filterbtns]').children().after('<button class="filter-go">Показать <span>375</span> вариантов</button>');
   }
+  if (jQuery('[data-popular]').length > 0) {
+    $('[data-popular]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+        infinite: true,
+        arrows: false,
+    });
+  }
 }
 if ($(window).width() < 769) {
   $('.footer__title').click(function(){

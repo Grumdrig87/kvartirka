@@ -277,7 +277,7 @@ input {
     font-size: 14px;
     line-height: 20px;
     color: #777D82;
-    padding:20px 0;
+    padding:14px 0;
     position: relative;
     z-index: 2;
     display: -webkit-box;
@@ -1836,8 +1836,8 @@ input::-webkit-inner-spin-button {
 	transition: all 0.3s ease;
 }
 .popular__number {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+    line-height: 21px;
 	color: #5E6165;
 }
 .review__left {

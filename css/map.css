@@ -109,3 +109,14 @@
     line-height: 20px;
     color: #777D82;
 }
+@media screen and (max-width: 993px) {
+    .filter-mob {
+        display: none;
+    }
+    .catalog__map {
+        padding-top: 0;
+    }
+    .main__inner {
+        margin-bottom: 0;
+    }
+}
