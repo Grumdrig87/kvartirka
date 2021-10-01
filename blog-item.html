@@ -193,31 +193,12 @@
                             <span>
                                 Оценить
                             </span>
-                            <div class="stars">
-                                <div class="rating__star">
-                                    <span>
-                                        <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
-                                    </span>
-                                </div>
-                                <div class="rating__star">
-                                    <span>
-                                        <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
-                                    </span>
-                                </div>
-                                <div class="rating__star">
-                                    <span>
-                                        <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
-                                    </span>
-                                </div>
-                                <div class="rating__star">
-                                    <span style="width: 0;">
-                                        <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
-                                    </span>
-                                </div>
-                                <div class="rating__star">
-                                    <span style="width: 0;">
-                                        <svg class="star-i"><use xlink:href="img/sprite.svg#star"></use></svg>
-                                    </span>
+                            <input type="hidden" name="feedback-raiting" value="0.6" class="wpcf7-form-control wpcf7-hidden" id="feedback_raiting">
+                            <div id="rating">
+                                <div>
+                                    <div class="rate__stars"></div>
+                                    <p class="progress" id="p1" style="width: 12.4062px;"></p>
+                                    <span></span>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +220,7 @@
                 <h2 class="title-m">
                     Последние новости
                 </h2>
-                <div class="blog__news-wrap">
+                <div class="blog__news-wrap" data-blognews>
                     <div class="blog__news-cardwrap">
                         <div class="blog__news-card">
                             <span class="blog__news-img">

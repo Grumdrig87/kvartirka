@@ -300,7 +300,26 @@ $('[data-showbtn]').on('click', function() {
       console.log(showHeighthelp)
     } 
   })
-
+//rating
+function move(e, obj) {
+  var summ = 0;
+  var id = obj.next().attr('id').substr(1);
+  var progress = e.pageX - obj.offset().left;
+  var rating = progress * 5 / jQuery('.rate__stars').width();
+  jQuery('#feedback_raiting').attr('value', rating.toFixed(1));
+  obj.next().width(progress);
+  jQuery('.rating').each(function() {
+      summ += parseFloat(jQuery(this).text());
+  });
+  summ = summ / jQuery('.rating').length;
+}
+jQuery('#rating .rate__stars').click(function(e) {
+  jQuery(this).toggleClass('fixed');
+  move(e, jQuery(this));
+});
+jQuery('#rating .rate__stars').on('mousemove', function(e) {
+  if (jQuery(this).hasClass('fixed') == false) move(e, jQuery(this));
+});
 //foto load
     $("#proffoto").change(function () {
       if (this.files && this.files[0]) {
@@ -336,6 +355,16 @@ if ($(window).width() < 994) {
   }
   if (jQuery('[data-popular]').length > 0) {
     $('[data-popular]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+        infinite: true,
+        arrows: false,
+    });
+  }
+  if (jQuery('[data-blognews]').length > 0) {
+    $('[data-blognews]').slick({
         dots: false,
         speed: 300,
         slidesToShow: 1,
