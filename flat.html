@@ -349,6 +349,10 @@
                                     Заезд: После 15:00
                                 </li>
                                 <li class="flat__rules-item">
+                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#p_n"></use></svg>
+                                    Нельзя с питомцами
+                                </li>
+                                <li class="flat__rules-item">
                                     <svg class="rules-i"><use xlink:href="img/sprite.svg#clock"></use></svg>
                                     Отъезд: 12:00
                                 </li>
@@ -356,15 +360,12 @@
                                     <svg class="rules-i"><use xlink:href="img/sprite.svg#k_z"></use></svg>
                                     Курение запрещено
                                 </li>
-                                <li class="flat__rules-item">
-                                    <svg class="rules-i"><use xlink:href="img/sprite.svg#p_n"></use></svg>
-                                    Нельзя с питомцами
-                                </li>
+
                                 <li class="flat__rules-item">
                                     <svg class="rules-i"><use xlink:href="img/sprite.svg#v_b"></use></svg>
                                     Без вечеринок и мероприятий
                                 </li>
-                                <li class="flat__rules-item">
+                                <!-- <li class="flat__rules-item">
                                     <svg class="rules-i"><use xlink:href="img/sprite.svg#letter"></use></svg>
                                     Наличие страхового депозита <br>(возвращается при отъезде)
                                 </li>
@@ -375,7 +376,7 @@
                                 <li class="flat__rules-item">
                                     <svg class="rules-i"><use xlink:href="img/sprite.svg#calendar"></use></svg>
                                     Минимальный срок аренды: 1 сутки
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         <div class="flat__near flat__sect" id="near">
@@ -486,50 +487,6 @@
                                 <div class="flat__review-itemwrap">
                                     <div class="flat__review-item">
                                         <p data-flatrev>
-                                            Чудесная квартира! Всё понравилось. Особенно удивил вход в квартиру по паролю :)
-                                        </p>
-                                        <div class="review__bottom">
-                                            <div class="review__left">
-                                                <div class="review__img">
-                                                    <img src="img/demo/rev2.png" alt="">
-                                                </div>
-                                                <div class="review__about">
-                                                    <div class="review__name">
-                                                        Анна
-                                                    </div>
-                                                    <div class="review__date">
-                                                        март 2021 г.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flat__review-itemwrap">
-                                    <div class="flat__review-item">
-                                        <p data-flatrev>
-                                            Очень красивая и просторная квартира с прекрасным ремонтом превзошла наши ожидания. Удобное расположение, в пешей доступности метро, магазины и парк. Ольга отвечала на сообщения почти мгновенно.
-                                        </p>
-                                        <div class="review__bottom">
-                                            <div class="review__left">
-                                                <div class="review__img">
-                                                    <img src="img/demo/rev3.png" alt="">
-                                                </div>
-                                                <div class="review__about">
-                                                    <div class="review__name">
-                                                        Антон
-                                                    </div>
-                                                    <div class="review__date">
-                                                        март 2021 г.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flat__review-itemwrap">
-                                    <div class="flat__review-item">
-                                        <p data-flatrev>
                                             highly recommended! Максимально открытые хозяева, всегда на связи, гостеприимство на высшем уровне. Отличное месторасположение. 
                                         </p>
                                         <div class="review__bottom">
@@ -613,15 +570,27 @@
                                     На карте
                                 </a>
                             </div>
-                            <div class="catalog__card-marsh">
-                                <svg width='21' height='12'><use xlink:href="img/sprite.svg#redline"></use></svg>
-                                <span class="catalog__card-metro">
-                                    Немига
-                                </span>
-                                <span class="catalog__card-time">
-                                    <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
-                                    <span>7</span> мин.
-                                </span>
+                            <div class="catalog__card-marshwrap">
+                                <div class="catalog__card-marsh">
+                                    <svg width='21' height='12'><use xlink:href="img/sprite.svg#redline"></use></svg>
+                                    <span class="catalog__card-metro">
+                                        Немига
+                                    </span>
+                                    <span class="catalog__card-time">
+                                        <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                        <span>7</span> мин.
+                                    </span>
+                                </div>
+                                <div class="catalog__card-marsh">
+                                    <svg width='21' height='12'><use xlink:href="img/sprite.svg#redline"></use></svg>
+                                    <span class="catalog__card-metro">
+                                        Пушкинская
+                                    </span>
+                                    <span class="catalog__card-time">
+                                        <svg class="man"><use xlink:href="img/sprite.svg#man"></use></svg>
+                                        <span>10</span> мин.
+                                    </span>
+                                </div>
                             </div>
                             <div class="flat__right-bg">
                                 <div class="flat__price">
@@ -672,28 +641,22 @@
                             </span>
                             <div class="catalog__card-bottom">
                                 <div class="catalog__card-contacts">
+                                    <svg class="wh24"><use xlink:href="img/sprite.svg#wphone"></use></svg>
                                     <a href="tel:+375296685110" class="catalog__card-phone">
                                         +375 29 668-51-10
                                     </a>
-                                    <div class="catalog__card-socwrap">
-                                        <a href="#" class="catalog__card-socitem">
-                                            <svg class="catalog-tg"><use xlink:href="img/sprite.svg#tg"></use></svg>
-                                        </a>
-                                        <a href="#" class="catalog__card-socitem">
-                                            <svg class="catalog-vb"><use xlink:href="img/sprite.svg#vb"></use></svg>
-                                        </a>
-                                        <a href="#" class="catalog__card-socitem">
-                                            <svg class="catalog-wa"><use xlink:href="img/sprite.svg#wa"></use></svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="catalog__card-hide" data-hide>
-                                    Показать контакты
+                                    <button class="catalog__card-more" data-catmore>
+                                        Показать
+                                    </button>
                                 </div>
                             </div>
                             <span class="flat__right-about">
                                 Позвоните владельцу, чтобы уточнить все детали аренды
                             </span>
+                            <a href="javascript:;" class="catalog__book">
+                                <svg width='18' height='17'><use xlink:href="img/sprite.svg#convers"></use></svg>
+                                Сделать заявку
+                            </a>
                         </div>
                     </div>
                 </div>

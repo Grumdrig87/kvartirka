@@ -15,11 +15,14 @@ jQuery(document).ready(function($) {
     $("[data-udobwrap] .flat__udob-itemwrap").show();
     $(this).hide();
   });
-  $("[data-revwrap] .flat__review-itemwrap:lt(4)").show();
+  $("[data-revwrap] .flat__review-itemwrap:lt(2)").show();
   $('[data-revall]').click(function(){
     $("[data-revwrap] .flat__review-itemwrap").show();
     $(this).hide();
   });
+  $('[data-catmore]').click(function(){
+    $(this).parent().addClass('show');
+  })
 // slide to id
 if (jQuery('[data-flatnav]').length > 0) {
   $('[data-flatnav]').on("click","a", function (event) {

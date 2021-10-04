@@ -1,5 +1,5 @@
 .flat {
-    padding-bottom: 40px;
+    padding: 8px 0 40px;
 }
 .flat__top {
     display: -webkit-box;
@@ -305,6 +305,8 @@
     height: 110px;  
 }
 .flat__more {
+    font-family: Cera Pro;
+    margin-top: 5px;
     font-size: 16px;
     line-height: 22px;
     cursor: pointer;
@@ -399,17 +401,9 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    max-height: 296px;
     margin-bottom: -22px;
 }
 .flat__rules-item {
@@ -418,8 +412,11 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 22px;
     line-height: 22px;
+    width: 50%;
+}
+.flat__rules-item:not(:last-child) {
+    margin-bottom: 22px;
 }
 .flat__rules-item svg {
     margin-right: 15px;
@@ -583,15 +580,28 @@
 .flat__right-card .catalog__card-link {
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     display: block;
 }
-
+.catalog__card-phone {
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    margin-right: 0;
+}
+.catalog__card-contacts svg {
+    margin-right: 15px;
+}
 .flat__right-card .catalog__card-mid {
     margin-bottom: 5px;
 }
-.flat__right-card .catalog__card-marsh {
+.flat__right-card .catalog__card-marshwrap {
     margin-bottom: 15px;
+}
+.flat__right-card .catalog__card-marsh:not(:last-child) {
+    margin-bottom: 5px;
 }
 .flat__right-bg {
     padding: 10px 20px;
@@ -734,5 +744,70 @@
             border-radius: 8px;
 }
 .flat__right-card .catalog__card-contacts {
+    padding: 13px 120px 13px 20px;
+    position: relative;
+}
+.catalog__card-more {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-family: Cera Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding: 14px 20px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+.flat__right-card .catalog__card-contacts.show {
     padding: 13px 20px;
+}
+.flat__right-card .catalog__card-contacts.show .catalog__card-phone {
+    max-width: unset;
+}
+.flat__right-card .catalog__card-contacts.show .catalog__card-more {
+    display: none;
+}
+.catalog__book {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #FFFFFF;
+    padding: 14px 10px;
+    color: #0752E4;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+    border: 1px solid #D8DEE0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+.catalog__book svg {
+    margin-right: 13px;
+}
+.catalog__book:hover {
+    text-decoration: none;
+    opacity: 0.8;
 }
