@@ -1,0 +1,15 @@
+.rules {
+    padding: 5px 0 60px;
+}
+
+/* 351-576px */
+@media screen and (max-width: 576px) {
+    .rules {
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 374px) {
+    .rules {
+        padding-top: 5px;
+    }
+}

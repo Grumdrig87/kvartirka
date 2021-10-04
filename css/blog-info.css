@@ -94,52 +94,6 @@
 .blog__art-link:hover {
     opacity: 0.8;
 }
-.blog__art-txt {
-    margin-bottom: 20px;
-}
-.blog__art-txt p {
-    line-height: 22px;
-}
-.blog__art-txt p:not(:last-child) {
-    margin-bottom: 30px;
-}
-.blog__art-txt blockquote {
-    padding-left: 34px;
-    margin: 30px 0;
-    position: relative;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 26px;
-    width: 80%;
-}
-.blog__art-txt blockquote::before {
-    content: '';
-    display: block;
-    width: 4px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: -webkit-gradient(linear, left bottom, left top, from(#0A71EB), to(#0A71EB)), -webkit-gradient(linear, left bottom, left top, from(#225FFB), to(#225FFB)), #0752E4;
-    background: -webkit-linear-gradient(bottom, #0A71EB, #0A71EB), -webkit-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
-    background: -moz-linear-gradient(bottom, #0A71EB, #0A71EB), -moz-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
-    background: -o-linear-gradient(bottom, #0A71EB, #0A71EB), -o-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
-    background: linear-gradient(0deg, #0A71EB, #0A71EB), linear-gradient(0deg, #225FFB, #225FFB), #0752E4;
-}
-.blog__art-img {
-    -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-            border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 30px;
-}
-.blog__art-img img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
 
 .blog__art-rate {
     display: -webkit-box;
@@ -473,20 +427,6 @@
     }
     .blog__art-links {
         margin-top: 20px;
-    }
-    .blog__art-txt p:not(:last-child) {
-        margin-bottom: 20px;
-    }
-    .blog__art-txt blockquote {
-        padding-left: 24px;
-        margin: 20px 0;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
     }
     .blog__art-img {
         height: 280px;

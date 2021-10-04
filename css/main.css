@@ -2130,3 +2130,75 @@ input::-webkit-inner-spin-button {
 	background: -o-linear-gradient(246.8deg, #37AEE2 21.67%, #1E96C8 70%);
 	background: linear-gradient(203.2deg, #37AEE2 21.67%, #1E96C8 70%);
 }
+.article-txt {
+    margin-bottom: 20px;
+}
+.article-txt h1 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	letter-spacing: -0.02em;
+}
+.article-txt h2 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 30px 0 20px;
+}
+.article-txt ol,
+.article-txt ul {
+	padding: 0;
+	margin: 20px 0 30px;
+}
+.article-txt ol li,
+.article-txt ul li {
+	line-height: 22px;
+}
+.article-txt ol li:not(:last-child),
+.article-txt ul li:not(:last-child) {
+	margin-bottom: 20px;
+}
+.article-txt p {
+    line-height: 22px;
+}
+.article-txt p:not(:last-child) {
+    margin-bottom: 24px;
+}
+.article-txt blockquote {
+    padding-left: 34px;
+    margin: 30px 0;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    width: 80%;
+}
+.article-txt blockquote::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#0A71EB), to(#0A71EB)), -webkit-gradient(linear, left bottom, left top, from(#225FFB), to(#225FFB)), #0752E4;
+    background: -webkit-linear-gradient(bottom, #0A71EB, #0A71EB), -webkit-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: -moz-linear-gradient(bottom, #0A71EB, #0A71EB), -moz-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: -o-linear-gradient(bottom, #0A71EB, #0A71EB), -o-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: linear-gradient(0deg, #0A71EB, #0A71EB), linear-gradient(0deg, #225FFB, #225FFB), #0752E4;
+}
+.blog__art-img {
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.blog__art-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+}

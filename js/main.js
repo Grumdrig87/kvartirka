@@ -41,7 +41,12 @@ if (jQuery('[data-addnew]').length > 0) {
 $('[data-unselect]').click(function(e) {    
   $('.filter__where-wrap input[type=checkbox]').prop('checked', false);
 });
-  
+  // faq
+  $('[data-faq]').click(function(){
+    $(this).toggleClass('open');
+    $(this).find('p').slideToggle(300);
+  })
+
 //slider
   if (jQuery('[data-reviews]').length > 0) {
       $('[data-reviews]').slick({

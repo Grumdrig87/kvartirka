@@ -264,6 +264,20 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
+.article-txt p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.article-txt blockquote {
+  padding-left: 24px;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 }
 @media screen and (max-width: 380px) {
   .footer__menu-item {
@@ -284,4 +298,11 @@
 		font-size: 20px;
 		line-height: 28px;
 	}
+  .article-txt h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .article-txt h2 {
+    margin-bottom: 10px;
+  }
 }
