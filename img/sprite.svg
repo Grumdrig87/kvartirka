@@ -218,4 +218,21 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15H16C17.657 15 19 13.657 19 12V4C19 2.343 17.657 1 16 1H4C2.343 1 1 2.343 1 4V12C1 13.657 2.343 15 4 15H5.5V18L10 15Z" stroke="#225FFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M10 15H16C17.657 15 19 13.657 19 12V4C19 2.343 17.657 1 16 1H4C2.343 1 1 2.343 1 4V12C1 13.657 2.343 15 4 15H5.5V18L10 15Z" stroke="#0A71EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="credit">
+    <path d="M3 9H21" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M9.57 13H7" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 19H6C4.343 19 3 17.657 3 16V8C3 6.343 4.343 5 6 5H18C19.657 5 21 6.343 21 8V16C21 17.657 19.657 19 18 19Z" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="nal">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.5H18C16.895 15.5 16 14.605 16 13.5V13.5C16 12.395 16.895 11.5 18 11.5H20C20.552 11.5 21 11.948 21 12.5V14.5C21 15.052 20.552 15.5 20 15.5Z" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20 11.5V8.5C20 7.395 19.105 6.5 18 6.5H4.5C3.672 6.5 3 5.828 3 5V5C3 4.172 3.672 3.5 4.5 3.5H17" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20 15.5V18.5C20 19.605 19.105 20.5 18 20.5H5C3.895 20.5 3 19.605 3 18.5V5" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bill">
+    <path d="M17 20H7V7H17V20" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M10 10H14" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M14 13H10" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M10 16H13" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M17 11H19C20.105 11 21 10.105 21 9V5C21 3.895 20.105 3 19 3H5C3.895 3 3 3.895 3 5V9C3 10.105 3.895 11 5 11H7" stroke="#777D82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>

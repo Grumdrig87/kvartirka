@@ -10,7 +10,6 @@ jQuery(document).ready(function($) {
     $(this).parent().find('p').removeClass('small');
     $(this).css({'display':'none'})
   })
-  $("[data-udobwrap] .flat__udob-itemwrap:lt(8)").show();
   $('[data-flatall]').click(function(){
     $("[data-udobwrap] .flat__udob-itemwrap").show();
     $(this).hide();
@@ -399,7 +398,21 @@ if ($(window).width() < 769) {
         arrows: false,
     });
 }
+$('[data-flatall]').after('<button class="flat__udob-all" data-flatall>Показать все <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></button>')
+$('[data-flatall]').click(function(){
+  $("[data-udobwrap]").addClass('show');
+  $(this).hide();
+});
 }
+//datepicker
+$("[data-bookin]").datepicker({
+  altField: "#actualDate",
+  firstDay: 1,
+  dateFormat: "dd.mm.yy",
+  dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+  monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+  gotoCurrent: true,
+});
   //dropzone foto
   if (jQuery('[data-dropzone]').length > 0) {
   var dropZone = $('[data-dropzone]'),
