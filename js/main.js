@@ -22,6 +22,11 @@ jQuery(document).ready(function($) {
   $('[data-catmore]').click(function(){
     $(this).parent().addClass('show');
   })
+  $('[data-sendlink]').click(function(){
+    var link = $(this).parent().find('input').val();
+    navigator.clipboard.writeText(link)
+  })
+  
 // slide to id
 if (jQuery('[data-flatnav]').length > 0) {
   $('[data-flatnav]').on("click","a", function (event) {
