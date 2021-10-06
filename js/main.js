@@ -398,6 +398,21 @@ if ($(window).width() < 994) {
         arrows: false,
     });
   }
+  if (jQuery('[data-moreflats]').length > 0) {
+    $('[data-moreflats]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+        infinite: true,
+        arrows: false,
+    });
+    
+  }
+  if (jQuery('[data-flatimg]').length > 0) {
+    $('[data-flatimg]').after('<div class="flat__card-mobile" data-flatcardmob></div>');
+    $('[data-flatcardr]').appendTo('[data-flatcardmob]');
+  }
 }
 if ($(window).width() < 769) {
   $('.footer__title').click(function(){
@@ -415,6 +430,16 @@ if ($(window).width() < 769) {
         infinite: false,
         arrows: false,
     });
+    
+}
+if (jQuery('[data-flatimg]').length > 0) {
+  $('[data-flatimg]').slick({
+      dots: false,
+      speed: 300,
+      slidesToShow: 1,
+      infinite: true,
+      arrows: false,
+  });
 }
 $('[data-flatall]').after('<button class="flat__udob-all" data-flatall>Показать все <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" fill="none"><path d="M3.759 4.448a1 1 0 0 1-1.519 0L.415 2.318A1 1 0 0 1 1.174.667h3.652a1 1 0 0 1 .759 1.651l-1.826 2.13z" fill="#777d82"/></svg></button>')
 $('[data-flatall]').click(function(){
