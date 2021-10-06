@@ -15,10 +15,6 @@ jQuery(document).ready(function($) {
     $(this).hide();
   });
   $("[data-revwrap] .flat__review-itemwrap:lt(2)").show();
-  $('[data-revall]').click(function(){
-    $("[data-revwrap] .flat__review-itemwrap").show();
-    $(this).hide();
-  });
   $('[data-catmore]').click(function(){
     $(this).parent().addClass('show');
   })
@@ -77,6 +73,23 @@ $('[data-unselect]').click(function(e) {
           }, ]
       });
   }
+  $("[data-src='#product-modal']").click(function() {
+    setTimeout(() => $('.product__view__slider').slick('setPosition'), 100);
+})
+$('[data-src="#allreview"]').click(function(){
+    function revslick (){
+      $('[data-allrevslider]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        infinite: true,
+        arrows: false,
+        rows: 2,
+    })
+    }
+    setTimeout(revslick , 100);
+  });
+
     if (jQuery('[data-catslider]').length > 0) {
       $('[data-catslider]').slick({
           dots: true,

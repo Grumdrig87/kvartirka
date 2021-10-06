@@ -1077,6 +1077,7 @@
 .sendlink {
     padding: 20px !important;
     width: 400px;
+    display: none;
     -webkit-border-radius: 10px;
        -moz-border-radius: 10px;
             border-radius: 10px;
@@ -1128,4 +1129,25 @@
 .sendlink-btn:hover {
     text-decoration: none;
     opacity: 0.8;
+}
+.allreview {
+    width: 600px;
+}
+.allreview__top {
+    padding: 20px 40px;
+    border-bottom: 1px solid #D8DEE0;
+}
+.allreview__top .flat__review-rate {
+    font-size: 30px;
+    line-height: 40px;
+}
+.allreview__slider {
+    padding: 30px 40px;
+}
+.allreview__answer {
+    margin-top: 35px;
+    padding-left: 30px;
+}
+.allreview .slick-slide>div:nth-child(1) {
+    margin-bottom: 40px;
 }
