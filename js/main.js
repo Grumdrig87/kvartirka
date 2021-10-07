@@ -139,6 +139,11 @@ $('[data-getrevall').click(function(){
       width: '250px'
     });
   }
+  if (jQuery('[data-flatsspec]').length > 0) {
+    jQuery('[data-flatsspec]').select2({
+      width: '180px'
+    });
+  }
   if (jQuery('[data-statssel]').length > 0) {
     jQuery('[data-statssel]').select2({
       width: '100%'
