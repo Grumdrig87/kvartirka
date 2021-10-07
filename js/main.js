@@ -1,5 +1,16 @@
 jQuery(document).ready(function($) {
-
+  $('[data-getrevall]').fancybox({
+    fitToView : false,
+    height: 1000
+  })
+  $('[data-zayavkaopen]').fancybox({
+    fitToView : false,
+    height: 1000
+  })
+  $('[data-getrev]').fancybox({
+    fitToView : false,
+    height: 1000
+  })
   $('[data-cardlike]').click(function(){
     $(this).toggleClass('active');
   })
@@ -76,7 +87,7 @@ $('[data-unselect]').click(function(e) {
   $("[data-src='#product-modal']").click(function() {
     setTimeout(() => $('.product__view__slider').slick('setPosition'), 100);
 })
-$('[data-src="#allreview"]').click(function(){
+$('[data-getrevall').click(function(){
     function revslick (){
       $('[data-allrevslider]').slick({
         dots: false,
@@ -446,6 +457,14 @@ $('[data-flatall]').click(function(){
   $("[data-udobwrap]").addClass('show');
   $(this).hide();
 });
+
+}
+if ($(window).width() < 577) {
+  $('[data-udobstva]').after('<button class="flat__more" data-udobshow>Показать все <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.444 1L5 4.556 8.555 1" stroke="#0752e4"/><path d="M1.444 1L5 4.556 8.555 1" stroke="#225ffb"/><path d="M1.444 1L5 4.556 8.555 1" stroke="#0a71eb"/></svg></button>')
+  $('[data-udobshow]').click(function(){
+    $("[data-udobstva]").addClass('show');
+    $(this).hide();
+  });
 }
 //datepicker
 $("[data-bookin]").datepicker({
