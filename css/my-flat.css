@@ -826,6 +826,9 @@
     .payment__item label {
         padding: 20px 72px 28px;
     }
+    .flat__item-active .flat__item-check {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 768px) {
     .flats__payment {
@@ -911,6 +914,13 @@
     }
     .payment__item label {
         padding: 20px 67px 28px;
+    }
+    .flats__warning p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .flats__warning {
+        padding: 20px 30px 20px 74px;
     }
 }
 @media screen and (max-width: 374px) {
