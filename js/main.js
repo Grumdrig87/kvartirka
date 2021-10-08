@@ -1,16 +1,13 @@
 jQuery(document).ready(function($) {
-  $('[data-getrevall]').fancybox({
-    fitToView : false,
-    height: 1000
-  })
-  $('[data-zayavkaopen]').fancybox({
-    fitToView : false,
-    height: 1000
-  })
-  $('[data-getrev]').fancybox({
-    fitToView : false,
-    height: 1000
-  })
+  function fancy(name){
+    $(name).fancybox({
+      fitToView : false,
+      height: 1000
+    })
+  };
+  fancy('[data-getrevall]');
+  fancy('[data-zayavkaopen]');
+  fancy('[data-getrev]');
   $('[data-cardlike]').click(function(){
     $(this).toggleClass('active');
   })
@@ -107,84 +104,31 @@ $('[data-getrevall').click(function(){
           speed: 300,
           slidesToShow: 1,
           infinite: false,
-          // responsive: [{
-          //     breakpoint: 994,
-          //     settings: {
-          //       centerMode: false,
-          //       arrows: true,
-          //       prevArrow: '[data-uniqprev]',
-          //       nextArrow: '[data-uniqnext]',
-          //     }
-          // }, ]
       });
   }
 // select
-  if (jQuery('[data-hcity]').length > 0) {
-    jQuery('[data-hcity]').select2({
-      width: 'auto'
+function select (data,set,drop,dropclass,template) {
+  if (jQuery(data).length > 0) {
+    jQuery(data).select2({
+      width: set,
+      dropdownAutoWidth: drop,
+      dropdownCssClass: dropclass,
+      templateSelection: template
     });
   }
-  if (jQuery('[data-paycount]').length > 0) {
-    jQuery('[data-paycount]').select2({
-      width: '100%'
-    });
-  }
-  if (jQuery('[data-paysrok]').length > 0) {
-    jQuery('[data-paysrok]').select2({
-      width: '100%'
-    });
-  }
-  if (jQuery('[data-flats]').length > 0) {
-    jQuery('[data-flats]').select2({
-      width: '250px'
-    });
-  }
-  if (jQuery('[data-flatsspec]').length > 0) {
-    jQuery('[data-flatsspec]').select2({
-      width: '180px'
-    });
-  }
-  if (jQuery('[data-statssel]').length > 0) {
-    jQuery('[data-statssel]').select2({
-      width: '100%'
-    });
-  }
-  if (jQuery('[data-addnewsel]').length > 0) {
-    jQuery('[data-addnewsel]').select2({
-      width: '100%'
-    });
-  }
-  if (jQuery('[data-time]').length > 0) {
-    jQuery('[data-time]').select2({
-      width: 'auto',
-      dropdownCssClass: "time-container",
-      dropdownAutoWidth: true
-    });
-  }
-  
-  if (jQuery('[data-val]').length > 0) {
-    jQuery('[data-val]').select2({
-      width: 'auto',
-      dropdownCssClass: "val-container",
-      dropdownAutoWidth: true
-    });
-  }
-  if (jQuery('[data-lang]').length > 0) {
-      jQuery('[data-lang]').select2({
-        width: 'auto',
-        dropdownAutoWidth: true,
-        dropdownCssClass: "lang-container",
-        templateSelection: formatState
-      });
-    }
-    if (jQuery('[data-mcity]').length > 0) {
-      jQuery('[data-mcity]').select2({
-        width: '240',
-        dropdownAutoWidth: true,
-        dropdownCssClass: "main-lang",
-        templateSelection: langformat
-      });
-    }
+}
+select ('[data-hcity]','auto');
+select ('[data-paycount]','100%');
+select ('[data-paysrok]','100%');
+select ('[data-flats]','250px');
+select ('[data-flatsspec]','180px');
+select ('[data-statssel]','100%');
+select ('[data-addnewsel]','100%');
+select ('[data-time]','auto',true,"time-container");
+select ('[data-val]','auto',true,"val-container");
+select ('[data-lang]','auto',true,"lang-container",formatState);
+select ('[data-mcity]','240',true,"main-lang",langformat);
+select ('[data-flatsmonth]','80px');
 // стилизация выпадающих селектов
   function formatState (state) {
       if (!state.id) {
@@ -545,6 +489,17 @@ $("[data-bookin]").datepicker({
         }
     }
   }
+      $('[data-count]').click(function(){
+        count = $('td input[type=checkbox]:checked').length;
+    console.log(count);
+    })
+
+    $('[data-disableall]').click(function(e) {    
+        $('[data-flatsinp]').prop('checked', false);
+    });
+    $('[data-addall]').click(function(e) {    
+      $('[data-flatsinp]').prop('checked', true);
+  });
 });
 
 
