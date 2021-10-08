@@ -278,6 +278,19 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+.flats__nav li a {
+  white-space: nowrap;
+}
+.flats__nav {
+  overflow-x: scroll;
+  margin-right: -15px;
+}
+.flats__nav::-webkit-scrollbar {
+  height: 0;
+}
+.flats__top {
+  margin-right: -15px;
+}
 }
 @media screen and (max-width: 380px) {
   .footer__menu-item {
