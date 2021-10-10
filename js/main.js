@@ -30,7 +30,9 @@ jQuery(document).ready(function($) {
     var link = $(this).parent().find('input').val();
     navigator.clipboard.writeText(link)
   })
-  
+  $('[data-izbshow]').click(function(){
+    $(this).parent().hide();
+  })
 // slide to id
 if (jQuery('[data-flatnav]').length > 0) {
   $('[data-flatnav]').on("click","a", function (event) {

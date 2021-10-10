@@ -2389,3 +2389,43 @@ input::-webkit-inner-spin-button {
     text-align: center;
     display: block;
 }
+.flat-more .catalog__card-wrap {
+    width: 25%;
+}
+.izbshow {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	z-index: 3;
+}
+.izb__wrap .container {
+	position: relative;
+}
+.izbadd {
+	width: 225px;
+	position: relative;
+	padding: 10px 10px 10px 20px;
+	background: #292D35;
+	-webkit-box-shadow: 0px 4px 8px rgba(21, 21, 21, 0.07);
+	   -moz-box-shadow: 0px 4px 8px rgba(21, 21, 21, 0.07);
+	        box-shadow: 0px 4px 8px rgba(21, 21, 21, 0.07);
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+	        border-radius: 8px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}
+.izbadd:not(:last-child) {
+	margin-bottom: 5px;
+}
+.izbadd a {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	margin: auto 0;
+	cursor: pointer;
+}
