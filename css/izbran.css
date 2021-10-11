@@ -1,5 +1,6 @@
 .izbran {
     padding: 40px 0;
+    position: relative;
 }
 .title-m {
     margin-bottom: 25px;
@@ -7,4 +8,44 @@
 .filter__btn-sec {
     max-width: 200px;
     margin: 0 auto;
+}
+@media screen and (max-width: 993px) {
+    .flat-more .catalog__card-wrap {
+        width: 50%;
+    }
+    
+    .catalog__card-imglink {
+        overflow: hidden;
+        height: 230px;
+    }
+    .header__city {
+        display: none !important;
+    }
+    .filter__btn-sec {
+        background: #fff;
+        color: #5E6165;
+    }
+}
+/* 351-576px */
+@media screen and (max-width: 576px) {
+  .filter__btn-sec {
+      position: absolute;
+      right: 15px;
+      top: 40px;
+      max-width: 170px;
+      padding: 12px 24px;
+  }
+  .flat-more .catalog__card-wrap {
+    width: 100%;
+}
+.title-m {
+    font-size: 20px;
+    line-height: 28px;
+}
+.catalog__cards-wrap {
+    margin-bottom: -5px;
+}
+}
+@media screen and (max-width: 374px) {
+  
 }

@@ -121,43 +121,57 @@
                     Профиль арендодателя
                 </h1>
                 <div class="profile__wrap">
-                    <div class="profile__item">
-                        <div class="profile__title">
-                            Имя на сайте:
-                        </div>
-                        <input type="text" name="profname" class="prof__input" placeholder="Укажите имя">
-                    </div>
-                    <div class="profile__item">
-                        <div class="profile__title">
-                            Телефон:
-                        </div>
-                        <input type="tel" name="proftel" class="prof__input" placeholder="Укажите телефон">
-                        <div class="profile__tel">
-                            <div class="profile__pay-item profile__tel-item">
-                                <input type="checkbox" checked name="ws" id="ws">
-                                <label for="ws">
-                                    Whatsapp
-                                </label>
+                    <div class="profile__wrapitems">
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Имя на сайте:
                             </div>
-                            <div class="profile__pay-item profile__tel-item">
-                                <input type="checkbox" name="vb" id="vb">
-                                <label for="vb">
-                                    Viber
-                                </label>
+                            <input type="text" name="profname" class="prof__input" placeholder="Укажите имя">
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Телефон:
+                            </div>
+                            <input type="tel" name="proftel" class="prof__input" placeholder="Укажите телефон">
+                            <div class="profile__tel">
+                                <div class="profile__pay-item profile__tel-item">
+                                    <input type="checkbox" checked name="ws" id="ws">
+                                    <label for="ws">
+                                        Whatsapp
+                                    </label>
+                                </div>
+                                <div class="profile__pay-item profile__tel-item">
+                                    <input type="checkbox" name="vb" id="vb">
+                                    <label for="vb">
+                                        Viber
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile__item">
-                        <div class="profile__title">
-                            Телефон:
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                E-mail:
+                            </div>
+                            <input type="email" name="profemail" class="prof__input" placeholder="Укажите e-mail">
                         </div>
-                        <input type="tel" name="proftelsec" class="prof__input" placeholder="Укажите второй телефон">
-                    </div>
-                    <div class="profile__item">
-                        <div class="profile__title">
-                            Telegram:
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Пароль:
+                            </div>
+                            <input type="text" name="profpass" class="prof__input" placeholder="***********">
                         </div>
-                        <input type="text" name="proftg" class="prof__input" placeholder="Укажите Telegram">
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Подтверждение пароля:
+                            </div>
+                            <input type="text" name="profpasssec" class="prof__input" placeholder="***********">
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Telegram:
+                            </div>
+                            <input type="text" name="proftg" class="prof__input" placeholder="Укажите Telegram">
+                        </div>
                     </div>
                 </div>
                 <div class="profile__payment">
@@ -184,6 +198,11 @@
                             </label>
                         </div>
                     </div>
+                </div>
+                <div class="profile__wrapitems">
+                    <button class="prof__btn">
+                        Сохранить изменения
+                    </button>
                 </div>
             </div>
         </section>

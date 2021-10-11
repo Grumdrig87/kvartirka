@@ -283,13 +283,23 @@
 }
 .flats__nav {
   overflow-x: scroll;
+  overflow-y: hidden;
   margin-right: -15px;
+  padding-bottom: 17px;
+  padding-right: 30px;
 }
 .flats__nav::-webkit-scrollbar {
   height: 0;
 }
 .flats__top {
   margin-right: -15px;
+  padding-bottom: 0;
+}
+.flats__nav li a:hover {
+  color: rgb(94, 97, 101);
+}
+.flats__nav li:hover::after {
+  background: transparent
 }
 }
 @media screen and (max-width: 380px) {

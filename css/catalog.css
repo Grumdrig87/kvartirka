@@ -658,7 +658,7 @@
 .catalog__card-imglink {
     display: block;
 }
-.catalog__card-imglink {
+.catalog__card-imglink img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
