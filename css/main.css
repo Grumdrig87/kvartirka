@@ -2429,3 +2429,147 @@ input::-webkit-inner-spin-button {
 	margin: auto 0;
 	cursor: pointer;
 }
+.catalog__filter-tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.catalog__filter-tab input {
+    display: none;
+}
+.catalog__filter-tab label {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 15px;
+    display: block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    color: #3A3F44;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.catalog__filter-tab label:hover,
+.catalog__filter-tab input:checked + label {
+    background: -webkit-gradient(linear, left bottom, left top, from(#0A71EB), to(#0A71EB)), -webkit-gradient(linear, left bottom, left top, from(#225FFB), to(#225FFB)), #0752E4;
+    background: -webkit-linear-gradient(bottom, #0A71EB, #0A71EB), -webkit-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: -moz-linear-gradient(bottom, #0A71EB, #0A71EB), -moz-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: -o-linear-gradient(bottom, #0A71EB, #0A71EB), -o-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
+    background: linear-gradient(0deg, #0A71EB, #0A71EB), linear-gradient(0deg, #225FFB, #225FFB), #0752E4;
+    color: #fff;
+}
+.filter-tab-border label {
+    border: 1px solid #D8DEE0;
+}
+.filter-tab-border:not(:first-child) label {    
+    display: -webkit-box;    
+    display: -webkit-flex;    
+    display: -moz-box;    
+    display: -ms-flexbox;    
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+.filter__item-inputs:not(:last-child) {
+    margin-bottom: 10px;
+}
+.filter__input-wrap:first-child {
+    border-right: 1px solid #C3C7CB;
+}
+.filter__input-wrap {
+    position: relative;
+    width: 50%;
+}
+.filter__input-wrap input {
+    display: block;
+    width: 100%;
+    padding: 10px 35px;
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+}
+.filter__input-wrap input::-webkit-input-placeholder {
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.filter__input-wrap input:-moz-placeholder {
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.filter__input-wrap input::-moz-placeholder {
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.filter__input-wrap input:-ms-input-placeholder {
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.filter__input-wrap input::-ms-input-placeholder {
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.filter__input-wrap input::placeholder {
+    font-family: Cera Pro;
+    font-size: 14px;
+    line-height: 20px;
+    color: #020E20;
+}
+.filter__item-inputs {
+    background: #FFFFFF;
+    border: 1px solid #C3C7CB;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    overflow: hidden;
+}
