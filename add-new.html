@@ -271,7 +271,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="addnew__item" id="adress">
+                    <div class="addnew__item" id="foto">
                         <div class="addnew__title addnew__title-sec">
                             Описание и фото
                         </div>
@@ -293,109 +293,639 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="profile__item">
-                        <div class="profile__title">
-                            Ссылка на видео в YouTube:
-                        </div>
-                        <input type="text" name="youtube" class="prof__input" placeholder="https://www.youtube.com/watch?v=bxjTL6LtCIO">
-                    </div>
-                    <div class="profile__item">
-                        <div class="profile__title">
-                            Описание:
-                        </div>
-                        <textarea name="description" class="prof__input prof__textarea" placeholder="Введите описание жилья"></textarea>
-                    </div>
-                    <div class="profile__item profile__itemdf">
-                        <div class="profile__title">
-                            Количество комнат:
-                        </div>
-                        <div class="profile__title-r">
-                            <div class="catalog__filter-tabs">
-                                <div class="catalog__filter-tab filter-tab-border">
-                                    <input type="radio" checked name="numbKomnat" id="numbKomnat1">
-                                    <label for="numbKomnat1">Студия</label>
-                                </div>
-                                <div class="catalog__filter-tab filter-tab-border">
-                                    <input type="radio" name="numbKomnat" id="numbKomnat2">
-                                    <label for="numbKomnat2">1</label>
-                                </div>
-                                <div class="catalog__filter-tab filter-tab-border">
-                                    <input type="radio" name="numbKomnat" id="numbKomnat3">
-                                    <label for="numbKomnat3">2</label>
-                                </div>
-                                <div class="catalog__filter-tab filter-tab-border">
-                                    <input type="radio" name="numbKomnat" id="numbKomnat4">
-                                    <label for="numbKomnat4">3</label>
-                                </div>
-                                <div class="catalog__filter-tab filter-tab-border">
-                                    <input type="radio" name="numbKomnat" id="numbKomnat5">
-                                    <label for="numbKomnat5">4+</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile__item profile__itemdf">
-                        <div class="profile__title">
-                            Площадь квартиры
-                        </div>
-                        <div class="profile__item-r">
-                            <div class="filter__item-inputs">
-                                <div class="filter__input-wrap">
-                                    <input type="number" name="pl-obsh" class="filter__input" id="ploshad1">
-                                    <label for="ploshad1">Общая</label>
-                                </div>
-                                <div class="filter__input-wrap">
-                                    <input type="number" name="pl-zhil" class="filter__input" id="ploshad2">
-                                    <label for="ploshad2">Жилая</label>
-                                </div>
-                                <div class="filter__input-wrap">
-                                    <input type="number" name="pl-kuh" class="filter__input" id="ploshad3">
-                                    <label for="ploshad3">Кухня</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile__item">
-                        <div class="profile__title-add">
+                        <div class="profile__item">
                             <div class="profile__title">
-                                Рекламная фраза:
+                                Ссылка на видео в YouTube:
                             </div>
+                            <input type="text" name="youtube" class="prof__input" placeholder="https://www.youtube.com/watch?v=bxjTL6LtCIO">
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Описание:
+                            </div>
+                            <textarea name="description" class="prof__input prof__textarea" placeholder="Введите описание жилья"></textarea>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Количество комнат:
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="catalog__filter-tabs">
+                                    <div class="catalog__filter-tab filter-tab-border">
+                                        <input type="radio" checked name="numbKomnat" id="numbKomnat1">
+                                        <label for="numbKomnat1">Студия</label>
+                                    </div>
+                                    <div class="catalog__filter-tab filter-tab-border">
+                                        <input type="radio" name="numbKomnat" id="numbKomnat2">
+                                        <label for="numbKomnat2">1</label>
+                                    </div>
+                                    <div class="catalog__filter-tab filter-tab-border">
+                                        <input type="radio" name="numbKomnat" id="numbKomnat3">
+                                        <label for="numbKomnat3">2</label>
+                                    </div>
+                                    <div class="catalog__filter-tab filter-tab-border">
+                                        <input type="radio" name="numbKomnat" id="numbKomnat4">
+                                        <label for="numbKomnat4">3</label>
+                                    </div>
+                                    <div class="catalog__filter-tab filter-tab-border">
+                                        <input type="radio" name="numbKomnat" id="numbKomnat5">
+                                        <label for="numbKomnat5">4+</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Площадь квартиры
+                            </div>
+                            <div class="profile__item-r">
+                                <div class="filter__item-inputs">
+                                    <div class="filter__input-wrap">
+                                        <input type="number" name="pl-obsh" class="filter__input" id="ploshad1">
+                                        <label for="ploshad1">Общая</label>
+                                    </div>
+                                    <div class="filter__input-wrap">
+                                        <input type="number" name="pl-zhil" class="filter__input" id="ploshad2">
+                                        <label for="ploshad2">Жилая</label>
+                                    </div>
+                                    <div class="filter__input-wrap">
+                                        <input type="number" name="pl-kuh" class="filter__input" id="ploshad3">
+                                        <label for="ploshad3">Кухня</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__title-add">
+                                <div class="profile__title">
+                                    Рекламная фраза:
+                                </div>
+                                <p>
+                                    Осталось символов: <span>50</span>
+                                </p>
+                            </div>
+                            <input type="text" name="shortdescr" class="prof__input">
                             <p>
-                                Осталось символов: <span>50</span>
+                                Краткое описание вашей квартиры на главной странице
                             </p>
                         </div>
-                        <input type="text" name="shortdescr" class="prof__input">
-                        <p>
-                            Краткое описание вашей квартиры на главной странице
-                        </p>
-                    </div>
-                    <div class="profile__item profile__itemdf">
-                        <div class="profile__title">
-                            Балкон
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Балкон
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="filter__checkbox-wrap">
+                                    <div class="filter__checkbox">
+                                        <input type="checkbox" name="balkon1" id="balkon1">
+                                        <label for="balkon1">
+                                            Есть балкон
+                                            <span>
+                                                <svg class="x"><use xlink:href="img/sprite.svg#x"></use></svg>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="filter__checkbox">
+                                        <input type="checkbox" name="balkon2" id="balkon2">
+                                        <label for="balkon2">
+                                            Есть лоджия
+                                            <span>
+                                                <svg class="x"><use xlink:href="img/sprite.svg#x"></use></svg>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="profile__title-r">
-                            <div class="filter__checkbox-wrap">
-                                <div class="filter__checkbox">
-                                    <input type="checkbox" name="balkon1" id="balkon1">
-                                    <label for="balkon1">
-                                        Есть балкон
-                                        <span>
-                                            <svg class="x"><use xlink:href="img/sprite.svg#x"></use></svg>
-                                        </span>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Этаж/этажей
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="profile__inputsflex">
+                                    <input type="number" name="flor1" class="profile__num">
+                                    <span>
+                                        из
+                                    </span>
+                                    <input type="number" name="flor2" class="profile__num">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Тип санузла
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="catalog__filter-tabs flex-w sanuzel">
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" checked name="toilet" id="toilet1">
+                                        <label for="toilet1">Совмещенный</label>
+                                    </div>
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" name="toilet" id="toilet2">
+                                        <label for="toilet2">2 санузла</label>
+                                    </div>
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" name="toilet" id="toilet3">
+                                        <label for="toilet3">Раздельный</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Удобства
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="filter__item-show">
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob1" id="udob1">
+                                        <label for="udob1">
+                                            Газовая плита
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob2" id="udob2">
+                                        <label for="udob2">
+                                            Холодильник
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob3" id="udob3">
+                                        <label for="udob3">
+                                            Электроплита
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob4" id="udob4">
+                                        <label for="udob4">
+                                            Электрочайник
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob5" id="udob5">
+                                        <label for="udob5">
+                                            Кофеварка
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob6" id="udob6">
+                                        <label for="udob6">
+                                            Микроволновая печь
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob7" id="udob7">
+                                        <label for="udob7">
+                                            Посудомоечная машина
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob8" id="udob8">
+                                        <label for="udob8">
+                                            Духовка
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob9" id="udob9">
+                                        <label for="udob9">
+                                            Кондиционер
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob10" id="udob10">
+                                        <label for="udob10">
+                                            Душевая кабина
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob11" id="udob11">
+                                        <label for="udob11">
+                                            Ванна
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob12" id="udob12">
+                                        <label for="udob12">
+                                            Сауна
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob13" id="udob13">
+                                        <label for="udob13">
+                                            Джакузи
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob14" id="udob14">
+                                        <label for="udob14">
+                                            Туалетные принадлежности
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob15" id="udob15">
+                                        <label for="udob15">
+                                            Фен
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob16" id="udob16">
+                                        <label for="udob16">
+                                            Домашний кинотеатр
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob17" id="udob17">
+                                        <label for="udob17">
+                                            Wi-Fi
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob18" id="udob18">
+                                        <label for="udob18">
+                                            Интернет
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob19" id="udob19">
+                                        <label for="udob19">
+                                            Кабельное ТВ
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob20" id="udob20">
+                                        <label for="udob20">
+                                            Спутниковое ТВ
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob21" id="udob21">
+                                        <label for="udob21">
+                                            Телевизор
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob22" id="udob22">
+                                        <label for="udob22">
+                                            Камин
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob23" id="udob23">
+                                        <label for="udob23">
+                                            Бильярд
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob24" id="udob24">
+                                        <label for="udob24">
+                                            Газовый водонагреватель
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob25" id="udob25">
+                                        <label for="udob25">
+                                            Бойлер
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob26" id="udob26">
+                                        <label for="udob26">
+                                            Детская кроватка
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob27" id="udob27">
+                                        <label for="udob27">
+                                            Детский стул для кормления
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob28" id="udob28">
+                                        <label for="udob28">
+                                            Сейф
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob29" id="udob29">
+                                        <label for="udob29">
+                                            Стиральная машина
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob30" id="udob30">
+                                        <label for="udob30">
+                                            Стиральный порошок
+                                        </label>
+                                    </div>
+                                    <div class="login__popup-inputwrap">
+                                        <input type="checkbox" name="udob31" id="udob31">
+                                        <label for="udob31">
+                                            Утюг
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addnew__item" id="odome">
+                        <div class="addnew__title">
+                            О доме
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Тип дома
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="catalog__filter-tabs flex-w sanuzel">
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" checked name="housetype1" id="housetype1">
+                                        <label for="housetype1">Кирпичный</label>
+                                    </div>
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" name="housetype2" id="housetype2">
+                                        <label for="housetype2">Монолитный</label>
+                                    </div>
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" name="housetype3" id="housetype3">
+                                        <label for="housetype3">Панельный</label>
+                                    </div>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="house1" id="house1">
+                                    <label for="house1">
+                                        Огороженная территория
                                     </label>
                                 </div>
-                                <div class="filter__checkbox">
-                                    <input type="checkbox" name="balkon2" id="balkon2">
-                                    <label for="balkon2">
-                                        Есть лоджия
-                                        <span>
-                                            <svg class="x"><use xlink:href="img/sprite.svg#x"></use></svg>
-                                        </span>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="house2" id="house2">
+                                    <label for="house2">
+                                        Лифт
                                     </label>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="addnew__item" id="odome">
+                        <div class="addnew__title">
+                            На территории
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Парковка
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="catalog__filter-tabs flex-w sanuzel">
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" checked name="parking1" id="parking1">
+                                        <label for="parking1">Закрытая</label>
+                                    </div>
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" name="parking2" id="parking2">
+                                        <label for="parking2">Подземная</label>
+                                    </div>
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" name="parking3" id="parking3">
+                                        <label for="parking3">Открытая</label>
+                                    </div>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="houseadd1" id="houseadd1">
+                                    <label for="houseadd1">
+                                        Беседка
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="houseadd2" id="houseadd2">
+                                    <label for="houseadd2">
+                                        Мангал
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="houseadd3" id="houseadd3">
+                                    <label for="houseadd3">
+                                        Бассейн
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="houseadd4" id="houseadd4">
+                                    <label for="houseadd4">
+                                        Терраса
+                                    </label>
+                                </div>
+                                <div class="catalog__filter-tabs flex-w sanuzel mt20">
+                                    <div class="catalog__filter-tab">
+                                        <input type="radio" checked name="video" id="video">
+                                        <label for="video">Видеонаблюдение</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addnew__item" id="odome">
+                        <div class="addnew__title">
+                            Цена и условия
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Цена за час
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="profile__inputsflex">
+                                    <input type="number" name="pricehour" class="profile__num">
+                                    <span>
+                                        руб
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Цена за сутки
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="profile__inputsflex">
+                                    <input type="number" name="priceday" class="profile__num">
+                                    <span>
+                                        руб
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Цена за неделю
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="profile__inputsflex">
+                                    <input type="number" name="priceweek" class="profile__num">
+                                    <span>
+                                        руб
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Цена за месяц
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="profile__inputsflex">
+                                    <input type="number" name="pricemonth" class="profile__num">
+                                    <span>
+                                        руб
+                                    </span>
+                                </div>
+                                <div class="login__popup-inputwrap mt20">
+                                    <input type="checkbox" name="pricedog" id="pricedog">
+                                    <label for="pricedog">
+                                        В праздники и выходные цена договорная
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Количество гостей
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="input__main-numb">
+                                    <button type="button" class="quantity-arrow quantity-arrow-minus" data-arrowminus>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" fill="none"><path d="M1.334 1h9.333" stroke="#777d82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </button>
+                                    <input type="number" name="guest" data-guest value="2" required class="main__inp-guest">
+                                    <button type="button" class="quantity-arrow quantity-arrow-plus" data-arrowplus>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.333v9.333" stroke="#777d82"/><path d="M8 3.333v9.333" stroke="#777d82"/><path d="M3.334 8h9.333" stroke="#777d82"/><path d="M3.334 8h9.333" stroke="#777d82"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Количество кроватей
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="input__main-numb">
+                                    <button type="button" class="quantity-arrow quantity-arrow-minus" data-arrowminus>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" fill="none"><path d="M1.334 1h9.333" stroke="#777d82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </button>
+                                    <input type="number" name="beds" data-guest value="2" required class="main__inp-guest">
+                                    <button type="button" class="quantity-arrow quantity-arrow-plus" data-arrowplus>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.333v9.333" stroke="#777d82"/><path d="M8 3.333v9.333" stroke="#777d82"/><path d="M3.334 8h9.333" stroke="#777d82"/><path d="M3.334 8h9.333" stroke="#777d82"/></svg>
+                                    </button>
+                                </div>
+                                <div class="login__popup-inputwrap mt20">
+                                    <input type="checkbox" name="pricedog" id="pricedog">
+                                    <label for="pricedog">
+                                        В праздники и выходные цена договорная
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Время заезда
+                            </div>
+                            <div class="profile__title-r">
+                                <select name="time1" data-timeadd>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Время выезда
+                            </div>
+                            <div class="profile__title-r">
+                                <select name="time2" data-timeadd>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                    <option value="1">10:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf">
+                            <div class="profile__title">
+                                Расположение спальных мест
+                            </div>
+                            <div class="profile__title-r">
+                                <input type="text" name="raspol" class="profile__num profile__how">
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Способы оплаты
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="howpay1" id="howpay1">
+                                    <label for="howpay1">
+                                        Наличными
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="howpay2" id="howpay2">
+                                    <label for="howpay2">
+                                        Банковской картой
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="howpay3" id="howpay3">
+                                    <label for="howpay3">
+                                        Безналичным платежом
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item profile__itemdf profile__itemaifs">
+                            <div class="profile__title">
+                                Условия заселения
+                            </div>
+                            <div class="profile__title-r">
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="uslovzasel1" id="uslovzasel1">
+                                    <label for="uslovzasel1">
+                                        Отчетные документы
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="uslovzasel2" id="uslovzasel2">
+                                    <label for="uslovzasel2">
+                                        Сдается для вечеринок
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="uslovzasel3" id="uslovzasel3">
+                                    <label for="uslovzasel3">
+                                        С детьми разрешено
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="uslovzasel4" id="uslovzasel4">
+                                    <label for="uslovzasel4">
+                                        С животными разрешено
+                                    </label>
+                                </div>
+                                <div class="login__popup-inputwrap">
+                                    <input type="checkbox" name="uslovzasel5" id="uslovzasel5">
+                                    <label for="uslovzasel5">
+                                        Курение запрещено
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__title">
+                                Доп. условия заселения
+                            </div>
+                            <textarea name="dopusl" class="prof__input prof__textarea" placeholder="Введите доп. условия заселения"></textarea>
                         </div>
                     </div>
                 </div>

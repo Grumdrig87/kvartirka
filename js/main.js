@@ -131,6 +131,7 @@ select ('[data-val]','auto',true,"val-container");
 select ('[data-lang]','auto',true,"lang-container",formatState);
 select ('[data-mcity]','240',true,"main-lang",langformat);
 select ('[data-flatsmonth]','80px');
+select ('[data-timeadd]','170px');
 // стилизация выпадающих селектов
   function formatState (state) {
       if (!state.id) {
