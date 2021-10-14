@@ -166,12 +166,13 @@ select ('[data-timeadd]','170px');
     (function quantityProducts() {
       var $quantityArrowMinus = $("[data-arrowminus]");
       var $quantityArrowPlus = $("[data-arrowplus]");
-      var $quantityNum = $("[data-guest]");
+      
    
       $quantityArrowMinus.click(quantityMinus);
       $quantityArrowPlus.click(quantityPlus);
    
       function quantityMinus() {
+        var $quantityNum = $(this).parent().find("[data-guest]");
         if ($quantityNum.val() > 1) {
           $quantityNum.val(+$quantityNum.val() - 1);
           $('[data-guestinp]').text($quantityNum.val());
@@ -186,6 +187,7 @@ select ('[data-timeadd]','170px');
       }
    
       function quantityPlus() {
+        var $quantityNum = $(this).parent().find("[data-guest]");
         $quantityNum.val(+$quantityNum.val() + 1);
         $('[data-guestinp]').text($quantityNum.val());
         if ($quantityNum.val() > 4) {
@@ -244,6 +246,17 @@ if (jQuery('[data-flatrev]').length > 0){
         .closest('.login__popup-wrap').find('form.login__popup-form').removeClass('active').eq($(this).index()).addClass('active');
     });
 
+
+    var Circle = function(sel){
+      var circles = document.querySelectorAll(sel);
+      [].forEach.call(circles,function(el){
+          var valEl = parseFloat(el.innerHTML);
+          valEl = valEl*220/100;
+          el.innerHTML = '<svg width="75" height="75"><circle transform="rotate(-90)" r="35" cx="-37" cy="37" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 220px;" r="35" cx="-37" cy="37" /></svg>';
+          
+      });
+  };
+  Circle('.circle');
 // range
 
     $( function() {
