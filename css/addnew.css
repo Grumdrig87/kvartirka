@@ -596,6 +596,31 @@ circle:nth-child(2n) {
   stroke: #0752E4;
   stroke-width: 5;
 }
+.filter-tab-bordersec label {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-border-radius: 50% !important;
+       -moz-border-radius: 50% !important;
+            border-radius: 50% !important;
+}
+.input__main-numb input {
+    background: #fff;
+}
 @media screen and (max-width: 1080px) {
     .addnew__nav li a {
         padding: 13px 25px;
