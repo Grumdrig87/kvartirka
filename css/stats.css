@@ -109,14 +109,10 @@
             border-radius: 50%;
 }
 .stats__item:first-child .stats__item-img {
-    background: -webkit-gradient(linear, left bottom, left top, from(#0A71EB), to(#0A71EB)), -webkit-gradient(linear, left bottom, left top, from(#225FFB), to(#225FFB)), #0752E4;
-    background: -webkit-linear-gradient(bottom, #0A71EB, #0A71EB), -webkit-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
-    background: -moz-linear-gradient(bottom, #0A71EB, #0A71EB), -moz-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
-    background: -o-linear-gradient(bottom, #0A71EB, #0A71EB), -o-linear-gradient(bottom, #225FFB, #225FFB), #0752E4;
-    background: linear-gradient(0deg, #0A71EB, #0A71EB), linear-gradient(0deg, #225FFB, #225FFB), #0752E4;
+    background: rgba(10, 113, 235, 0.1);
 }
 .stats__item:last-child .stats__item-img {
-    background: #5D4FFC;
+    background: rgba(93, 79, 252, 0.1);
 }
 .stats__months {
     display: -webkit-box;
@@ -222,14 +218,50 @@
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
+        width: 82%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+           -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
         -webkit-align-items: center;
            -moz-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
     }
+    .stats .title-m {
+        margin-bottom: 30px;
+    }
+    .stats__item {
+        padding: 20px;
+    }
+    .stats__item-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    .stats__item-img .stat-i {
+        width: 25px;
+        height: 25px;
+    }
+    .stats__item-txt span:first-of-type {
+        width: 60%;
+        margin-bottom: 0;
+    }
+    .stats {
+        padding-bottom: 10px;
+    }
 }
 @media screen and (max-width: 374px) {
-
-
+    .stats .title-m {
+        margin-bottom: 20px;
+    }
+    .stats__count {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .stats__item-txt span:first-of-type {
+        width: 72%;
+    }
 }

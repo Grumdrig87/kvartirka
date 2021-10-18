@@ -163,12 +163,22 @@
     <path clip-rule="evenodd" d="M12 21v0a9 9 0 01-9-9v0a9 9 0 019-9v0a9 9 0 019 9v0a9 9 0 01-9 9z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="eyeok">
-    <path d="M23.537 16.467a5.006 5.006 0 010 7.075 5.006 5.006 0 01-7.075 0 5.006 5.006 0 010-7.075 5 5 0 017.075 0M35 26.667l-5 5-3.334-3.334" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M20 31.667c-6.152 0-11.732-3.319-14.257-8.48v0A7.244 7.244 0 015 20c0-1.098.253-2.185.743-3.187v0c2.525-5.161 8.105-8.48 14.257-8.48 6.152 0 11.732 3.319 14.257 8.48v0A7.243 7.243 0 0135 20" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M23.5348 16.4666C25.4865 18.4183 25.4865 21.5866 23.5348 23.5416C21.5832 25.4933 18.4148 25.4933 16.4598 23.5416C14.5082 21.59 14.5082 18.4216 16.4598 16.4666C18.4148 14.5116 21.5815 14.5116 23.5348 16.4666" stroke="#0752E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M23.5348 16.4666C25.4865 18.4183 25.4865 21.5866 23.5348 23.5416C21.5832 25.4933 18.4148 25.4933 16.4598 23.5416C14.5082 21.59 14.5082 18.4216 16.4598 16.4666C18.4148 14.5116 21.5815 14.5116 23.5348 16.4666" stroke="#225FFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M23.5348 16.4666C25.4865 18.4183 25.4865 21.5866 23.5348 23.5416C21.5832 25.4933 18.4148 25.4933 16.4598 23.5416C14.5082 21.59 14.5082 18.4216 16.4598 16.4666C18.4148 14.5116 21.5815 14.5116 23.5348 16.4666" stroke="#0A71EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M35.0013 26.6666L30.0013 31.6666L26.668 28.3333" stroke="#0752E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M35.0013 26.6666L30.0013 31.6666L26.668 28.3333" stroke="#225FFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M35.0013 26.6666L30.0013 31.6666L26.668 28.3333" stroke="#0A71EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20 31.6667C13.8483 31.6667 8.26833 28.3484 5.74333 23.1867V23.1867C5.25333 22.185 5 21.0984 5 20C5 18.9017 5.25333 17.815 5.74333 16.8134V16.8134C8.26833 11.6517 13.8483 8.33337 20 8.33337C26.1517 8.33337 31.7317 11.6517 34.2567 16.8134V16.8134C34.7467 17.815 35 18.9017 35 20" stroke="#0752E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20 31.6667C13.8483 31.6667 8.26833 28.3484 5.74333 23.1867V23.1867C5.25333 22.185 5 21.0984 5 20C5 18.9017 5.25333 17.815 5.74333 16.8134V16.8134C8.26833 11.6517 13.8483 8.33337 20 8.33337C26.1517 8.33337 31.7317 11.6517 34.2567 16.8134V16.8134C34.7467 17.815 35 18.9017 35 20" stroke="#225FFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20 31.6667C13.8483 31.6667 8.26833 28.3484 5.74333 23.1867V23.1867C5.25333 22.185 5 21.0984 5 20C5 18.9017 5.25333 17.815 5.74333 16.8134V16.8134C8.26833 11.6517 13.8483 8.33337 20 8.33337C26.1517 8.33337 31.7317 11.6517 34.2567 16.8134V16.8134C34.7467 17.815 35 18.9017 35 20" stroke="#0A71EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="cursor">
-    <path clip-rule="evenodd" d="M25.694 35.542l-3.951-12.624c-.417-1.331.946-2.525 2.211-1.935l11.785 5.502c1.397.652 1.162 2.707-.346 3.025l-4.852 1.027-1.8 5.061c-.518 1.454-2.585 1.414-3.047-.056z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M13.334 23.333h1.667m-1.667-5h3.333m-3.333-5h10m-5 18.694c-3.395-.039-6.772-1.304-9.365-3.895-5.292-5.292-5.292-13.87 0-19.162 5.291-5.292 13.87-5.292 19.161 0 2.592 2.592 3.857 5.97 3.897 9.365" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6961 35.5417L21.7445 22.9183C21.3278 21.5867 22.6911 20.3933 23.9561 20.9833L35.7411 26.485C37.1378 27.1367 36.9028 29.1917 35.3945 29.51L30.5428 30.5367L28.7428 35.5983C28.2245 37.0517 26.1578 37.0117 25.6961 35.5417Z" stroke="#5D4FFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M13.332 23.3333H14.9987" stroke="#5D4FFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M13.332 18.3333H16.6654" stroke="#5D4FFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M13.332 13.3333H23.332" stroke="#5D4FFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M18.3337 32.0266C14.9387 31.9883 11.5621 30.7233 8.96875 28.1316C3.67708 22.84 3.67708 14.2616 8.96875 8.96997C14.2604 3.6783 22.8387 3.6783 28.1304 8.96997C30.7221 11.5616 31.9871 14.94 32.0271 18.335" stroke="#5D4FFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrstat">
     <path d="M14.5 17l-5-5 5-5" stroke="#777D82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
